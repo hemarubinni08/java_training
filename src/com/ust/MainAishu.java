@@ -1,11 +1,11 @@
 package com.ust;
 
 public class MainAishu {
-    public static void main(String[] args){
-        int n=multiplyNum(2,7);
-        System.out.println(n);
-    }
-    public static Integer multiplyNum(int a,int b){
-        return a*b;
+    public static void main(String[] args) {
+        Arithmetic arithmetic = new Arithmetic();
+        System.out.println(arithmetic.addition(2, 5));
+        System.out.println(arithmetic.subtraction(3, 7));
+        System.out.println(arithmetic.multiplication(6, 5));
     }
 }
+
