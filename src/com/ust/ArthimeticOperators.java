@@ -19,10 +19,10 @@ public class ArthimeticOperators {
 
     public static void main(String args[]) {
         ArthimeticOperators newArth = new ArthimeticOperators();
-        System.out.println(newArth.add(2, 3));
-        System.out.println(newArth.sub(34, 5));
-        System.out.println(newArth.mul(2, 5));
-        System.out.println(newArth.div(5, 5));
+        System.out.println("Addition: "+newArth.add(2, 3));
+        System.out.println("Substraction: "+newArth.sub(34, 5));
+        System.out.println("Multiplication: "+newArth.mul(2, 5));
+        System.out.println("Divison: "+newArth.div(5, 5));
 
     }
 }
