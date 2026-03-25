@@ -8,7 +8,7 @@ public class FindCharacter {
         char[] splittedArray = name.toCharArray();
         int i = 0;
         while (i < splittedArray.length) {
-            if (splittedArray[i] == 'a') {
+            if (splittedArray[i] == find) {
                 System.out.println("Character position is: " + i);
                 break;
             }
