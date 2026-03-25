@@ -3,7 +3,7 @@ package com.ust;
 public class name {
     public static void main(String[] args) {
         String name = "Ritika Kumari";
-        System.out.println("Reversed Name:" + " " + reverseName(name));
+        System.out.println("Reversed Name=" + " " + reverseName(name));
 
     }
 
