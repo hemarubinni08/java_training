@@ -6,10 +6,10 @@ public class StringHarsh {
         StringBuffer sb = new StringBuffer(name);
         System.out.println(sb.reverse().toString());
 
-        String rev = "";
+        String reverse = "";
         for (int i = name.length() - 1; i >= 0; i--) {
-            rev += name.charAt(i);
+            reverse += name.charAt(i);
         }
-        System.out.println(rev);
+        System.out.println(reverse);
     }
 }
