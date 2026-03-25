@@ -4,15 +4,13 @@ import java.util.*;
 
 public class MainYesh {
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-        int c = sc.nextInt();
-        int d = sc.nextInt();
-        System.out.println(subtract(c, d));
+        ArithimeticYesh arithmeticobject = new ArithimeticYesh();
+        System.out.println("adding two numbers: " + arithmeticobject.addition(2, 3));
+        System.out.println("subtraction of two numbers: " + arithmeticobject.subtraction(2, 3));
+        System.out.println("multiplying two numbers: " + arithmeticobject.multiply(2, 3));
+        System.out.println("division of two numbers: " + arithmeticobject.division(2, 3));
 
     }
 
-    public static Integer subtract(int a, int b) {
-        return a - b;
-    }
+
 }
