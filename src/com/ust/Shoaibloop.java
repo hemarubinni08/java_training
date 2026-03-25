@@ -17,7 +17,5 @@ public class Shoaibloop {
             System.out.print(name.charAt(i));
             i++;
         }
-
-
     }
 }
