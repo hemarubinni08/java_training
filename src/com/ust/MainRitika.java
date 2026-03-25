@@ -2,12 +2,9 @@ package com.ust;
 
 public class MainRitika {
     public static void main(String[] args) {
-
-        int result = addThreeNumbers(2, 4, 5);
-        System.out.println("Add three number :" + " " + result);
-    }
-
-    public static Integer addThreeNumbers(int a, int b, int c) {
-        return a + b + c;
+        ArithmeticRitika obj = new ArithmeticRitika();
+        System.out.println(obj.addition(2, 3));
+        System.out.println(obj.substraction(20, 10));
+        System.out.println(obj.multiple(2, 10));
     }
 }
