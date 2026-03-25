@@ -11,13 +11,16 @@ public class MainArithmeticCJ {
         System.out.println("Product is " + product);
     }
 }
+
 class ArithmeticOperations {
     int addition(int a, int b) {
         return a + b;
     }
+
     int subtraction(int a, int b) {
         return a - b;
     }
+
     int multiplication(int a, int b) {
         return a * b;
     }
