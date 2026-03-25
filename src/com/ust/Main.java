@@ -1,5 +1,3 @@
 package com.ust;
 
-public class Main {
-
-}
+public class Main {}
