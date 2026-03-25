@@ -2,7 +2,7 @@ package com.ust;
 
 public class Reverse {
     public static void main(String[] args) {
-        String originalString = "hemarubinni";
+        String originalString = "hema";
         System.out.println("Reversed String: " + stringReverse(originalString));
     }
 
