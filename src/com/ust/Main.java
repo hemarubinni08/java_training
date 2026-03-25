@@ -2,12 +2,13 @@ package com.ust;
 
 public class Main {
     public static void main(String[] args) {
-        ArithemeticProgramPranav ar = new ArithemeticProgramPranav();
-        int sum = ar.addNumbers(5, 5);
-        int difference = ar.subtractNumbers(5, 5);
-        int product = ar.multiplyNumbers(5, 5);
-        System.out.println("Sum " + sum);
-        System.out.println("Difference " + difference);
-        System.out.println("Product " + product);
+        ArithemiticOperationNavaneeth ao = new ArithemiticOperationNavaneeth();
+        int sum = ao.addition(2, 3);
+        int subraction = ao.subraction(5, 3);
+        int multiply = ao.multiply(8, 5);
+
+        System.out.println("Addition:" + sum);
+        System.out.println("Subraction:" + subraction);
+        System.out.println("Multiply:" + multiply);
     }
 }
