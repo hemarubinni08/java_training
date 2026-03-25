@@ -9,5 +9,4 @@ public class MainMamtha1{
         }
         System.out.println(reversed);
     }
-
 }
