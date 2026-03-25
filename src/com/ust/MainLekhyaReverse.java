@@ -6,9 +6,8 @@ public class MainLekhyaReverse {
     }
 
     public static String reverseAString(String str) {
-        int n = str.length();
         String reverse = "";
-        for (int i = n - 1; i >= 0; i--) {
+        for (int i = str.length() - 1; i >= 0; i--) {
             reverse += str.charAt(i);
         }
         return reverse;
