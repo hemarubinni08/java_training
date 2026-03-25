@@ -8,7 +8,5 @@ public class MainReverseSrujan {
             reversed = reversed + name.charAt(i);
         }
         System.out.println("The reversed name is : " + reversed);
-
     }
-
 }
