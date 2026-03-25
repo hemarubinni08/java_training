@@ -8,10 +8,10 @@ public class ReverseString {
         String s;
         System.out.println("Enter String");
         s = sc.next();
-        System.out.println(reverseString(s));
+        System.out.println(reverseName(s));
     }
 
-    public static String reverseString(String s) {
+    public static String reverseName(String s) {
         char c;
         String rev = "";
         for (int i = 0; i < s.length(); i++) {
