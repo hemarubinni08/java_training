@@ -5,9 +5,8 @@ import java.util.*;
 public class ReverseString {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s;
         System.out.println("Enter String");
-        s = sc.next();
+        String s = sc.next();
         System.out.println(reverseName(s));
     }
 
