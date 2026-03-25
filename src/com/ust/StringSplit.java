@@ -5,11 +5,11 @@ public class StringSplit {
         String name="navya";
         int i=0;
         while(i<name.length()){
-            if(name.charAt(i)=='v'){
+            if(name.charAt(i)=='v') {
                 break;
             }
 
-            System.out.println(name.charAt(i));
+            System.out.print(name.charAt(i));
             i++;
 
         }
