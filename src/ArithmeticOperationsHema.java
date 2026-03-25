@@ -23,11 +23,10 @@ public class ArithmeticOperationsHema {
         int number1 = sc.nextInt();
         int number2 = sc.nextInt();
         ArithmeticOperationsHema am = new ArithmeticOperationsHema();
-
         System.out.println("Addition : " + am.Addition(number1, number2));
         System.out.println("Subtraction : " + am.Subtraction(number1, number2));
         System.out.println("Multiplication : " + am.Multiplication(number1, number2));
         System.out.println("Division : " + am.Division(number1, number2));
 
     }
-    }
+}
