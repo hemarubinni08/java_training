@@ -3,18 +3,18 @@ package com.ust;
 public class MainReverseStrNagarajan {
     public static void main(String[] args) {
 
-        System.out.println(reverseString("Nagarajan"));
+        System.out.println(reverseStr("Nagarajan"));
 
     }
 
-    public static String reverseString(String str) {
+    public static String reverseStr(String str) {
 
-        String revStr = "";
+        String reverseString = "";
         for (int i = str.length() - 1; i >= 0; i--) {
-            revStr += String.valueOf(str.charAt(i));
+            reverseString += String.valueOf(str.charAt(i));
 
         }
-        return revStr;
+        return reverseString;
 
     }
 }
