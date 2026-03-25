@@ -2,10 +2,10 @@ package com.ust;
 
 public class MainSrujan {
     public static void main(String[] args) {
-        System.out.println(multiplyNumber(2, 9));
-    }
-
-    public static Integer multiplyNumber(int a, int b) {
-        return a * b;
+        ArithmeticOperationsSrujan myobject = new ArithmeticOperationsSrujan();
+        System.out.println(myobject.addition(2, 3));
+        System.out.println(myobject.subtraction(2, 3));
+        System.out.println(myobject.division(2, 3));
+        System.out.println(myobject.multiplication(2, 3));
     }
 }
