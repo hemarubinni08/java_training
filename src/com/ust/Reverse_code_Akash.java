@@ -7,12 +7,12 @@ public class Reverse_code_Akash {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter name");
         String name = sc.nextLine();
-        String rev = "";
+        String reversedName = "";
         char ch[] = name.toCharArray();
         for (int i = ch.length - 1; i >= 0; i--) {
-            rev = rev + ch[i];
+            reversedName = reversedName + ch[i];
         }
-        System.out.println("Reverse String:" + rev);
+        System.out.println("Reverse String:" + reversedName);
     }
 
     public static void main(String args[]) {
