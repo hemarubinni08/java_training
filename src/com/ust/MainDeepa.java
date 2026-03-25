@@ -5,11 +5,11 @@ public class MainDeepa {
         System.out.println(printName("Deepakarthika"));
     }
 
-    public static String printName(String s) {
-        String rev = "";
-        for (int i = s.length() - 1; i >= 0; i--) {
-            rev += s.charAt(i);
+    public static String printName(String originalString) {
+        String reversedString = "";
+        for (int i = originalString.length() - 1; i >= 0; i--) {
+            reversedString += originalString.charAt(i);
         }
-        return rev;
+        return reversedString;
     }
 }
