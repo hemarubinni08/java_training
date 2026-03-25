@@ -5,7 +5,7 @@ public class MainPranav {
         System.out.print(isCorrect(1));
     }
 
-    public static boolean isCorrect(int num) {
-        return num == 1;
+    public static boolean isCorrect(int numb) {
+        return numb == 1;
     }
 }
