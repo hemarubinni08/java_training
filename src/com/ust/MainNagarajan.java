@@ -9,7 +9,7 @@ public class MainNagarajan {
 
     public static int sumOfNumbers(int a, int b) {
 
-        return a - b;
+        return a + b;
 
     }
 }
