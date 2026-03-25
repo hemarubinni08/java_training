@@ -12,6 +12,7 @@ public class Letter {
             }
             System.out.print(ch);
             i++;
+
         }
     }
 }
