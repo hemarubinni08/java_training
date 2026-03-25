@@ -2,10 +2,10 @@ package com.ust;
 
 public class MainAishu {
     public static void main(String[] args){
-        int n=mulNum(2,7);
+        int n=multiplyNum(2,7);
         System.out.println(n);
     }
-    public static Integer mulNum(int a,int b){
+    public static Integer multiplyNum(int a,int b){
         return a*b;
     }
 }
