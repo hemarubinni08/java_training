@@ -1,11 +1,11 @@
 package com.ust;
 
 public class MainShoaib {
-    public static int div(int a, int b) {
-        return a / b;
-    }
 
     public static void main(String[] args) {
-        System.out.println(div(9, 3));
+        ShoaibArithmetic obj= new ShoaibArithmetic();
+        System.out.println(obj.addition(1,3));
+        System.out.println(obj.subtract(3,8));
+        System.out.println(obj.multiply(8,8));
     }
 }
