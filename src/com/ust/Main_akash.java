@@ -1,24 +1,16 @@
 package com.ust;
-
+//Driver code for ArithmeticAkash
 import java.util.Scanner;
-
 public class Main_akash {
-    static int a = 0, b = 0;
-
-    public static void accept() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the first number");
-        a = sc.nextInt();
-        System.out.println(("Enter the second number"));
-        b = sc.nextInt();
-    }
-
-    public static int addNumbers(int a, int b) {
-        return a + b;
-    }
-
     public static void main(String[] args) {
-        accept();
-        System.out.println("Answer: " + addNumbers(a, b));
+        ArithmeticAkash arithmeticObject = new ArithmeticAkash();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter numbers");
+        int first_number = sc.nextInt();
+        int second_number = sc.nextInt();
+        System.out.println("Sum of numbers: " + ArithmeticAkash.add(first_number, second_number));
+        System.out.println("Difference of numbers: " + ArithmeticAkash.subtract(first_number, second_number));
+        System.out.println("Multiplication result of numbers: " + ArithmeticAkash.multiply(first_number, second_number));
+        System.out.println("Division of numbers: " + ArithmeticAkash.division(first_number, second_number));
     }
 }
