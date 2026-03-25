@@ -1,4 +1,4 @@
-public class MainWhileHema {
+public class WhilePractice {
     public static void main(String[] args) {
         String name = "Hema";
         int i = 0;
