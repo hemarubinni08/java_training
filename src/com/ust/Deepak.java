@@ -2,11 +2,11 @@ package com.ust;
 
 public class Deepak {
     public static void main(String[] args) {
-        int result = add2nos(2, 3);
+        int result = multiply(2, 3);
         System.out.println(result);
     }
 
-    public static Integer add2nos(int a, int b) {
+    public static Integer multiply(int a, int b) {
         return a * b;
     }
 }
