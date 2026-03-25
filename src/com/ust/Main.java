@@ -2,10 +2,10 @@ package com.ust;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(addTwoNumbers(2, 5));
-    }
-
-    public static Integer addTwoNumbers(int a, int b) {
-        return a + b;
+        ArithmeticOperations a = new ArithmeticOperations();
+        System.out.println(a.addition(2, 3));
+        System.out.println(a.subtraction(5, 4));
+        System.out.println(a.multiplication(2, 3));
+        System.out.println(a.division(8, 2));
     }
 }
