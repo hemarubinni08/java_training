@@ -3,7 +3,9 @@ package com.ust;
 public class ReverseString {
     public static void main(String[] args) {
         String name = "navya";
+        System.out.println(name);
         System.out.println(reverseString(name));
+
     }
 
     public static String reverseString(String name) {
