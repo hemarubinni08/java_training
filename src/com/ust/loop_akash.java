@@ -9,9 +9,9 @@ public class loop_akash {
         name = name.toLowerCase();
         char[] letter = name.toCharArray();
         int i = 0;
-        while (letter[i] != 'a') {
+         do {
             System.out.println(letter[i++]);
-        }
+        }while (letter[i] != 'a');
         System.out.println(("Exiting...."));
     }
 
