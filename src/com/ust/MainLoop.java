@@ -1,15 +1,15 @@
 package com.ust;
 
-public class MainDeepshikaSplit {
+public class MainLoop {
     public static void main(String[] args) {
-        String name = "Deepshika";
+        String name = "Stranger Things";
         int i = 0;
         while (i < name.length()) {
             char ch = name.charAt(i);
-            if (ch == 's') {
+            System.out.println(ch);
+            if (ch == 'g') {
                 break;
             }
-            System.out.print(ch);
             i++;
         }
     }
