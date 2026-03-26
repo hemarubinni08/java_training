@@ -1,7 +1,6 @@
 package com.ust;
 
 public class VehicleTwoWheelerLekhya extends VehicleLekhya {
-
     public static String getBrandOfTheVehicle() {
         return "Honda";
     }

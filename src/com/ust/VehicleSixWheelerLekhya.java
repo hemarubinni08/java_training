@@ -1,5 +1,4 @@
 package com.ust;
-
 import java.time.LocalDate;
 
 public class VehicleSixWheelerLekhya extends HeavyVehicleLekhya {
