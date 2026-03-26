@@ -1,5 +1,8 @@
 package com.ust;
 
+import com.ust.impl.CarInterfaceChailaImpl;
+import com.ust.impl.TruckInterfaceChailaImpl;
+
 /*
 public class Object {
     public static void main(String[] args) {
@@ -10,6 +13,7 @@ public class Object {
     }
 }
 */
+/*
 public class Object {
     public static void main(String[] args) {
         VehicleChaila objveh = new VehicleChaila();
@@ -23,5 +27,15 @@ public class Object {
         System.out.println(objbike.getNumberOfSeats());
         System.out.println(objcar.getNumberOfWheels());
         System.out.println(objtruck.getBrand());
+    }
+}
+
+ */
+public class Object{
+    public static void main(String[] args){
+        CarInterfaceChailaImpl objcarint = new CarInterfaceChailaImpl();
+        TruckInterfaceChailaImpl objtruckint = new TruckInterfaceChailaImpl();
+        System.out.println(objcarint.stearingControl());
+        System.out.println(objtruckint.airConditioner());
     }
 }
