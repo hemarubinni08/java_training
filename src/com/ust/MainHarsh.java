@@ -1,5 +1,10 @@
 package com.ust;
 
+import com.ust.impl.AllVechileInterfaceImpl;
+import com.ust.impl.BikeHarshImpl;
+import com.ust.impl.BusInterfaceImpl;
+import com.ust.impl.CarInterfaceImpl;
+
 import java.sql.SQLOutput;
 
 public class MainHarsh {
@@ -41,5 +46,30 @@ public class MainHarsh {
 
         VechileHarsh car=new CarHarsh();
         System.out.println("number of wheels in car:"+car.wheeles());
+
+        System.out.println("**********************************************************");
+
+        VehicleInterfaceHarsh a=new BikeHarshImpl();
+        System.out.println("number of wheels in Bike:" + a.wheeles());
+        System.out.println("Color of Bike is:" + a.color());
+        System.out.println("Brand of Bike is:" + a.brand());
+
+        System.out.println();
+
+        BusInterfaceImpl b=new BusInterfaceImpl();
+        System.out.println("number of wheels in Bike:" + b.wheeles());
+        System.out.println("Color of Bike is:" + b.color());
+        System.out.println("Brand of Bike is:" + b.brand());
+        System.out.println("Has AC in Bike:" + b.hasAc());
+        System.out.println("Speed of Bike is:" + b.speedMoreThan120());
+        System.out.println("Number of door in  Bike is:" + b.numberOfDoor());
+
+        System.out.println();
+
+        VehicleInterfaceHarsh c=new CarInterfaceImpl();
+        System.out.println("number of wheels in Bike:" + c.wheeles());
+        System.out.println("Color of Bike is:" + c.color());
+        System.out.println("Brand of Bike is:" + c.brand());
+
     }
 }
