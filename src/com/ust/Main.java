@@ -1,11 +1,15 @@
 package com.ust;
 
+import com.ust.impl.FourWheelersHemanthImpl;
+import com.ust.impl.TwoWheelersHemanthImpl;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println(addTwoNumbers(2, 5));
-    }
-
-    public static Integer addTwoNumbers(int a, int b) {
-        return a + b;
+        FourWheelersHemanthImpl four = new FourWheelersHemanthImpl();
+        System.out.println(four.typeOfVehicle());
+        System.out.println(four.hasAc());
+        VehicleInterfaceHemanth bike = new TwoWheelersHemanthImpl();
+        bike.typeOfVehicle();
+        bike.mileage();
     }
 }
