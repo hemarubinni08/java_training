@@ -1,6 +1,6 @@
 package com.ust;
 
-public class bikeHarsha extends VehicleHarsha{
+public class BikeHarsha extends VehicleHarsha{
     public int numberOfWheels(){
         return 2;
     }

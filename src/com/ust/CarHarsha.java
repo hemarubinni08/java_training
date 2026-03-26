@@ -1,6 +1,6 @@
 package com.ust;
 
-public class carHarsha extends HeavyVehiclesHarsha{
+public class CarHarsha extends HeavyVehiclesHarsha{
     public int engineCapacity(){
         return 1500;
     }
