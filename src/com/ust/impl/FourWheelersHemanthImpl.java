@@ -8,25 +8,20 @@ public class FourWheelersHemanthImpl implements VehicleInterfaceHemanth, HeavyVe
     public String typeOfVehicle() {
         return "Cars Hii";
     }
-
     @Override
     public String modelName() {
         return "Suzuki";
     }
-
     @Override
     public int mileage() {
         return 18;
     }
-
     @Override
     public boolean hasAc() {
         return false;
     }
-
     @Override
     public int noOfDoors() {
         return 4;
     }
-
 }

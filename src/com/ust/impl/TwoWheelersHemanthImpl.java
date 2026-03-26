@@ -7,12 +7,10 @@ public class TwoWheelersHemanthImpl implements VehicleInterfaceHemanth {
     public String typeOfVehicle() {
         return "Bike";
     }
-
     @Override
     public String modelName() {
         return "Yamaha";
     }
-
     @Override
     public int mileage() {
         return 40;
