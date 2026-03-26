@@ -2,11 +2,11 @@ package com.ust;
 
 public class MainAnu {
     public static void main(String[] args) {
-        int result = subtractionTwoNumbers(20, 10);
-        System.out.println(result);
-    }
+        MainArithemetic object = new MainArithemetic();
+        System.out.println(object.addition(10, 20));
+        System.out.println(object.subtraction(40, 20));
+        System.out.println(object.multiplication(10, 10));
 
-    public static Integer subtractionTwoNumbers(int a, int b) {
-        return a - b;
+
     }
 }
