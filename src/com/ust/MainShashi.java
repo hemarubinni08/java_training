@@ -1,5 +1,8 @@
 package com.ust;
 
+import com.ust.impl.CarInterfaceShashiImpl;
+import com.ust.impl.TractorInterfaceShashiImpl;
+
 public class MainShashi {
     /*public static void main(String[] args) {
          System.out.println(addTwoNumbers(4, 5));
@@ -17,10 +20,16 @@ public class MainShashi {
     public static Integer subtractTwoNumber(int a, int b) {
         return a - b;
     }*/
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         TractorShashi tractor = new TractorShashi();
         CarShashi car = new CarShashi();
         System.out.println("Tractor details: " + tractor.getBrandName() + " " + tractor.getModelName() + "\n" + tractor.getNumberOfWheels() + "\n" + tractor.getBrakeType() + "\n" + tractor.getFuelType());
         System.out.println("Car details: " + car.getBrandName() + " " + car.getModelName() + "\n" + car.getNumberOfWheels() + "\n" + car.getBrakeType() + "\n" + car.getDoorOpeningType() + "\n" + car.getAirConditioning() + "\n" + car.getFuelType()+"\n"+car.getYearsOfInsurance());
+    }*/
+    public static void main(String[] args) {
+        TractorInterfaceShashiImpl tractor = new TractorInterfaceShashiImpl();
+        CarInterfaceShashiImpl car = new CarInterfaceShashiImpl();
+        System.out.println("Tractor details: " + tractor.getBrandName() + " " + tractor.getModelName() + "\n" + tractor.getNumberOfWheels() + "\n" + tractor.getBrakeType() + "\n" + tractor.getFuelType());
+        System.out.println("Car details: " + car.getBrandName() + " " + car.getModelName() + "\n" + car.getNumberOfWheels() + "\n" + car.getBrakeType() + "\n" + car.getDoorOpeningType() + "\n" + car.getAirConditioning() + "\n" + car.getFuelType() + "\n" + car.getYearsOfInsurance());
     }
 }
