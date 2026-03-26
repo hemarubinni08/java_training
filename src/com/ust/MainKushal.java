@@ -5,8 +5,6 @@ import com.ust.impl.BusKushalImpl;
 import com.ust.impl.CarKushalImpl;
 import com.ust.impl.TruckKushalImpl;
 
-import java.sql.SQLOutput;
-
 public class MainKushal {
     static void main() {
 //        ArithmeticOperationKushal aok = new ArithmeticOperationKushal();
