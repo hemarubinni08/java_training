@@ -1,20 +1,21 @@
 package com.ust;
 
+import com.ust.impl.BikeHarshaImpl;
+import com.ust.impl.BusHarshaImpl;
+import com.ust.impl.CarHarshaImpl;
+import com.ust.impl.LorryHarshaImpl;
+
 public class MainHarshavardhan {
     public static void main(String[] args) {
-        VehicleHarsha vehicleObj = new VehicleHarsha();
-        System.out.println("Number of wheels in vehicle: " + vehicleObj.numberOfWheels());
-        System.out.println("Engine capacity in vehicle: " + vehicleObj.engineCapacity());
-        System.out.println("fuel type of vehicle: " + vehicleObj.fuelType());
 
-        BikeHarsha bikeObj = new BikeHarsha();
+        BikeHarshaImpl bikeObj = new BikeHarshaImpl();
         System.out.println();
         System.out.println("Number of wheels in bike: " + bikeObj.numberOfWheels());
         System.out.println("Engine capacity in bike: " + bikeObj.engineCapacity());
         System.out.println("fuel type of bike: " + bikeObj.fuelType());
         System.out.println("Can do wheelie: "+ bikeObj.canDoWheelie());
 
-        HeavyVehiclesHarsha carObj = new CarHarsha();
+        HeavyVehicleInterfaceHarsha carObj = new CarHarshaImpl();
         System.out.println();
         System.out.println("Number of wheels in car: " + carObj.numberOfWheels());
         System.out.println("Engine capacity in car: " + carObj.engineCapacity());
@@ -23,7 +24,7 @@ public class MainHarshavardhan {
         System.out.println("Is public transport: " + carObj.isPublicTransport());
         System.out.println("Has sunroof: " + carObj.hasSunRoof());
 
-        HeavyVehiclesHarsha busObj = new BusHarsha();
+        HeavyVehicleInterfaceHarsha busObj = new BusHarshaImpl();
         System.out.println();
         System.out.println("Number of wheels in bus: " + busObj.numberOfWheels());
         System.out.println("Engine capacity in bus: " + busObj.engineCapacity());
@@ -32,7 +33,7 @@ public class MainHarshavardhan {
         System.out.println("Is public transport: " + busObj.isPublicTransport());
         System.out.println("Has sunroof: " + busObj.hasSunRoof());
 
-        HeavyVehiclesHarsha lorryObj = new LorryHarsha();
+        HeavyVehicleInterfaceHarsha lorryObj = new LorryHarshaImpl();
         System.out.println();
         System.out.println("Number of wheels in Lorry: " + lorryObj.numberOfWheels());
         System.out.println("Engine capacity in Lorry: " + lorryObj.engineCapacity());
