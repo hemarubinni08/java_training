@@ -1,21 +1,20 @@
 package com.ust;
 
-import com.ust.impl.BikeInterfaceImpl;
-import com.ust.impl.CarInterfaceImpl;
-import com.ust.impl.TruckInterfaceImpl;
-import com.ust.impl.VechicleInterfaceImpl;
+import com.ust.impl.BikeInterfaceRituImpl;
+import com.ust.impl.CarInterfaceRituImpl;
+import com.ust.impl.TruckInterfaceRituImpl;
+import com.ust.impl.VechicleInterfaceRituImpl;
 
 public class MainRitika {
     public static void main(String[] args) {
-        VechicleInterfaceRitu car=new CarInterfaceImpl();
-        TruckInterfaceImpl truck=new TruckInterfaceImpl();
-        VechicleInterfaceRitu bike= new BikeInterfaceImpl();
+        VechicleInterfaceRitu car=new CarInterfaceRituImpl();
+        TruckInterfaceRituImpl truck=new TruckInterfaceRituImpl();
+        VechicleInterfaceRitu bike= new BikeInterfaceRituImpl();
 //        HeavyVechicleInterface truck=new TruckInterfaceImpl();
 
 
         System.out.println("number of wheels in car: " + car.noOfWheels());
         System.out.println("Mileage of Bike: " + bike.mileage());
-        System.out.println("Number of people in truck: " + truck.noOfPeople());
 
 
 

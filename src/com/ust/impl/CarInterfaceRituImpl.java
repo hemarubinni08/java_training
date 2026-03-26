@@ -1,12 +1,10 @@
 package com.ust.impl;
 
-import com.ust.HeavyVehiclesInterfaceAnu;
-import com.ust.VehicleInterfaceAnu;
-
-public class CarInterfaceImpl implements VehicleInterfaceAnu, HeavyVehiclesInterfaceAnu {
+import com.ust.VechicleInterfaceRitu;
 import com.ust.VechicleInterfaceRitu;
 
 public class CarInterfaceRituImpl implements VechicleInterfaceRitu {
+
 
     @Override
     public int noOfWheels() {
@@ -14,32 +12,12 @@ public class CarInterfaceRituImpl implements VechicleInterfaceRitu {
     }
 
     @Override
-    public int maxSpeed() {
-        return 100;
     public int mileage() {
-        return 25;
+        return 20;
     }
 
     @Override
     public String getBrand() {
-        return "MG";
-    }
-
-    @Override
-    public boolean hasAc() {
-        return true;
-    }
-
-    @Override
-    public boolean hasGps() {
-        return true;
-    }
-
-    @Override
-    public int noOfPassengers() {
-        return "BMW";
-    }
-    public int noOfDoors(){
-        return 4;
+        return "Swift";
     }
 }

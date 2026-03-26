@@ -1,6 +1,6 @@
 package com.ust;
 
-public interface HeavyVechicleInterface {
+public interface HeavyVechicleInterfaceRitu {
     int noOfPeople();
     int noOfDoors();
 }
