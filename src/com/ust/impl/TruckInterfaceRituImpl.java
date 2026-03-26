@@ -1,52 +1,33 @@
 package com.ust.impl;
 
-import com.ust.HeavyVehiclesInterfaceAnu;
-import com.ust.VehicleInterfaceAnu;
-
-public class TruckInterfaceImpl implements VehicleInterfaceAnu, HeavyVehiclesInterfaceAnu {
-import com.ust.HeavyVechicleInterface;
 import com.ust.VechicleInterfaceRitu;
+import com.ust.HeavyVechicleInterfaceRitu;
 
-public class TruckInterfaceRituImpl implements VechicleInterfaceRitu, HeavyVechicleInterface {
+
+public class TruckInterfaceRituImpl implements VechicleInterfaceRitu,HeavyVechicleInterfaceRitu  {
+
     @Override
     public int noOfWheels() {
-        return 4;
+        return 0;
     }
 
     @Override
-    public int maxSpeed() {
-        return 120;
     public int mileage() {
-        return 8;
+        return 0;
     }
 
     @Override
     public String getBrand() {
-        return "TATA";
+        return "";
     }
 
     @Override
-    public boolean hasAc() {
-        return "Lorri";
-    }
-    public boolean hasAc(){
-        return false;
-    }
-
-    @Override
-    public boolean hasGps() {
-        return false;
-    }
-
-    @Override
-    public int noOfPassengers() {
-        return 10;
     public int noOfPeople() {
-        return 10;
+        return 0;
     }
 
     @Override
     public int noOfDoors() {
-        return 2;
+        return 0;
     }
 }
