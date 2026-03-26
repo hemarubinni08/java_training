@@ -2,7 +2,7 @@ package com.ust.impl;
 
 import com.ust.VehicleInferfaceNavya;
 
-public class BusInterfaceNavyaImpl implements VehicleInferfaceNavya,HeavyVehicleInterfaceNavya{
+public class BusInterfaceNavyaImpl implements VehicleInferfaceNavya, HeavyVehicleInterfaceNavya {
 
     @Override
     public int wheels() {
