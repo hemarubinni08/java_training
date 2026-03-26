@@ -1,7 +1,7 @@
 package com.ust;
 
 class CarRohit extends VehicleRohit {
-    public String Color() {
+    public String color() {
         return "Black";
     }
 }

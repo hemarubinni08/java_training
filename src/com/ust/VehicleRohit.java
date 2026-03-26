@@ -5,15 +5,15 @@ public class VehicleRohit {
         return 4;
     }
 
-    public Boolean HeadLights() {
+    public Boolean headLights() {
         return true;
     }
 
-    public String Brand() {
+    public String brand() {
         return "BMW";
     }
 
-    public Boolean Doors() {
+    public Boolean doors() {
         return true;
     }
 

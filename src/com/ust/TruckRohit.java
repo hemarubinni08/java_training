@@ -1,7 +1,7 @@
 package com.ust;
 
 class TruckRohit extends CarRohit {
-    public String Heavy() {
+    public String heavy() {
         return "Heavy Vehicle";
     }
 
