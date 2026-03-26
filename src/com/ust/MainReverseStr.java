@@ -2,7 +2,7 @@ package com.ust;
 
 public class MainReverseStr {
     public static void main(String[] args){
-        String name = "Chris_Johnson";
+        String name = "Chris_Johnson123";
         String reverse = StringReversal(name);
         System.out.println(reverse);
     }
