@@ -4,10 +4,10 @@ import com.ust.impl.BikeCjImpl;
 import com.ust.impl.BusCJImpl;
 import com.ust.impl.TruckCJImpl;
 
-public class MainChris {
+public abstract class MainChris {
     public static void main(String[] args) {
-        BusCJImpl bus = new BusCJImpl();
-        TruckCJImpl truck = new TruckCJImpl();
+        BusAbstractCJImpl bus = new BusAbstractCJImpl();
+        TruckAbstractCJImpl truck = new TruckAbstractCJImpl();
 
         System.out.println("Truck Information");
 //        System.out.println("The Brand is " + truck.getBrand());
