@@ -1,14 +1,20 @@
 package com.ust;
 
-public class FourWheelerYesh extends VehicleYesh{
-    public Integer  maxSpeedOfVehicle(){
-        return 180;
+public class FourWheelerYesh extends HeavyVehiclesYesh {
+    public Integer numberOfPassengers() {
+        return 4;
     }
-    public String getBrand(){
+
+    public String getBrand() {
         return "Skoda";
     }
-    public String colorOfVehicle(){
+
+    public String colorOfVehicle() {
         return "White";
+    }
+
+    public int noOfDoors() {
+        return 4;
     }
 }
 
