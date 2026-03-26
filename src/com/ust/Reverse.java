@@ -1,18 +1,16 @@
 package com.ust;
-import java.util.Scanner;
 
 public class Reverse {
+    public static void main(String[] args) {
+        String originalString = "hema";
+        System.out.println("Reversed String: " + stringReverse(originalString));
+    }
 
-    public static void main(String []args)
-    {
-        StringBuilder ans= new StringBuilder();
-        Scanner in=new Scanner(System.in);
-        String str=in.nextLine();
-        System.out.println("Your name is"+" "+str);
-        for(int i=str.length()-1;i>=0;i--)
-        {
-            ans.append(str.charAt(i));
+    public static String stringReverse(String originalString) {
+        String reversed = "";
+        for (int i = originalString.length() - 1; i >= 0; i--) {
+            reversed += originalString.charAt(i);
         }
-        System.out.println("your reverse name is"+" "+ans);
+        return reversed;
     }
 }

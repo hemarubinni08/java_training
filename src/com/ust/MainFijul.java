@@ -2,12 +2,9 @@ package com.ust;
 
 public class MainFijul {
     public static void main(String[] args) {
-        int r = multiplyTwoNumbers(5, 3);
-        System.out.println(r);
-
-    }
-
-    public static int multiplyTwoNumbers(int a, int b) {
-        return a * b;
+        // learning training
+        BankDetails object = new BankDetails();
+        System.out.println(object.addBalance(2000, 3000));
+        System.out.println(object.minusBalance(4000, 2000));
     }
 }
