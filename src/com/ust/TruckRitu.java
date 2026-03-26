@@ -1,20 +1,30 @@
 package com.ust;
 
-public class TruckRitu extends VechicleRitu {
-    @Override
+public class TruckRitu extends HeavyVechicles {
     public int noOfWheels() {
         return 6;
 
     }
 
-    @Override
     public int mileage() {
         return 8;
     }
 
-    @Override
     public int speed() {
         return 80;
+    }
+
+    public int noOfDoors() {
+        return 2;
+
+    }
+
+    public boolean hasAC() {
+        return false;
+    }
+
+    public int noOfPassengers() {
+        return 10;
     }
 
 }

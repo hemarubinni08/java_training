@@ -1,17 +1,19 @@
 package com.ust;
 
-public class CarRitu extends VechicleRitu {
+public class CarRitu extends HeavyVechicles {
+    public int noOfWheels() {
+        return 4;
 
-    @Override
+    }
     public int mileage() {
         return 18;
     }
 
-    @Override
     public int speed() {
         return 160;
     }
-    public String brandName(){
+
+    public String brandName() {
         return "SUV";
     }
 

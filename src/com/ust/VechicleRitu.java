@@ -7,7 +7,7 @@ public class VechicleRitu {
     }
 
     public int mileage() {
-        return 20;
+        return 10;
     }
 
     public int speed() {
