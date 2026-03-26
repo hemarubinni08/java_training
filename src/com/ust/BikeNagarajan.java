@@ -1,7 +1,6 @@
 package com.ust;
 
 public class BikeNagarajan extends VehicleNagarajan {
-
     boolean helmet;
 
     String bikeInfo() {
