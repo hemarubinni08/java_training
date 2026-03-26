@@ -1,8 +1,10 @@
 package com.ust;
 
+import com.ust.impl.VehicleInterfaceBewimpl;
+
 public class MainVehicleBew {
     static void main(String[] args) {
-        VehicleBew vehicle = new VehicleBew();
+        VehicleInterfaceBewimpl vehicle = new VehicleInterfaceBewimpl();
         CarBew car = new CarBew();
         BikeBew bike = new BikeBew();
         TruckBew truck = new TruckBew();
