@@ -1,9 +1,6 @@
 package com.ust;
 
-import com.ust.impl.BikeHemaImpl;
-import com.ust.impl.BusHemaImpl;
-import com.ust.impl.CarHemaImpl;
-import com.ust.impl.TruckHemaImpl;
+import com.ust.impl.*;
 
 public class MainHema {
     public static void main(String[] args) {
@@ -30,31 +27,51 @@ public class MainHema {
 //        System.out.println(b.gearSystem());
 //        System.out.println(b.getBrand());
 //        System.out.println("That,s All I Learned Inheritance");
-
-        BikeHemaImpl bhi = new BikeHemaImpl();
-        BusHemaImpl bi = new BusHemaImpl();
-        CarHemaImpl chi = new CarHemaImpl();
-        TruckHemaImpl thi = new TruckHemaImpl();
-        String brand = thi.getBrand();
+//        BikeHemaImpl bhi = new BikeHemaImpl();
+//        BusHemaImpl bi = new BusHemaImpl();
+//        CarHemaImpl chi = new CarHemaImpl();
+//        TruckHemaImpl thi = new TruckHemaImpl();
+//        String brand = thi.getBrand();
+//        System.out.println(brand);
+//        System.out.println(thi.hasAirBrakes());
+//        System.out.println(thi.loadCapacity());
+//        String brand1 = chi.getBrand();
+//        System.out.println(brand1);
+//        String color = chi.color();
+//        System.out.println(color);
+//        String gear = chi.gearSystem();
+//        System.out.println(gear);
+//        System.out.println(chi.hasAc());
+//        String fuel = bhi.getFuelType();
+//        System.out.println(fuel);
+//        int wheel = bhi.getWheelsCount();
+//        System.out.println(wheel);
+//        System.out.println(bi.hasAirBrakes());
+//        System.out.println(bi.gearSystem());
+//        System.out.println(bi.getBrand());
+//        System.out.println("That,s All I Learned Interface");
+        BikeAbstractHema bk = new BikeAbstractHema();
+        BusAbstractHema bh = new BusAbstractHema();
+        CarAbstractHema cb = new CarAbstractHema();
+        TruckAbstractHema tb = new TruckAbstractHema();
+        String brand = bk.getBrand();
         System.out.println(brand);
-        System.out.println(thi.hasAirBrakes());
-        System.out.println(thi.loadCapacity());
-        String brand1 = chi.getBrand();
+        System.out.println(tb.loadCapacity());
+        String brand1 = tb.getBrand();
         System.out.println(brand1);
-        String color = chi.color();
+        String color = cb.color();
         System.out.println(color);
-        String gear = chi.gearSystem();
+        String gear = cb.getFuelType();
         System.out.println(gear);
-        System.out.println(chi.hasAc());
-        String fuel = bhi.getFuelType();
+        String fuel = bk.getFuelType();
         System.out.println(fuel);
-        int wheel = bhi.getWheelsCount();
+        int wheel = tb.getWheelsCount();
         System.out.println(wheel);
-        System.out.println(bi.hasAirBrakes());
-        System.out.println(bi.gearSystem());
-        System.out.println(bi.getBrand());
-        System.out.println("That,s All I Learned Interface");
-
+        System.out.println(bh.doorsCount());
+        System.out.println(tb.getBrand());
+        System.out.println(cb.Capacity());
+        System.out.println(bh.getFuelType());
+        System.out.println(bh.rate());
     }
 }
 
