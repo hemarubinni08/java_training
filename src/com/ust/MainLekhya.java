@@ -1,21 +1,15 @@
 package com.ust;
 
+import com.ust.impl.BikeAbstracLekhyatImpl;
+import com.ust.impl.BikeLekhyaImpl;
+import com.ust.impl.CarAbstractLekhyaImpl;
+import com.ust.impl.CarLekhyaImpl;
+
 public class MainLekhya {
     public static void main(String[] args) {
-        //System.out.println(largestNumber(683, 380));
-        VehicleTwoWheelerLekhya vehicleScooty = new VehicleTwoWheelerLekhya();
-        VehicleFourWheelerLekhya vehicleCar = new VehicleFourWheelerLekhya();
-        VehicleThreeWheelerLekhya vehicleAuto = new VehicleThreeWheelerLekhya();
-        VehicleSixWheelerLekhya vehicleLorry = new VehicleSixWheelerLekhya();
-        System.out.println(vehicleScooty.getRpm());
-        System.out.println(vehicleScooty.getWarranty());
-        System.out.println(vehicleCar.getBrandOfTheVehicle());
-        System.out.println(vehicleAuto.getSpeedLimit());
-        System.out.println(vehicleLorry.getRegistrationName());
-        System.out.println(vehicleLorry.hasAc());
+        CarAbstractLekhyaImpl car = new CarAbstractLekhyaImpl();
+        BikeAbstracLekhyatImpl bike = new BikeAbstracLekhyatImpl();
+        System.out.println(car.getRpm());
+        System.out.println(bike.fuelUsed());
     }
-
-    /*public static Integer largestNumber(int a, int b) {
-        return Math.max(a, b);
-    }*/
 }
