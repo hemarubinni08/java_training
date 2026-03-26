@@ -1,21 +1,18 @@
 package com.ust;
 
-import com.ust.impl.BikeHarshaImpl;
-import com.ust.impl.BusHarshaImpl;
-import com.ust.impl.CarHarshaImpl;
-import com.ust.impl.LorryHarshaImpl;
+import com.ust.impl.*;
 
 public class MainHarshavardhan {
     public static void main(String[] args) {
 
-        BikeHarshaImpl bikeObj = new BikeHarshaImpl();
+        BikeAbstractHarshaImpl bikeObj = new BikeAbstractHarshaImpl();
         System.out.println();
         System.out.println("Number of wheels in bike: " + bikeObj.numberOfWheels());
         System.out.println("Engine capacity in bike: " + bikeObj.engineCapacity());
         System.out.println("fuel type of bike: " + bikeObj.fuelType());
         System.out.println("Can do wheelie: "+ bikeObj.canDoWheelie());
 
-        HeavyVehicleInterfaceHarsha carObj = new CarHarshaImpl();
+        HeavyVehiclesAbstractHarsha carObj = new CarAbstractHarshaImpl();
         System.out.println();
         System.out.println("Number of wheels in car: " + carObj.numberOfWheels());
         System.out.println("Engine capacity in car: " + carObj.engineCapacity());
@@ -24,7 +21,7 @@ public class MainHarshavardhan {
         System.out.println("Is public transport: " + carObj.isPublicTransport());
         System.out.println("Has sunroof: " + carObj.hasSunRoof());
 
-        HeavyVehicleInterfaceHarsha busObj = new BusHarshaImpl();
+        HeavyVehiclesAbstractHarsha busObj = new BusAbstractHarshaImpl();
         System.out.println();
         System.out.println("Number of wheels in bus: " + busObj.numberOfWheels());
         System.out.println("Engine capacity in bus: " + busObj.engineCapacity());
@@ -33,7 +30,7 @@ public class MainHarshavardhan {
         System.out.println("Is public transport: " + busObj.isPublicTransport());
         System.out.println("Has sunroof: " + busObj.hasSunRoof());
 
-        HeavyVehicleInterfaceHarsha lorryObj = new LorryHarshaImpl();
+        HeavyVehiclesAbstractHarsha lorryObj = new LorryAbstractHarshaImpl();
         System.out.println();
         System.out.println("Number of wheels in Lorry: " + lorryObj.numberOfWheels());
         System.out.println("Engine capacity in Lorry: " + lorryObj.engineCapacity());
