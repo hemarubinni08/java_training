@@ -1,6 +1,6 @@
 package com.ust;
 
-public class TruckNavaneeth extends HeavyVechilesNavaneeth{
+public class TruckNavaneeth extends HeavyVechilesNavaneeth {
 
     @Override
     public int numberOfWheels() {
@@ -16,14 +16,17 @@ public class TruckNavaneeth extends HeavyVechilesNavaneeth{
     public int engineCapacity() {
         return 3000;
     }
+
     @Override
-    public boolean hasAc(){
+    public boolean hasAc() {
         return false;
     }
+
     @Override
-    public boolean hasPublicTransport(){
+    public boolean hasPublicTransport() {
         return false;
     }
+
     @Override
     public int doors() {
         return 2;

@@ -17,7 +17,7 @@ public class BikeNavaneeth extends VechicleNavaneeth {
         return 500;
     }
 
-    public int stand(){
+    public int stand() {
         return 1;
     }
 
