@@ -9,8 +9,8 @@ public class MainVehicleInterfaceMamtha {
     public static void main(String[] args){
         CarInterfaceMamthaImpl car=new CarInterfaceMamthaImpl();
         BusInterfaceMamthaImpl bus=new BusInterfaceMamthaImpl();
-        TruckInterfaceMamthaImpl Truck=new TruckInterfaceMamthaImpl();
-        BikeInterfaceMamthaImpl Bike=new BikeInterfaceMamthaImpl();
+        TruckInterfaceMamthaImpl truck=new TruckInterfaceMamthaImpl();
+        BikeInterfaceMamthaImpl bike=new BikeInterfaceMamthaImpl();
 
         System.out.println(car.numberOfWheels());
         System.out.println(car.getColor());
@@ -20,13 +20,13 @@ public class MainVehicleInterfaceMamtha {
         System.out.println(bus.getColor());
         System.out.println(bus.getFuelType());
         System.out.println();
-        System.out.println(Truck.numberOfWheels());
-        System.out.println(Truck.getColor());
-        System.out.println(Truck.getFuelType());
+        System.out.println(truck.numberOfWheels());
+        System.out.println(truck.getColor());
+        System.out.println(truck.getFuelType());
         System.out.println();
-        System.out.println(Bike.numberOfWheels());
-        System.out.println(Bike.getColor());
-        System.out.println(Bike.getFuelType());
+        System.out.println(bike.numberOfWheels());
+        System.out.println(bike.getColor());
+        System.out.println(bike.getFuelType());
         System.out.println();
     }
 }
