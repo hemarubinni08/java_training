@@ -1,6 +1,8 @@
 package com.ust;
 
 import com.ust.impl.HeavyVehicleInterfaceYeshImpl;
+import com.ust.impl.VehicleBusYeshImpl;
+import com.ust.impl.VehicleCarYeshImpl;
 import com.ust.impl.VehicleInterfaceYeshImpl;
 
 import java.util.*;
@@ -21,6 +23,10 @@ public class MainYesh {
         System.out.println(interfaceObj.numberOfwheels());
         System.out.println(interfaceObj.colorOfVehicle());
         System.out.println(heavyVehicleInterfaceYeshObj.maxSpeedOfVehicle());
+        VehicleBusYeshImpl busObject=new VehicleBusYeshImpl();
+        System.out.println(busObject.noOfSeats());
+        VehicleCarYeshImpl carObject=new VehicleCarYeshImpl();
+        System.out.println(carObject.itHasAc());
     }
 
 
