@@ -6,16 +6,16 @@ public class BikeInterfaceRituImpl implements VechicleInterfaceRitu {
 
     @Override
     public int noOfWheels() {
-        return 0;
+        return 2;
     }
 
     @Override
     public int mileage() {
-        return 0;
+        return 010;
     }
 
     @Override
     public String getBrand() {
-        return "";
+        return "Honda";
     }
 }

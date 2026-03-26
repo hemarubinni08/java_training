@@ -8,16 +8,16 @@ public class CarInterfaceRituImpl implements VechicleInterfaceRitu {
 
     @Override
     public int noOfWheels() {
-        return 0;
+        return 4;
     }
 
     @Override
     public int mileage() {
-        return 0;
+        return 20;
     }
 
     @Override
     public String getBrand() {
-        return "";
+        return "Swift";
     }
 }
