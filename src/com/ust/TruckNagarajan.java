@@ -10,4 +10,4 @@ public class TruckNagarajan extends HeavyVehicleNagarajan {
     String loadingInfo() {
         return "Truck is loading goods";
     }
-}
+
