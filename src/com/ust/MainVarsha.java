@@ -1,17 +1,14 @@
 package com.ust;
 
-import com.ust.impl.AutoVarshaImpl;
-import com.ust.impl.BikeVarshaImpl;
-import com.ust.impl.BusVarshaImpl;
-import com.ust.impl.CarVarshaImpl;
+import com.ust.impl.*;
 
 public class MainVarsha {
     public static void main(String[] args) {
         VehicleVarsha varshaVehicle = new VehicleVarsha();
-        BikeVarshaImpl varshaBike = new BikeVarshaImpl();
-        AutoVarshaImpl varshaAuto = new AutoVarshaImpl();
-        CarVarshaImpl varshaCar = new CarVarshaImpl();
-        BusVarshaImpl varshaBus = new BusVarshaImpl();
+        BikeAbstractVarsha varshaBike = new BikeAbstractVarsha();
+        AutoAbstractVarsha varshaAuto = new AutoAbstractVarsha();
+        CarAbstractVarsha varshaCar = new CarAbstractVarsha();
+        BusAbstractVarsha varshaBus = new BusAbstractVarsha();
 
 
         System.out.println("Bike : " + varshaBike.numberOfWheels() + " " + varshaBike.numberOfLights() + " " + varshaBike.capacityOfFuel() + " " + varshaBike.numberOfDoors() + " " + varshaBike.publicTransportation() + " " + varshaBike.hasAc() + " " + varshaBike.sunRoof());
