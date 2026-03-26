@@ -10,7 +10,7 @@ public class Truck extends HeavyVehicleAish {
     }
 
     public String brand() {
-        return "Ashokleyland";
+        return "Ashokleylands";
 
     }
 
