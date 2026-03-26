@@ -15,6 +15,7 @@ public class CarSrujan extends HeavyVehiclesSrujan {
     }
 
     public int numberOfWheels() {
+
         return 4;
     }
 }
