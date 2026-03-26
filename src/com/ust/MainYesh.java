@@ -4,15 +4,16 @@ import java.util.*;
 
 public class MainYesh {
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-        int c = sc.nextInt();
-        int d = sc.nextInt();
-        System.out.println(subtract(c, d));
-
+        VehicleYesh vehicleObject = new VehicleYesh();
+        HeavyVehiclesYesh fourWheelerObject = new FourWheelerYesh();
+        System.out.println(fourWheelerObject.colorOfVehicle());
+        System.out.println(vehicleObject.colorOfVehicle());
+        SixWheelerYesh sixWheelObject = new SixWheelerYesh();
+        System.out.println(sixWheelObject.numberOfWheels());
+        //FourWheelerYesh fourWheelObject=new FourWheelerYesh();
+        //System.out.println(fourWheelObject.noOfDoors());
+        System.out.println(fourWheelerObject.noOfDoors());
     }
 
-    public static Integer subtract(int a, int b) {
-        return a - b;
-    }
+
 }

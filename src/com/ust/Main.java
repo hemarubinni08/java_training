@@ -2,9 +2,12 @@ package com.ust;
 
 public class Main {
     public static void main(String[] args) {
-        ArithematicHemanth arithematicOperation = new ArithematicHemanth();
-        System.out.println(arithematicOperation.addTwoNumbers(2, 4));
-        System.out.println(arithematicOperation.multiplyTwoNumbers(2, 4));
-        System.out.println(arithematicOperation.subtractTwoNumbers(2, 4));
+        SixWheelersHemanth sixwheeler = new SixWheelersHemanth();
+        System.out.println(sixwheeler.modelName());
+        System.out.println(sixwheeler.hasAc());
+        System.out.println(sixwheeler.maximumSpeed());
+        System.out.println(sixwheeler.typeOfVehicle());
+        FourWheelersHemanth fourwheels = new FourWheelersHemanth();
+        System.out.println(fourwheels.numberOfWheels());
     }
 }
