@@ -279,7 +279,5 @@ public class Main_akash {
             System.out.println("This is a single axle vehicle");
         }
         System.out.println("----------------------------------------------------");
-
-
     }
 }
