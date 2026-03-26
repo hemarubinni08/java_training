@@ -2,7 +2,7 @@ package com.ust.impl;
 
 import com.ust.VechicleInterfaceRitu;
 
-public class BikeInterfaceImpl implements VechicleInterfaceRitu {
+public class BikeInterfaceRituImpl implements VechicleInterfaceRitu {
     @Override
     public int noOfWheels() {
         return 2;

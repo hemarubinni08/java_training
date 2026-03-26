@@ -3,7 +3,7 @@ package com.ust.impl;
 import com.ust.HeavyVechicleInterface;
 import com.ust.VechicleInterfaceRitu;
 
-public class TruckInterfaceImpl implements VechicleInterfaceRitu, HeavyVechicleInterface {
+public class TruckInterfaceRituImpl implements VechicleInterfaceRitu, HeavyVechicleInterface {
     @Override
     public int noOfWheels() {
         return 4;

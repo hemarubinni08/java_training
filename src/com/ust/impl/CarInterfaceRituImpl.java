@@ -2,19 +2,23 @@ package com.ust.impl;
 
 import com.ust.VechicleInterfaceRitu;
 
-public class VechicleInterfaceImpl implements VechicleInterfaceRitu {
+public class CarInterfaceRituImpl implements VechicleInterfaceRitu {
+
     @Override
     public int noOfWheels() {
-        return 0;
+        return 4;
     }
 
     @Override
     public int mileage() {
-        return 0;
+        return 25;
     }
 
     @Override
     public String getBrand() {
-        return "";
+        return "BMW";
+    }
+    public int noOfDoors(){
+        return 4;
     }
 }
