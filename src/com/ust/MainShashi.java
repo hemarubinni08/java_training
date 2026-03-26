@@ -1,6 +1,8 @@
 package com.ust;
 
+import com.ust.impl.CarAbstractShashiImpl;
 import com.ust.impl.CarInterfaceShashiImpl;
+import com.ust.impl.TractorAbstractShashiImpl;
 import com.ust.impl.TractorInterfaceShashiImpl;
 
 public class MainShashi {
@@ -26,9 +28,15 @@ public class MainShashi {
         System.out.println("Tractor details: " + tractor.getBrandName() + " " + tractor.getModelName() + "\n" + tractor.getNumberOfWheels() + "\n" + tractor.getBrakeType() + "\n" + tractor.getFuelType());
         System.out.println("Car details: " + car.getBrandName() + " " + car.getModelName() + "\n" + car.getNumberOfWheels() + "\n" + car.getBrakeType() + "\n" + car.getDoorOpeningType() + "\n" + car.getAirConditioning() + "\n" + car.getFuelType()+"\n"+car.getYearsOfInsurance());
     }*/
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         TractorInterfaceShashiImpl tractor = new TractorInterfaceShashiImpl();
         CarInterfaceShashiImpl car = new CarInterfaceShashiImpl();
+        System.out.println("Tractor details: " + tractor.getBrandName() + " " + tractor.getModelName() + "\n" + tractor.getNumberOfWheels() + "\n" + tractor.getBrakeType() + "\n" + tractor.getFuelType());
+        System.out.println("Car details: " + car.getBrandName() + " " + car.getModelName() + "\n" + car.getNumberOfWheels() + "\n" + car.getBrakeType() + "\n" + car.getDoorOpeningType() + "\n" + car.getAirConditioning() + "\n" + car.getFuelType() + "\n" + car.getYearsOfInsurance());
+    }*/
+    static void main() {
+        TractorAbstractShashiImpl tractor = new TractorAbstractShashiImpl();
+        CarAbstractShashiImpl car = new CarAbstractShashiImpl();
         System.out.println("Tractor details: " + tractor.getBrandName() + " " + tractor.getModelName() + "\n" + tractor.getNumberOfWheels() + "\n" + tractor.getBrakeType() + "\n" + tractor.getFuelType());
         System.out.println("Car details: " + car.getBrandName() + " " + car.getModelName() + "\n" + car.getNumberOfWheels() + "\n" + car.getBrakeType() + "\n" + car.getDoorOpeningType() + "\n" + car.getAirConditioning() + "\n" + car.getFuelType() + "\n" + car.getYearsOfInsurance());
     }
