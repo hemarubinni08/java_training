@@ -11,6 +11,5 @@ public class MainSrujan {
         VehiclesSrujan bikeObject = new BikeSrujan();
 
         System.out.println(bikeObject.costOfVehicle());
-
-    }
+  }
 }
