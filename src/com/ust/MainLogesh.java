@@ -1,17 +1,18 @@
 package com.ust;
 
+import com.ust.impl.*;
+
 public class MainLogesh {
     public static void main(String[] args) {
-        VehicleLogesh vehicle = new VehicleLogesh();
+        VehicleInterfaceLogeshImpl vehicle = new VehicleInterfaceLogeshImpl();
         System.out.println(vehicle.getNumberOfWheels());
         System.out.println(vehicle.getModel());
         System.out.println(vehicle.getPrice());
         System.out.println();
 
         System.out.print("CAR");
-        CarLogesh car = new CarLogesh();
-        System.out.println(car.getDoor());
-        System.out.println(car.getLaunchYear());
+        CarLogeshImpl car = new CarLogeshImpl();
+        System.out.println(car.getNumberOfWheels());
         System.out.println(car.getPrice());
         System.out.println(car.getAc());
         System.out.println(car.getLoadBed());
@@ -20,29 +21,27 @@ public class MainLogesh {
         System.out.println();
 
         System.out.println("BIKE");
-        BikeLogesh bike = new BikeLogesh();
-        System.out.println(bike.numberofWheels());
+        BikeLogeshImpl bike = new BikeLogeshImpl();
         System.out.println(bike.getPrice());
-        System.out.println(bike.getGear());
+        System.out.println(bike.getAc());
         System.out.println(bike.getModel());
-        System.out.println(bike.getSeat());
-        System.out.println(bike.getSpeed());
+        System.out.println(bike.getLoadBed());
+        System.out.println(bike.getNumberOfWheels());
         System.out.println();
 
         System.out.println("LORRY");
-        LorryLogesh lorry = new LorryLogesh();
-        System.out.println(lorry.getGuranteeYears());
+        LorryLogeshImpl lorry = new LorryLogeshImpl();
         System.out.println(lorry.getNumberOfSeat());
         System.out.println(lorry.getModel());
         System.out.println(lorry.getPrice());
         System.out.println(lorry.getAc());
         System.out.println(lorry.getLoadBed());
         System.out.println(lorry.getFuel());
-        System.out.println(lorry.getNumberOfSeat());
+        System.out.println(lorry.getNumberOfWheels());
         System.out.println();
 
         System.out.println("CYCLE");
-        CycleLogesh cycle = new CycleLogesh();
+        CycleLogeshImpl cycle = new CycleLogeshImpl();
         System.out.println(cycle.getFuel());
         System.out.println(cycle.getNumberOfWheels());
         System.out.println(cycle.getModel());
