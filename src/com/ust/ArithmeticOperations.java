@@ -24,4 +24,3 @@ class Arithmetic {
         return a / b;
     }
 }
-
