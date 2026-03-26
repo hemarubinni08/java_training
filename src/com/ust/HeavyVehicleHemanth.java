@@ -1,16 +1,19 @@
 package com.ust;
 
-public class HeavyVehicleHemanth extends VehicleHemanth{
-    public static boolean hasAc (){
+public class HeavyVehicleHemanth extends VehicleHemanth {
+    public static boolean hasAc() {
         return true;
     }
-    public static boolean canAutoDrive(){
+
+    public static boolean canAutoDrive() {
         return true;
     }
-    public String typeOfVehicle(){
+
+    public String typeOfVehicle() {
         return "Heavy Vehicle";
     }
-    public int noOfDoors(){
+
+    public int noOfDoors() {
         return 2;
     }
 }
