@@ -14,6 +14,4 @@ public class VehiclesSrujan {
     public int costOfVehicle() {
         return 1000000;
     }
-
-
 }
