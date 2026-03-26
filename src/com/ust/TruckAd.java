@@ -18,6 +18,7 @@ public class TruckAd extends HeavyVehicles {
     }
 
     public boolean hasAc() {
+
         return false;
     }
 
@@ -25,7 +26,9 @@ public class TruckAd extends HeavyVehicles {
         return false;
     }
 
+    @Override
     public int noOfPassengers() {
+
         return 10;
     }
 }
