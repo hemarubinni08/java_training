@@ -1,15 +1,26 @@
 package com.ust;
 
+import com.ust.impl.HeavyVehicleInterfaceYeshImpl;
+import com.ust.impl.VehicleInterfaceYeshImpl;
+
 import java.util.*;
 
 public class MainYesh {
     public static void main(String[] args) {
-        ArithimeticYesh arithmeticobject = new ArithimeticYesh();
-        System.out.println("adding two numbers: " + arithmeticobject.addition(2, 3));
-        System.out.println("subtraction of two numbers: " + arithmeticobject.subtraction(2, 3));
-        System.out.println("multiplying two numbers: " + arithmeticobject.multiply(2, 3));
-        System.out.println("division of two numbers: " + arithmeticobject.division(2, 3));
-
+        /*VehicleYesh vehicleObject = new VehicleYesh();
+        HeavyVehiclesYesh fourWheelerObject = new FourWheelerYesh();
+        System.out.println(fourWheelerObject.colorOfVehicle());
+        System.out.println(vehicleObject.colorOfVehicle());
+        SixWheelerYesh sixWheelObject = new SixWheelerYesh();
+        System.out.println(sixWheelObject.numberOfWheels());*/
+        //FourWheelerYesh fourWheelObject=new FourWheelerYesh();
+        //System.out.println(fourWheelObject.noOfDoors());
+        //System.out.println(fourWheelerObject.noOfDoors());
+        VehicleInterfaceYesh interfaceObj=new VehicleInterfaceYeshImpl();
+        HeavyVehicleInterfaceYeshImpl heavyVehicleInterfaceYeshObj=new HeavyVehicleInterfaceYeshImpl();
+        System.out.println(interfaceObj.numberOfwheels());
+        System.out.println(interfaceObj.colorOfVehicle());
+        System.out.println(heavyVehicleInterfaceYeshObj.maxSpeedOfVehicle());
     }
 
 

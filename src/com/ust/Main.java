@@ -1,10 +1,15 @@
 package com.ust;
 
+import com.ust.impl.FourWheelersHemanthImpl;
+import com.ust.impl.TwoWheelersHemanthImpl;
+
 public class Main {
     public static void main(String[] args) {
-        ArithematicHemanth arithematicOperation = new ArithematicHemanth();
-        System.out.println(arithematicOperation.addTwoNumbers(2, 4));
-        System.out.println(arithematicOperation.multiplyTwoNumbers(2, 4));
-        System.out.println(arithematicOperation.subtractTwoNumbers(2, 4));
+        FourWheelersHemanthImpl four = new FourWheelersHemanthImpl();
+        System.out.println(four.typeOfVehicle());
+        System.out.println(four.hasAc());
+        VehicleInterfaceHemanth bike = new TwoWheelersHemanthImpl();
+        bike.typeOfVehicle();
+        bike.mileage();
     }
 }
