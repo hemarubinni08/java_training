@@ -8,27 +8,22 @@ public class TruckInterfaceChailaImpl implements VehicleInterfaceChaila, HeavyVe
     public int getNumberOfSeats() {
         return 2;
     }
-
     @Override
     public int getNumberOfWheels() {
         return 6;
     }
-
     @Override
     public String getBrand() {
         return null;
     }
-
     @Override
     public boolean stearingControl() {
         return true;
     }
-
     @Override
     public boolean airConditioner() {
         return false;
     }
-
     @Override
     public int getDoors() {
         return 2;

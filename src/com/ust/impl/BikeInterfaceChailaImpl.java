@@ -7,22 +7,18 @@ public class BikeInterfaceChailaImpl implements VehicleInterfaceChaila {
     public int getNumberOfSeats() {
         return 2;
     }
-
     @Override
     public int getNumberOfWheels() {
         return 2;
     }
-
     @Override
     public String getBrand() {
         return null;
     }
-
     @Override
     public boolean airConditioner() {
         return false;
     }
-
     @Override
     public int getDoors() {
         return 0;
