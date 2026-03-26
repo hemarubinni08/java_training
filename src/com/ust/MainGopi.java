@@ -14,5 +14,7 @@ public class MainGopi {
         boolean gear = obj5.Gears();
         System.out.println(gear);
         System.out.println(obj5.price());
+        System.out.println(obj2.TyreName());
+        System.out.println(obj1.Mileage());
     }
 }
