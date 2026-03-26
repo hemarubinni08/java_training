@@ -2,10 +2,10 @@ package com.ust;
 
 public class MainLogesh {
     public static void main(String[] args) {
-        System.out.println(multiplyTwo(5, 5));
-    }
+        ArithmaticOperation1 a1 = new ArithmaticOperation1();
+        System.out.println(a1.addition(5, 4));
+        System.out.println(a1.multiplication(5, 4));
+        System.out.println(a1.subtraction(5, 4));
 
-    public static Integer multiplyTwo(int a, int b) {
-        return a * b;
     }
 }
