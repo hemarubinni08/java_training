@@ -7,14 +7,14 @@ public class MainHarshavardhan {
         System.out.println("Engine capacity in vehicle: " + vehicleObj.engineCapacity());
         System.out.println("fuel type of vehicle: " + vehicleObj.fuelType());
 
-        bikeHarsha bikeObj = new bikeHarsha();
+        BikeHarsha bikeObj = new BikeHarsha();
         System.out.println();
         System.out.println("Number of wheels in bike: " + bikeObj.numberOfWheels());
         System.out.println("Engine capacity in bike: " + bikeObj.engineCapacity());
         System.out.println("fuel type of bike: " + bikeObj.fuelType());
         System.out.println("Can do wheelie: "+ bikeObj.canDoWheelie());
 
-        HeavyVehiclesHarsha carObj = new carHarsha();
+        HeavyVehiclesHarsha carObj = new CarHarsha();
         System.out.println();
         System.out.println("Number of wheels in car: " + carObj.numberOfWheels());
         System.out.println("Engine capacity in car: " + carObj.engineCapacity());
