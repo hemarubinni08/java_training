@@ -4,7 +4,6 @@ import com.ust.LargerVehicleInterface;
 import com.ust.VehicleInterface;
 
 public class CarLogeshImpl implements VehicleInterface, LargerVehicleInterface {
-
     @Override
     public Integer getNumberOfWheels() {
         return 4;

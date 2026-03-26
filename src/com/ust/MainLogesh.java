@@ -9,7 +9,6 @@ public class MainLogesh {
         System.out.println(vehicle.getModel());
         System.out.println(vehicle.getPrice());
         System.out.println();
-
         System.out.print("CAR");
         CarLogeshImpl car = new CarLogeshImpl();
         System.out.println(car.getNumberOfWheels());
@@ -19,7 +18,6 @@ public class MainLogesh {
         System.out.println(car.getFuel());
         System.out.println(car.getNumberOfSeat());
         System.out.println();
-
         System.out.println("BIKE");
         BikeLogeshImpl bike = new BikeLogeshImpl();
         System.out.println(bike.getPrice());
@@ -28,7 +26,6 @@ public class MainLogesh {
         System.out.println(bike.getLoadBed());
         System.out.println(bike.getNumberOfWheels());
         System.out.println();
-
         System.out.println("LORRY");
         LorryLogeshImpl lorry = new LorryLogeshImpl();
         System.out.println(lorry.getNumberOfSeat());
@@ -39,7 +36,6 @@ public class MainLogesh {
         System.out.println(lorry.getFuel());
         System.out.println(lorry.getNumberOfWheels());
         System.out.println();
-
         System.out.println("CYCLE");
         CycleLogeshImpl cycle = new CycleLogeshImpl();
         System.out.println(cycle.getFuel());

@@ -3,7 +3,6 @@ package com.ust.impl;
 import com.ust.VehicleInterface;
 
 public class VehicleInterfaceLogeshImpl implements VehicleInterface {
-
     @Override
     public Integer getNumberOfWheels() {
         return 4;

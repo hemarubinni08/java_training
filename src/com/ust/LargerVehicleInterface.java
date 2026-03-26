@@ -8,5 +8,4 @@ public interface LargerVehicleInterface {
     public boolean getLoadBed();
 
     public int getNumberOfSeat();
-
 }
