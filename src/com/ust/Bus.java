@@ -16,4 +16,5 @@ public class Bus extends HeavyVehicleAish {
     public int fetchDoors() {
         return 3;
     }
+
 }
