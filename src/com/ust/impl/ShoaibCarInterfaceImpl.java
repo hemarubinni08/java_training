@@ -1,4 +1,4 @@
-package com.ust.impl;
+package com.ust.Impl;
 
 import com.ust.HeavyVehicleInterfaceJava;
 import com.ust.VehicleInterfaceShoaib;
