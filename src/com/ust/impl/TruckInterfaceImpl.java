@@ -1,34 +1,36 @@
-package com.ust;
+package com.ust.impl;
 
-public class TruckAd extends HeavyVehicles {
+import com.ust.HeavyVehiclesInterfaceAnu;
+import com.ust.VehicleInterfaceAnu;
+
+public class TruckInterfaceImpl implements VehicleInterfaceAnu, HeavyVehiclesInterfaceAnu {
+    @Override
     public int noOfWheels() {
         return 4;
     }
 
+    @Override
     public int maxSpeed() {
-        return 70;
+        return 120;
     }
 
+    @Override
     public String getBrand() {
         return "TATA";
     }
 
-    public int maxMileage() {
-        return 41;
-    }
-
+    @Override
     public boolean hasAc() {
-
         return false;
     }
 
+    @Override
     public boolean hasGps() {
         return false;
     }
 
     @Override
     public int noOfPassengers() {
-
         return 10;
     }
 }
