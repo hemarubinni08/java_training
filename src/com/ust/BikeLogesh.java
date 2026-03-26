@@ -5,23 +5,23 @@ public class BikeLogesh extends VehicleLogesh {
         return 2;
     }
 
-    public int gear() {
+    public Integer getGear() {
         return 4;
     }
 
-    public String model() {
+    public String getModel() {
         return "Pulser";
     }
 
-    public int seat() {
+    public int getSeat() {
         return 2;
     }
 
-    public Integer price() {
+    public Integer getPrice() {
         return 70000;
     }
 
-    public Integer speed() {
+    public Integer getSpeed() {
         return 80;
     }
 }

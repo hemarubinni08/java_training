@@ -1,19 +1,19 @@
 package com.ust;
 
 public class CycleLogesh extends VehicleLogesh {
-    public Integer numberofWheels() {
+    public Integer getNumberOfWheels() {
         return 2;
     }
 
-    public String model() {
+    public String getModel() {
         return "Herculus";
     }
 
-    public Integer price() {
+    public Integer getPrice() {
         return 5000;
     }
 
-    public String fuel() {
+    public String getFuel() {
         return "no need";
     }
 }

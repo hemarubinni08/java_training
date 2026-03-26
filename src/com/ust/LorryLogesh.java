@@ -2,19 +2,19 @@ package com.ust;
 
 public class LorryLogesh extends LargerVehicle {
 
-    public Integer guranteeYears() {
+    public Integer getGuranteeYears() {
         return 10;
     }
 
-    public Integer numberOfWheels() {
+    public Integer getNumberOfWheels() {
         return 6;
     }
 
-    public String model() {
+    public String getModel() {
         return "Eicher";
     }
 
-    public Integer price() {
+    public Integer getPrice() {
         return 200000;
     }
 }

@@ -2,23 +2,23 @@ package com.ust;
 
 public class CarLogesh extends LargerVehicle {
 
-    public Integer door() {
+    public Integer getDoor() {
         return 4;
     }
 
-    public Integer price() {
+    public Integer getPrice() {
         return 100000;
     }
 
-    public Integer launchYear() {
+    public Integer getLaunchYear() {
         return 2026;
     }
 
-    public int numberOfSeat() {
+    public int getNumberOfSeat() {
         return 4;
     }
 
-    public boolean loadBed() {
+    public boolean getLoadBed() {
         return false;
     }
 }

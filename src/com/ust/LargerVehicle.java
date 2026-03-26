@@ -1,7 +1,7 @@
 package com.ust;
 
 public class LargerVehicle extends VehicleLogesh {
-    public boolean ac() {
+    public boolean getAc() {
         return true;
     }
 
@@ -9,11 +9,11 @@ public class LargerVehicle extends VehicleLogesh {
         return "diesel";
     }
 
-    public boolean loadBed() {
+    public boolean getLoadBed() {
         return true;
     }
 
-    public int numberOfSeat() {
+    public int getNumberOfSeat() {
         return 2;
     }
 }

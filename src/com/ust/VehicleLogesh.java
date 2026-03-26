@@ -1,15 +1,15 @@
 package com.ust;
 
 public class VehicleLogesh {
-    public Integer numberofWheels() {
+    public Integer getNumberOfWheels() {
         return 4;
     }
 
-    public String model() {
+    public String getModel() {
         return "Mahindra";
     }
 
-    public Integer price() {
+    public Integer getPrice() {
         return 30000;
     }
 }
