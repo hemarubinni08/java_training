@@ -9,7 +9,6 @@ public class BikeNagarajanImpl implements VehicleInterfaceNagarajan {
 
     @Override
     public String start() {
-
         return brand + " is  Starting";
     }
 

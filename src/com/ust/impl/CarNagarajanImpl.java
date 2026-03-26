@@ -8,7 +8,6 @@ public class CarNagarajanImpl implements VehicleInterfaceNagarajan {
 
     @Override
     public String start() {
-
         return brand + " is  Starting";
     }
 
@@ -19,7 +18,6 @@ public class CarNagarajanImpl implements VehicleInterfaceNagarajan {
 
     @Override
     public String displayInfo() {
-
         return "Brand : " + brand + ", Speed : " + speed;
     }
 
