@@ -7,5 +7,4 @@ public class HeavyVehicles extends VehiclesGopi {
     public int price() {
         return 5000000;
     }
-
 }
