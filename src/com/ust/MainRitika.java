@@ -8,9 +8,9 @@ import com.ust.impl.VechicleInterfaceImpl;
 public class MainRitika {
     public static void main(String[] args) {
         VechicleInterfaceRitu car=new CarInterfaceImpl();
-//        TruckInterfaceImpl truck=new TruckInterfaceImpl();
+        TruckInterfaceImpl truck=new TruckInterfaceImpl();
         VechicleInterfaceRitu bike= new BikeInterfaceImpl();
-        HeavyVechicleInterface truck=new TruckInterfaceImpl();
+//        HeavyVechicleInterface truck=new TruckInterfaceImpl();
 
 
         System.out.println("number of wheels in car: " + car.noOfWheels());
