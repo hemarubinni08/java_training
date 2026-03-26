@@ -14,7 +14,6 @@ public class MainAnu {
 
 
         System.out.println("Number of wheels in scooty: " + scooty.noOfWheels());
-        System.out.println("Car has gps: " + car.hasGps());
         System.out.println("Bike brand name: " + bike.getBrand());
         System.out.println("Brand name of truck: " + truck.getBrand());
 
