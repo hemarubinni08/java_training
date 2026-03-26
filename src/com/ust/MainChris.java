@@ -1,25 +1,9 @@
 package com.ust;
 
-//public class MainChris {
-//    public static void main(String[] args) {
-//        int fact = factorial(5);
-//        System.out.println(fact);
-//    }
-//
-//    public static Integer factorial(int num) {
-//        int prod = 1;
-//        for (int i = 1; i <= num; i++) {
-//            prod = prod * i;
-//        }
-//        return prod;
-//    }
-//}
-
 public class MainChris {
     public static void main(String[] args) {
-        VehicleCJ vehicle = new VehicleCJ();
-        CarCJ car = new CarCJ();
-        BusCJ bus = new BusCJ();
+//        CarCJ car = new CarCJ();
+//        BusCJ bus = new BusCJ();
         BikeCJ bike = new BikeCJ();
         TruckCJ truck = new TruckCJ();
         truck.ac = true;
@@ -48,4 +32,5 @@ public class MainChris {
         System.out.println("Number of Wheels: " + bike.numberOfWheels());
         System.out.println("Engine Power: " + bike.engineCc() + " cc");
     }
+
 }
