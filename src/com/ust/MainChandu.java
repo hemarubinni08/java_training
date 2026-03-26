@@ -1,17 +1,14 @@
 package com.ust;
 
-import com.ust.impl.BikeChanduImpl;
-import com.ust.impl.BusChanduImpl;
-import com.ust.impl.CarChanduImpl;
-import com.ust.impl.TruckChanduImpl;
+import com.ust.impl.*;
 
 public class MainChandu {
     public static void main(String[] args) {
 
-        BikeChanduImpl bc = new BikeChanduImpl();
-        CarChanduImpl cc = new CarChanduImpl();
-        TruckChanduImpl tc = new TruckChanduImpl();
-        BusChanduImpl bbc = new BusChanduImpl();
+        BikeAbstractChandu bc = new BikeAbstractChandu();
+        CarAbstractChandu cc = new CarAbstractChandu();
+        TruckAbstractChandu tc = new TruckAbstractChandu();
+        BusAbstractChandu bbc = new BusAbstractChandu();
 
 
         System.out.println("Bike: " + bc.fuel() + ", " + bc.engine() + "cc, " + bc.wheels() + " wheels, " + bc.passenger() + " Passengers");
