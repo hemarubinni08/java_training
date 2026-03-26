@@ -197,5 +197,89 @@ public class Main_akash {
             System.out.println("This is a single axle vehicle");
         }
         System.out.println("----------------------------------------------------");
+        System.out.println("Inheritance using abstract");
+        //Driver for Car class
+        CarAbstractAkash carAbstractAkash = new CarAbstractAkash();
+        System.out.println("The details from the Car");
+        System.out.println("Number of wheels: " + carAbstractAkash.numberOfWheels());
+        System.out.println("Applicable Tax: " + carAbstractAkash.applicableTax());
+        System.out.println("Seating capacity: " + carAbstractAkash.seatingCapacity());
+        System.out.println("Power Generated: " + carAbstractAkash.powerGenerated());
+        System.out.println("This is a heavy vehicle");
+        if (carAbstractAkash.isCommercial()) {
+            System.out.println("This is a commercial vehicle.");
+        } else {
+            System.out.println(("This is a private vehicle"));
+        }
+        if (carAbstractAkash.hasAC()) {
+            System.out.println("AC is available");
+        } else {
+            System.out.println("AC is not available");
+        }
+        if (carAbstractAkash.isMultiAxle()) {
+            System.out.println("This is a multi-axle vehicle");
+        } else {
+            System.out.println("This is a single axle vehicle");
+        }
+        System.out.println("----------------------------------------------------");
+        //Driver for Bike class
+        BikeAbstractAkash bikeAbstractAkash = new BikeAbstractAkash();
+        System.out.println("The details from the Bike");
+        System.out.println("Number of wheels: " + bikeAbstractAkash.numberOfWheels());
+        System.out.println("Applicable Tax: " + bikeAbstractAkash.applicableTax());
+        System.out.println("Seating capacity: " + bikeAbstractAkash.seatingCapacity());
+        System.out.println("Power Generated: " + bikeAbstractAkash.powerGenerated());
+        System.out.println("This is a light vehicle");
+        System.out.println("----------------------------------------------------");
+        //Driver for Truck class
+        TruckAbstractAkash truckAbstractAkash = new TruckAbstractAkash();
+        System.out.println("The details from the Truck");
+        System.out.println("Number of wheels: " + truckAbstractAkash.numberOfWheels());
+        System.out.println("Applicable Tax: " + truckAbstractAkash.applicableTax());
+        System.out.println("Seating capacity: " + truckAbstractAkash.seatingCapacity());
+        System.out.println("Power Generated: " + truckAbstractAkash.powerGenerated());
+        System.out.println("This is a heavy vehicle");
+        if (truckAbstractAkash.isCommercial()) {
+            System.out.println("This is a commercial vehicle.");
+        } else {
+            System.out.println(("This is a private vehicle"));
+        }
+        if (truckAbstractAkash.hasAC()) {
+            System.out.println("AC is available");
+        } else {
+            System.out.println("AC is not available");
+        }
+        if (truckAbstractAkash.isMultiAxle()) {
+            System.out.println("This is a multi-axle vehicle");
+        } else {
+            System.out.println("This is a single axle vehicle");
+        }
+        System.out.println("----------------------------------------------------");
+        //Driver for Luxury class
+        LuxuryCarAbstractAkash luxuryCarAbstractAkash = new LuxuryCarAbstractAkash();
+        System.out.println("The details from the Luxury car");
+        System.out.println("Number of wheels: " + luxuryCarAbstractAkash.numberOfWheels());
+        System.out.println("Applicable Tax: " + luxuryCarAbstractAkash.applicableTax());
+        System.out.println("Seating capacity: " + luxuryCarAbstractAkash.seatingCapacity());
+        System.out.println("Power Generated: " + luxuryCarAbstractAkash.powerGenerated());
+        System.out.println("This is a heavy vehicle");
+        if (luxuryCarAbstractAkash.isCommercial()) {
+            System.out.println("This is a commercial vehicle.");
+        } else {
+            System.out.println(("This is a private vehicle"));
+        }
+        if (luxuryCarAbstractAkash.hasAC()) {
+            System.out.println("AC is available");
+        } else {
+            System.out.println("AC is not available");
+        }
+        if (luxuryCarAbstractAkash.isMultiAxle()) {
+            System.out.println("This is a multi-axle vehicle");
+        } else {
+            System.out.println("This is a single axle vehicle");
+        }
+        System.out.println("----------------------------------------------------");
+
+
     }
 }
