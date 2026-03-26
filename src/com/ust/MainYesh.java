@@ -28,6 +28,4 @@ public class MainYesh {
         VehicleCarYeshImpl carObject=new VehicleCarYeshImpl();
         System.out.println(carObject.itHasAc());
     }
-
-
 }
