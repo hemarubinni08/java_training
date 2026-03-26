@@ -18,7 +18,5 @@ public class VehicleInterfaceYeshImpl implements VehicleInterfaceYesh {
     public String colorOfVehicle() {
         return "Black";
     }
-
-
-    }
+}
 

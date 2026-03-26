@@ -7,7 +7,6 @@ public class HeavyVehicleInterfaceYeshImpl implements HeavyVehiclesInterfaceYesh
     @Override
     public int noOfDoors() {
         return 4;
-
     }
 
     @Override
