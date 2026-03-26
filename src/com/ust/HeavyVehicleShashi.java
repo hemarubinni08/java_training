@@ -2,12 +2,12 @@ package com.ust;
 
 public class HeavyVehicleShashi extends VehicleShashi {
     @Override
-    public String brakeType() {
+    public String getBrakeType() {
         return "Air Compact System";
     }
 
     @Override
-    public String fuelType() {
+    public String getFuelType() {
         return "Deisel";
     }
 }
