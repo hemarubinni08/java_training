@@ -7,3 +7,4 @@ public interface VehicleInterfaceAnu {
 
     String getBrand();
 }
+
