@@ -23,5 +23,4 @@ public class BikeKushalImpl implements VehicleInterfaceKushal {
     public String getVehicleType() {
         return "LMV";
     }
-
 }
