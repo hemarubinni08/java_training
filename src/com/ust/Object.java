@@ -31,11 +31,23 @@ public class Object {
 }
 
  */
+/*
 public class Object{
     public static void main(String[] args){
         CarInterfaceChailaImpl objcarint = new CarInterfaceChailaImpl();
         TruckInterfaceChailaImpl objtruckint = new TruckInterfaceChailaImpl();
         System.out.println(objcarint.stearingControl());
         System.out.println(objtruckint.airConditioner());
+    }
+}
+
+ */
+
+public class Object {
+    public static void main(String[] args){
+        BusAbstractChaila objabsbus = new BusAbstractChaila();
+        TruckAbstractChaila objabstruck = new TruckAbstractChaila();
+        System.out.println(objabsbus.getNumberOfWheels());
+        System.out.println(objabstruck.getNumberOfWheels());
     }
 }
