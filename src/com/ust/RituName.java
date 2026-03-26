@@ -1,10 +1,9 @@
 package com.ust;
 
-public class name {
+public class RituName {
     public static void main(String[] args) {
         String name = "Ritika Kumari";
         System.out.println("Reversed Name=" + " " + reverseName(name));
-
     }
 
     public static String reverseName(String name) {

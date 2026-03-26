@@ -1,13 +1,13 @@
 package com.ust;
 
 public class Main {
-    public static void main(String[] args)
-    {
-        System.out.println(addTwoNumbers(2, 5));
-    }
-
-    public static Integer addTwoNumbers(int a, int b)
-    {
-        return a + b;
+    public static void main(String[] args) {
+        SixWheelersHemanth sixwheeler = new SixWheelersHemanth();
+        System.out.println(sixwheeler.modelName());
+        System.out.println(sixwheeler.hasAc());
+        System.out.println(sixwheeler.maximumSpeed());
+        System.out.println(sixwheeler.typeOfVehicle());
+        FourWheelersHemanth fourwheels = new FourWheelersHemanth();
+        System.out.println(fourwheels.numberOfWheels());
     }
 }
