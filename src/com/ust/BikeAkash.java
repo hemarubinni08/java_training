@@ -1,19 +1,19 @@
 package com.ust;
 
 public class BikeAkash extends VehicleAkash {
-    public static int numberOfWheels(String vehicleType) {
+    public int numberOfWheels() {
         return 2;
     }
 
-    public static double applicableTax() {
+    public double applicableTax() {
         return 12.00;
     }
 
-    public static int seatingCapacity() {
+    public int seatingCapacity() {
         return 2;
     }
 
-    public static double powerGenerated() {
+    public double powerGenerated() {
         return 350;
     }
 }

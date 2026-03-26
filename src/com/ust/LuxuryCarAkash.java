@@ -1,27 +1,27 @@
 package com.ust;
 
-public class LuxuryCarAkash extends VehicleAkash {
-    public static int numberOfWheels(String vehicleType) {
+public class LuxuryCarAkash extends HeavyVehicleAkash {
+    public int numberOfWheels() {
         return 4;
     }
 
-    public static double applicableTax() {
+    public double applicableTax() {
         return 30.00;
     }
 
-    public static int seatingCapacity() {
+    public int seatingCapacity() {
         return 4;
     }
 
-    public static double powerGenerated() {
+    public double powerGenerated() {
         return 2400;
     }
 
-    public static void nameOfVehicle() {
-        System.out.println("This is a luxury car");
+    public int numberOfDoors() {
+        return 4;
     }
 
-    public static int numberOfDoors() {
-        return 4;
+    public boolean hasAC() {
+        return true;
     }
 }

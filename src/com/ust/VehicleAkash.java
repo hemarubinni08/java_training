@@ -2,19 +2,19 @@ package com.ust;
 
 //three vehicles
 public class VehicleAkash {
-    public static int numberOfWheels() {
+    public int numberOfWheels() {
         return 4;
     }
 
-    public static double applicableTax() {
+    public double applicableTax() {
         return 18.00;
     }
 
-    public static int seatingCapacity() {
+    public int seatingCapacity() {
         return 5;
     }
 
-    public static double powerGenerated() {
+    public double powerGenerated() {
         return 600;
     }
 }

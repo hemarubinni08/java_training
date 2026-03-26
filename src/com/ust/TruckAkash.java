@@ -1,23 +1,31 @@
 package com.ust;
 
-public class TruckAkash extends VehicleAkash {
-    public static int numberOfWheels(String vehicleType) {
+public class TruckAkash extends HeavyVehicleAkash {
+    public int numberOfWheels() {
         return 10;
     }
 
-    public static double applicableTax() {
+    public double applicableTax() {
         return 25.00;
     }
 
-    public static int seatingCapacity() {
+    public int seatingCapacity() {
         return 3;
     }
 
-    public static double powerGenerated() {
+    public double powerGenerated() {
         return 2500;
     }
 
-    public static int numberOfDoors() {
+    public int numberOfDoors() {
         return 2;
+    }
+
+    public boolean isCommercial() {
+        return true;
+    }
+
+    public boolean isMultiAxle() {
+        return true;
     }
 }
