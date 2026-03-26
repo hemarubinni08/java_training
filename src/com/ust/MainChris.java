@@ -2,17 +2,10 @@ package com.ust;
 
 public class MainChris {
     public static void main(String[] args) {
-//        CarCJ car = new CarCJ();
-//        BusCJ bus = new BusCJ();
         BikeCJ bike = new BikeCJ();
         TruckCJ truck = new TruckCJ();
         truck.ac = true;
-        bus.ac = true;
-        car.ac = true;
         truck.door = 2;
-        bus.door = 2;
-        car.door = 4;
-
 
         System.out.println("Truck Information");
         System.out.println("The Brand is " + truck.getBrand());
