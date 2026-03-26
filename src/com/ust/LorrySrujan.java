@@ -20,5 +20,4 @@ public class LorrySrujan extends HeavyVehiclesSrujan {
     public int backupTires() {
         return 4;
     }
-
 }
