@@ -20,15 +20,20 @@ public class Main {
 
         //System.out.println("truck:" + "\nNumber of seats: " + t.numbersOfSeats() + "\nNumber of wheels: " + t.wheels() + "\nBrand: " + t.brandOfVehicle() + "\nHASAC: " + t.hasAc() + "\nnumber of doors: " + t.numberOfDoors());
 
-        CarInterfaceNavyaImpl carImpl = new CarInterfaceNavyaImpl();
-        BusInterfaceNavyaImpl busImpl = new BusInterfaceNavyaImpl();
-        TruckInterfaceNavyaImpl truckImpl = new TruckInterfaceNavyaImpl();
-        BikeInterfaceNavyaImpl bikeImpl = new BikeInterfaceNavyaImpl();
-        System.out.println("truck:" + "\nNumber of seats: " + truckImpl.numbersOfSeats() + "\nNumber of wheels: " + truckImpl.wheels() + "\nBrand: " + truckImpl.brandOfVehicle() + "\nhasac:" + truckImpl.hasAc() + "\nnumber of passesgers:" + truckImpl.noOfPassengers());
-        System.out.println("Bus:" + "\nNumber of seats: " + busImpl.numbersOfSeats() + "\nNumber of wheels: " + busImpl.wheels() + "\nBrand: " + busImpl.brandOfVehicle() + "\nhasac:" + busImpl.hasAc() + "\nnumber of passesgers:" + busImpl.noOfPassengers());
-        System.out.println("car:" + "\nNumber of seats: " + carImpl.numbersOfSeats() + "\nNumber of wheels: " + carImpl.wheels() + "\nBrand: " + carImpl.brandOfVehicle() + "\nhasac:" + carImpl.hasAc() + "\nnumber of passesgers:" + carImpl.noOfPassengers());
-        System.out.println("Bike:" + "\nNumber of seats: " + bikeImpl.numbersOfSeats() + "\nNumber of wheels: " + bikeImpl.wheels() + "\nBrand: " + bikeImpl.brandOfVehicle());
+        //CarInterfaceNavyaImpl carImpl = new CarInterfaceNavyaImpl();
+        //BusInterfaceNavyaImpl busImpl = new BusInterfaceNavyaImpl();
+        //TruckInterfaceNavyaImpl truckImpl = new TruckInterfaceNavyaImpl();
+        //BikeInterfaceNavyaImpl bikeImpl = new BikeInterfaceNavyaImpl();
+        //System.out.println("truck:" + "\nNumber of seats: " + truckImpl.numbersOfSeats() + "\nNumber of wheels: " + truckImpl.wheels() + "\nBrand: " + truckImpl.brandOfVehicle() + "\nhasac:" + truckImpl.hasAc() + "\nnumber of passesgers:" + truckImpl.noOfPassengers());
+        //System.out.println("Bus:" + "\nNumber of seats: " + busImpl.numbersOfSeats() + "\nNumber of wheels: " + busImpl.wheels() + "\nBrand: " + busImpl.brandOfVehicle() + "\nhasac:" + busImpl.hasAc() + "\nnumber of passesgers:" + busImpl.noOfPassengers());
+        //System.out.println("car:" + "\nNumber of seats: " + carImpl.numbersOfSeats() + "\nNumber of wheels: " + carImpl.wheels() + "\nBrand: " + carImpl.brandOfVehicle() + "\nhasac:" + carImpl.hasAc() + "\nnumber of passesgers:" + carImpl.noOfPassengers());
+        //System.out.println("Bike:" + "\nNumber of seats: " + bikeImpl.numbersOfSeats() + "\nNumber of wheels: " + bikeImpl.wheels() + "\nBrand: " + bikeImpl.brandOfVehicle());
 
+        BusAbstractNavyaImpl busab = new BusAbstractNavyaImpl();
+        BikeInterfaceNavyaImpl bikeInterfaceNavya = new BikeInterfaceNavyaImpl();
+        System.out.println("bus:" + "\nNumber of seats: " + busab.numbersOfSeats() + "\nNumber of wheels: " + busab.wheels() + "\nBrand: " + busab.brandOfVehicle() + "\nhasac:" + busab.hasAc());
+        System.out.println("bike:" + "\nNumber of seats: " + bikeInterfaceNavya.numbersOfSeats() + "\nNumber of wheels: " + bikeInterfaceNavya.wheels() + "\nBrand: " + bikeInterfaceNavya.brandOfVehicle());
     }
+
 }
 
