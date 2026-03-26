@@ -18,4 +18,5 @@ public class Car extends HeavyVehicleAish {
     public int fetchDoors() {
         return 4;
     }
+
 }

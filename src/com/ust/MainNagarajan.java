@@ -14,12 +14,12 @@ public class MainNagarajan {
         bike.speed = 140;
         bike.helmet = true;
 
-        TruckNagarajan truck = new TruckNagarajan();
-        truck.brand = "VOLVO";
-        truck.speed = 80;
-        truck.load = 800;
-        truck.door = 2;
-        truck.ac = false;
+//        TruckNagarajan truck = new TruckNagarajan();
+//        truck.brand = "VOLVO";
+//        truck.speed = 80;
+//        truck.load = 800;
+//        truck.door = 2;
+//        truck.ac = false;
 
         System.out.println("Car Information");
         System.out.println(car.start());
@@ -28,12 +28,12 @@ public class MainNagarajan {
         System.out.println(car.stop());
         System.out.println();
 
-        System.out.println("Truck Information");
-        System.out.println(truck.start());
-        System.out.println(truck.truckInfo());
-        System.out.println(truck.loadingInfo());
-        System.out.println(truck.stop());
-        System.out.println();
+//        System.out.println("Truck Information");
+//        System.out.println(truck.start());
+//        System.out.println(truck.truckInfo());
+//        System.out.println(truck.loadingInfo());
+//        System.out.println(truck.stop());
+//        System.out.println();
 
         System.out.println("Bike Information");
         System.out.println(bike.start());
