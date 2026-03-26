@@ -1,6 +1,6 @@
 package com.ust;
 
-public class HeavyVehicles {
+public class HeavyVehiclesAnu {
     public boolean hasAc() {
         return true;
     }
