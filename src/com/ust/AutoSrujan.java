@@ -12,5 +12,4 @@ public class AutoSrujan extends VehiclesSrujan {
     public int costOfVehicle() {
         return 300000;
     }
-
 }
