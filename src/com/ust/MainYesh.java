@@ -19,7 +19,7 @@ public class MainYesh {
         //FourWheelerYesh fourWheelObject=new FourWheelerYesh();
         //System.out.println(fourWheelObject.noOfDoors());
         //System.out.println(fourWheelerObject.noOfDoors());
-        VehicleInterfaceYesh interfaceObj=new VehicleInterfaceYeshImpl();
+        /*VehicleInterfaceYesh interfaceObj=new VehicleInterfaceYeshImpl();
         HeavyVehicleInterfaceYeshImpl heavyVehicleInterfaceYeshObj=new HeavyVehicleInterfaceYeshImpl();
         System.out.println(interfaceObj.numberOfwheels());
         System.out.println(interfaceObj.colorOfVehicle());
@@ -29,7 +29,7 @@ public class MainYesh {
         VehicleCarYeshImpl carObject=new VehicleCarYeshImpl();
         System.out.println(carObject.itHasAc());
         ArithimeticYesh addObject=new ArithimeticYesh();
-        System.out.println(addObject.addition(3,4,6));
+        System.out.println(addObject.addition(3,4,6));*/
         List<String> teamMembersNames=new ArrayList<String>();
         teamMembersNames.add("Yeshwanth");
         teamMembersNames.add("Hemanth");
@@ -40,5 +40,16 @@ public class MainYesh {
         CollectionsYesh collectionObject=new CollectionsYesh();
         collectionObject.doIterate(teamMembersNames);
         collectionObject.EliminateNeighbor(teamMembersNames);
+        List<Integer> secondList=new ArrayList<>();
+        secondList.add(5);
+        secondList.add(6);
+        secondList.add(7);
+        List<Integer> firstList=new ArrayList<>();
+        firstList.add(1);
+        firstList.add(2);
+        firstList.add(3);
+        firstList.add(4);
+        firstList.add(5);
+        System.out.println(collectionObject.removingDuplicate(firstList,secondList));
     }
 }
