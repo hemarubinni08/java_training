@@ -37,7 +37,7 @@ public class CollectionsDeepak {
 //            if (!list1.contains(num)) {
 //                System.out.println(num);
 //            }
-//        }
+//        } for loop
         list1.stream()
                 .filter(num -> !list2.contains(num))
                 .forEach(num -> System.out.println(num));
