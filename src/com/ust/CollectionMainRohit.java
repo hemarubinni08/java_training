@@ -5,24 +5,24 @@ import java.util.List;
 
 public class CollectionMainRohit {
     public static void main(String[] args){
-        List<String> names=new ArrayList<>();
-        names.add("Rohit");
-        names.add("Harsh");
-        names.add("Keerthi");
-        names.add("Navya");
-        names.add("Deepak");
-        names.add("Gokul");
+        List<String> l1=new ArrayList<>();
+        l1.add("Rohit");
+        l1.add("Harsh");
+        l1.add("Keerthi");
+        l1.add("Navya");
+        l1.add("Deepak");
+        l1.add("Gokul");
         CollectionRohit C=new CollectionRohit();
 
-        List<String> names1=new ArrayList<>();
-        names1.add("Sreelekshmi");
-        names1.add("Gokul");
-        names1.add("Pranav");
-        names1.add("Chris");
+        List<String> l2=new ArrayList<>();
+        l2.add("Sreelekshmi");
+        l2.add("Gokul");
+        l2.add("Pranav");
+        l2.add("Chris");
 
-        C.printValues(names);
-        C.removeNeighbour(names);
-        C.combinedList(names,names1);
+        C.printValues(l1);
+        C.removeNeighbour(l1);
+        C.combinedList(l1,l2);
 
     }
 
