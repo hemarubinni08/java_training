@@ -22,6 +22,78 @@ public class MainHema {
         String fuel = bh.getFuelType();
         System.out.println(fuel);
         System.out.println("That,s All I Learned Inheritance");
+import com.ust.impl.*;
+
+public class MainHema {
+    public static void main(String[] args) {
+//        TruckHema th = new TruckHema();
+//        CarHema ch = new CarHema();
+//        BikeHema bh = new BikeHema();
+//        BusHema b=new BusHema();
+//        String brand = th.getBrand();
+//        System.out.println(brand);
+//        System.out.println(th.hasAirBrakes());
+//        System.out.println(th.loadCapacity());
+//        String brand1 = ch.getBrand();
+//        System.out.println(brand1);
+//        String color = ch.color();
+//        System.out.println(color);
+//        String gear = ch.gearSystem();
+//        System.out.println(gear);
+//        System.out.println(ch.hasAc());
+//        String fuel = bh.getFuelType();
+//        System.out.println(fuel);
+//        int wheel = bh.getWheelsCount();
+//        System.out.println(wheel);
+//        System.out.println(b.hasAirBrakes());
+//        System.out.println(b.gearSystem());
+//        System.out.println(b.getBrand());
+//        System.out.println("That,s All I Learned Inheritance");
+//        BikeHemaImpl bhi = new BikeHemaImpl();
+//        BusHemaImpl bi = new BusHemaImpl();
+//        CarHemaImpl chi = new CarHemaImpl();
+//        TruckHemaImpl thi = new TruckHemaImpl();
+//        String brand = thi.getBrand();
+//        System.out.println(brand);
+//        System.out.println(thi.hasAirBrakes());
+//        System.out.println(thi.loadCapacity());
+//        String brand1 = chi.getBrand();
+//        System.out.println(brand1);
+//        String color = chi.color();
+//        System.out.println(color);
+//        String gear = chi.gearSystem();
+//        System.out.println(gear);
+//        System.out.println(chi.hasAc());
+//        String fuel = bhi.getFuelType();
+//        System.out.println(fuel);
+//        int wheel = bhi.getWheelsCount();
+//        System.out.println(wheel);
+//        System.out.println(bi.hasAirBrakes());
+//        System.out.println(bi.gearSystem());
+//        System.out.println(bi.getBrand());
+//        System.out.println("That,s All I Learned Interface");
+        BikeAbstractHema bk = new BikeAbstractHema();
+        BusAbstractHema bh = new BusAbstractHema();
+        CarAbstractHema cb = new CarAbstractHema();
+        TruckAbstractHema tb = new TruckAbstractHema();
+        String brand = bk.getBrand();
+        System.out.println(brand);
+        System.out.println(tb.loadCapacity());
+        String brand1 = tb.getBrand();
+        System.out.println(brand1);
+        String color = cb.color();
+        System.out.println(color);
+        String gear = cb.getFuelType();
+        System.out.println(gear);
+        String fuel = bk.getFuelType();
+        System.out.println(fuel);
+        int wheel = tb.getWheelsCount();
+        System.out.println(wheel);
+        System.out.println(bh.doorsCount());
+        System.out.println(tb.getBrand());
+        System.out.println(cb.Capacity());
+        System.out.println(bh.getFuelType());
+        System.out.println(bh.rate());
     }
 }
 
