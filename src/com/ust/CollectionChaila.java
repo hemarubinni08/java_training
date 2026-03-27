@@ -10,6 +10,7 @@ public class CollectionChaila {
         names.add("shree");
         names.add("Lekhya");
 
+
        for(String name : names){
             if(name.equalsIgnoreCase("chaila")){
                 System.out.println(names);
