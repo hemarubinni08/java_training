@@ -1,26 +1,15 @@
 package com.ust;
 
 public class ArithmeticOperations {
-    public static void main(String[] args) {
-        Arithmetic Operation = new Arithmetic();
-        System.out.println("addition:" + Operation.add(2, 5));
-        System.out.println("Subtraction:" + Operation.subtract(7, 5));
-        System.out.println("Multiplication:" + Operation.multiply(2, 5));
-        System.out.println("Division:" + Operation.divide(10, 5));
+    public int addNumbers(int num1, int num2) {
+        return num1 + num2;
     }
-}
 
-class Arithmetic {
-    public static int add(int a, int b) {
-        return a + b;
+    public int addNumbers(int num1, int num2, int num3) {
+        return num1 + num2 + num3;
     }
-    public static int subtract(int a, int b) {
-        return a - b;
-    }
-    public static int multiply(int a, int b) {
-        return a * b;
-    }
-    public static int divide(int a, int b) {
-        return a / b;
+
+    public int addNumbers(int num1, int num2, int num3, int num4) {
+        return num1 + num2 + num3 + num4;
     }
 }
