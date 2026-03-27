@@ -1,7 +1,6 @@
 package com.ust;
 
-import com.ust.impl.ShoaibBikeInterfaceImpl;
-import com.ust.impl.ShoaibCarInterfaceImpl;
+import com.ust.Impl.*;
 
 public class MainVehicleShoaib {
     public static void main(String[] args) {
@@ -23,5 +22,13 @@ public class MainVehicleShoaib {
         System.out.println("Brand Name:"+" "+mybike.vehicleBrand());
         System.out.println("Total Wheels:"+" "+mybike.numberOfWheels());
         System.out.println("Total kilometers:"+" "+mybike.kilometerDone());
+        VehicleAbstractShoaib car=new CarAbstractShoaib();
+        System.out.println(car.vehicleBrand());
+        VehicleAbstractShoaib bike=new BikeAbstractShoaib();
+        System.out.println(bike.vehicleBrand());
+        VehicleAbstractShoaib scooty=new ScootyAbstractShoaib();
+        System.out.println(scooty.vehicleBrand());
+        ShoaibArithmetic obj=new ShoaibArithmetic();
+        System.out.println(obj.addition(9,9,9));
     }
 }
