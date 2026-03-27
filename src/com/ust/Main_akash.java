@@ -1,14 +1,8 @@
 package com.ust;
 //Driver code for ArithmeticAkash and VehicleAkash and its child classes.
 
-import com.ust.collections.IterationAkash;
 import com.ust.collections.RemoveDuplicateAkash;
-import com.ust.impl.BikeInterfaceAkashImpl;
-import com.ust.impl.CarInterfaceAkashImpl;
-import com.ust.impl.LuxuryCarInterfaceAkashImpl;
-import com.ust.impl.TruckInterfaceAkashImpl;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -305,21 +299,19 @@ public class Main_akash {
         System.out.println("Iteration using Stream neighbour deletion");
         iterationAkash.deleteNeighbour(names);*/
         RemoveDuplicateAkash removeDuplicateAkash = new RemoveDuplicateAkash();
-        Scanner sc=new Scanner(System.in);
-        List<String> names1= new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+        List<String> names1 = new ArrayList<>();
         System.out.println("Enter the names");
-        String name1="";
-        for(int i=0;i<2;i++)
-        {
-            name1=sc.nextLine();
+        String name1 = "";
+        for (int i = 0; i < 2; i++) {
+            name1 = sc.nextLine();
             names1.add(name1);
         }
-        List<String> names2= new ArrayList<>();
+        List<String> names2 = new ArrayList<>();
         System.out.println("Enter the names");
-        String name2="";
-        for(int i=0;i<2;i++)
-        {
-            name2=sc.nextLine();
+        String name2 = "";
+        for (int i = 0; i < 2; i++) {
+            name2 = sc.nextLine();
             names2.add(name2);
         }
         System.out.println();
