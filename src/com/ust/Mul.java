@@ -8,5 +8,9 @@ public class Mul {
     public static Integer mulTwoNumbers(int a, int b) {
         return a * b;
     }
+    public static Integer mulTwoNumbers(float a, float b) {
+        return a * b;
+    }
+
 }
 
