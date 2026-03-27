@@ -1,8 +1,6 @@
 package com.ust.impl;
 
-import com.ust.VehicleAbstractAron;
-
-public class CarAbstractAronImpl extends VehicleAbstractAron {
+public class CarAbstractAronImpl extends HeavyVehicleAbstractClassImpl {
     public String getSound() {
         return "Vrroom";
     }
@@ -13,6 +11,10 @@ public class CarAbstractAronImpl extends VehicleAbstractAron {
 
     public String getBrandName() {
         return "Volvo";
+    }
+
+    public int getNoOfDoors() {
+        return 4;
     }
 
     public String getDoorType() {

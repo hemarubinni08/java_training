@@ -1,8 +1,6 @@
 package com.ust.impl;
 
-import com.ust.VehicleAbstractAron;
-
-public class AutoAbstractAronImpl extends VehicleAbstractAron {
+public class AutoAbstractAronImpl extends HeavyVehicleAbstractClassImpl {
     public String getSound() {
         return "Ksssrrrr";
     }

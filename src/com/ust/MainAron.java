@@ -9,6 +9,8 @@ public class MainAron {
         System.out.println("Brand Name: " + car.getBrandName());
         System.out.println("Car makes the sound " + car.getSound());
         System.out.println("No of wheels in a car " + car.getNoOfWheels());
+        System.out.println("No of doors in a car " + car.getNoOfDoors());
+        System.out.println("Door type: " + car.getDoorType());
         System.out.println("No of warranty in years: " + car.getWarrantyInYears());
 
         System.out.println("\nBike");
@@ -23,7 +25,7 @@ public class MainAron {
         AutoAbstractAronImpl auto = new AutoAbstractAronImpl();
         System.out.println("Brand Name: " + auto.getBrandName());
         System.out.println("Auto makes the sound " + auto.getSound());
-        System.out.println("No of wheels in a Bike " + auto.getNoOfWheels());
+        System.out.println("No of wheels in an auto " + auto.getNoOfWheels());
         System.out.println("No of doors in an auto " + auto.getNoOfDoors());
         System.out.println("No of warranty in years: " + auto.getWarrantyInYears());
 
@@ -31,7 +33,7 @@ public class MainAron {
         LorryAbstractClassImpl lorry = new LorryAbstractClassImpl();
         System.out.println("Brand Name: " + lorry.getBrandName());
         System.out.println("Lorry makes the sound " + lorry.getSound());
-        System.out.println("No of wheels in a Bike " + lorry.getNoOfWheels());
+        System.out.println("No of wheels in a Lorry " + lorry.getNoOfWheels());
         System.out.println("No of doors in a Lorry " + lorry.getNoOfDoors());
         System.out.println("No of warranty in years: " + lorry.getWarrantyInYears());
     }
