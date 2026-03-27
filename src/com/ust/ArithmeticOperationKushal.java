@@ -8,6 +8,11 @@ public class ArithmeticOperationKushal {
         return result;
     }
 
+    public float add(float n1, float n2, float n3) {
+        result = n1 + n2 + n3;
+        return result;
+    }
+
     public float subtract(float n1, float n2) {
         result = n1 - n2;
         return result;
