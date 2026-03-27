@@ -1,5 +1,6 @@
 package com.ust;
 
+import com.ust.collections.CollectionsYesh;
 import com.ust.impl.HeavyVehicleInterfaceYeshImpl;
 import com.ust.impl.VehicleBusYeshImpl;
 import com.ust.impl.VehicleCarYeshImpl;
@@ -29,5 +30,15 @@ public class MainYesh {
         System.out.println(carObject.itHasAc());
         ArithimeticYesh addObject=new ArithimeticYesh();
         System.out.println(addObject.addition(3,4,6));
+        List<String> teamMembersNames=new ArrayList<String>();
+        teamMembersNames.add("Yeshwanth");
+        teamMembersNames.add("Hemanth");
+        teamMembersNames.add("Ritika");
+        teamMembersNames.add("Anudeepika");
+        teamMembersNames.add("Ardra");
+        teamMembersNames.add("Akash");
+        CollectionsYesh collectionObject=new CollectionsYesh();
+        collectionObject.doIterate(teamMembersNames);
+        collectionObject.EliminateNeighbor(teamMembersNames);
     }
 }
