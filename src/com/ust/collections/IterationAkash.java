@@ -14,4 +14,8 @@ public class IterationAkash {
     {
         names.forEach(System.out::println);
     }
+    public void deleteNeighbour(List<String> names)
+    {
+        System.out.println(names.stream().filter(name->!name.equalsIgnoreCase("Yeshwanth")).toList());
+    }
 }

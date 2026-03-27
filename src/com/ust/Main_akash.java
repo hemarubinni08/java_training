@@ -7,6 +7,7 @@ import com.ust.impl.CarInterfaceAkashImpl;
 import com.ust.impl.LuxuryCarInterfaceAkashImpl;
 import com.ust.impl.TruckInterfaceAkashImpl;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -300,5 +301,7 @@ public class Main_akash {
         System.out.println();
         System.out.println("Iteration using Stream");
         iterationAkash.nameIterationStream(names);
+        System.out.println("Iteration using Stream neighbour deletion");
+        iterationAkash.deleteNeighbour(names);
     }
 }
