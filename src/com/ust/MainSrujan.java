@@ -10,6 +10,10 @@ public class MainSrujan {
 //        System.out.println(myobject.division(6, 3));
 //        System.out.println(myobject.multiplication(2, 3));
 
+        VehiclesSrujan bikeObject = new BikeSrujan();
+
+        System.out.println(bikeObject.costOfVehicle());
+  }
 //        VehiclesSrujan bikeObject = new BikeSrujan();
 //
 //        System.out.println(bikeObject.costOfVehicle());

@@ -1,9 +1,6 @@
 package com.ust;
 
 public class WhileFijul {
-    public static void main(String[] args) {
-        printCharacters("hfgdyais");
-    }
 
     public static void printCharacters(String name) {
         int i = 0;
