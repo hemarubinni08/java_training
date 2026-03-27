@@ -11,5 +11,6 @@ public class MainLekhya {
         BikeAbstracLekhyatImpl bike = new BikeAbstracLekhyatImpl();
         System.out.println(car.getRpm());
         System.out.println(bike.fuelUsed());
+        System.out.println(car.hasAc());
     }
 }
