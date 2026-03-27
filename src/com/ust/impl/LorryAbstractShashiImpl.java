@@ -1,8 +1,8 @@
 package com.ust.impl;
 
-import com.ust.VehicleAbstractShashi;
+import com.ust.HeavyVehicleAbstractShashi;
 
-public class LorryAbstractShashiImpl extends VehicleAbstractShashi {
+public class LorryAbstractShashiImpl extends HeavyVehicleAbstractShashi {
     public String getFuelType() {
         return "Diesel";
     }
