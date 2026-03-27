@@ -5,7 +5,7 @@ public class ArithematicHemanth {
         return a + b;
     }
 
-    public static int subtractTwoNumbers(int a, int b) {
+    public static float addTwoNumbers(int a, float b) {
         return a - b;
     }
 
