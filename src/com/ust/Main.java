@@ -11,7 +11,11 @@ public class Main {
         VehicleInterfaceHemanth bike = new TwoWheelersHemanthImpl();
         bike.typeOfVehicle();
         bike.mileage();*/
-        VehicleBikeHemanth bike = new VehicleBikeHemanth();
-        System.out.println(bike.noOfTyres());
+        //VehicleBikeHemanth bike = new VehicleBikeHemanth();
+        //System.out.println(bike.noOfTyres());
+        ArithematicHemanth Arithematicoperation = new ArithematicHemanth();
+        System.out.println(Arithematicoperation.addTwoNumbers(2,5));
+        System.out.println(Arithematicoperation.addTwoNumbers(2, 5.1F));
+        System.out.println(Arithematicoperation.multiplyTwoNumbers(3,5));
     }
 }
