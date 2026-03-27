@@ -7,17 +7,24 @@ import com.ust.impl.VechicleInterfaceImpl;
 
 public class MainRitika {
     public static void main(String[] args) {
-        VechicleAbstractRitu car = new CarAbstractRitu();
-        TruckAbstractRitu truck = new TruckAbstractRitu();
-        VechicleAbstractRitu bike = new BikeAbstractRitu();
-
-        System.out.println("Number of wheels in car: " + car.noOfTyres());
-        System.out.println("Mileage of Bike: " + bike.mileage());
-        System.out.println("Number of people in truck: " + truck.noOfPeople());
+        ArithmeticRitika obj = new ArithmeticRitika();
+        System.out.println("Addition: " + " " + obj.addition(3, 4));
+        System.out.println("Multiple: " + " " + obj.multiple(10, 4));
 
     }
 }
-
+/**
+ * VechicleAbstractRitu car = new CarAbstractRitu();
+ * TruckAbstractRitu truck = new TruckAbstractRitu();
+ * VechicleAbstractRitu bike = new BikeAbstractRitu();
+ * <p>
+ * System.out.println("Number of wheels in car: " + car.noOfTyres());
+ * System.out.println("Mileage of Bike: " + bike.mileage());
+ * System.out.println("Number of people in truck: " + truck.noOfPeople());
+ * <p>
+ * }
+ * }
+ */
 
 /**
  * VechicleInterfaceRitu car=new CarInterfaceImpl();
