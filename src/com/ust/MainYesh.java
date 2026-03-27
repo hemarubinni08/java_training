@@ -27,5 +27,7 @@ public class MainYesh {
         System.out.println(busObject.noOfSeats());
         VehicleCarYeshImpl carObject=new VehicleCarYeshImpl();
         System.out.println(carObject.itHasAc());
+        ArithimeticYesh addObject=new ArithimeticYesh();
+        System.out.println(addObject.addition(3,4,6));
     }
 }
