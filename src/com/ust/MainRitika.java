@@ -1,15 +1,28 @@
 package com.ust;
 
-import com.ust.impl.BikeInterfaceImpl;
-import com.ust.impl.CarInterfaceImpl;
-import com.ust.impl.TruckInterfaceImpl;
-import com.ust.impl.VechicleInterfaceImpl;
+import java.util.*;
+import java.util.ArrayList;
 
 public class MainRitika {
     public static void main(String[] args) {
-        ArithmeticRitika obj = new ArithmeticRitika();
-        System.out.println("Addition: " + " " + obj.addition(3, 4));
-        System.out.println("Multiple: " + " " + obj.multiple(10, 4));
+        List<String> list1=new ArrayList<>();
+        List<String> list2=new ArrayList<>();
+        list1.add("Ritu");
+        list1.add("Anu");
+        list1.add("Hemanth");
+        list1.add("Yesh");
+        list1.add("Ardra");
+        list1.add("Akash");
+
+        list2.add("Kushal");
+        list2.add("Harsh");
+        list2.add("Chandra");
+        list2.add("Harsita");
+        list2.add("Mansi");
+        list2.add("Akash");
+
+        CollectionRitika obj = new CollectionRitika();
+        obj.removeCommon(list1,list2);
 
     }
 }
