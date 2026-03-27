@@ -1,6 +1,9 @@
 package com.ust;
 
+import com.ust.impl.BikeInterfaceImpl;
+import com.ust.impl.CarInterfaceImpl;
 import com.ust.impl.TruckInterfaceImpl;
+import com.ust.impl.VechicleInterfaceImpl;
 
 public class MainRitika {
     public static void main(String[] args) {
