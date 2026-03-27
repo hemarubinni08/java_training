@@ -1,28 +1,35 @@
 package com.ust;
 
-public class ArthimeticOperators {
-    public static int add(int a, int b) {
-        return a + b;
+
+
+    public class ArthimeticOperators {
+
+
+        public static int add(int a, int b) {
+            return a + b;
+        }
+
+
+        public static int add(int a, int b, int c) {
+            return a + b + c;
+        }
+
+
+        public static double add(double a, double b) {
+            return a + b;
+        }
+
+
+        public static double add(int a, double b) {
+            return a + b;
+        }
+
+        public static void main(String[] args) {
+
+            System.out.println("Add 2 ints: " + add(2, 3));
+            System.out.println("Add 3 ints: " + add(1, 2, 3));
+            System.out.println("Add 2 doubles: " + add(2.5, 3.5));
+            System.out.println("Add int + double: " + add(5, 2.5));
+        }
     }
 
-    public static int sub(int a, int b) {
-        return a - b;
-    }
-
-    public static int mul(int a, int b) {
-        return a * b;
-    }
-
-    public static int div(int a, int b) {
-        return a / b;
-    }
-
-    public static void main(String args[]) {
-        ArthimeticOperators newArth = new ArthimeticOperators();
-        System.out.println("Addition: "+newArth.add(2, 3));
-        System.out.println("Substraction: "+newArth.sub(34, 5));
-        System.out.println("Multiplication: "+newArth.mul(2, 5));
-        System.out.println("Divison: "+newArth.div(5, 5));
-
-    }
-}
