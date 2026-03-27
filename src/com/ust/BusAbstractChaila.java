@@ -1,12 +1,18 @@
 package com.ust;
 
-public class BusAbstractChaila extends VehicleAbstractChaila{
+public class BusAbstractChaila extends HeavyVehicleAbstractChaila{
     @Override
-    protected Integer getNumberOfSeats() {
+    public Integer getNumberOfSeats() {
         return 20;
     }
+
     @Override
-    protected Integer getNumberOfWheels() {
+    public boolean hasAc() {
+        return false;
+    }
+
+    @Override
+    public Integer getNumberOfWheels() {
         return 4;
     }
 }

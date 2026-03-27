@@ -1,12 +1,18 @@
 package com.ust;
 
-public class CarAbstractChaila extends VehicleAbstractChaila {
+public class CarAbstractChaila extends HeavyVehicleAbstractChaila {
     @Override
-    protected Integer getNumberOfSeats() {
+    public Integer getNumberOfSeats() {
         return 4;
     }
+
     @Override
-    protected Integer getNumberOfWheels() {
+    public boolean hasAc() {
+        return true;
+    }
+
+    @Override
+    public Integer getNumberOfWheels() {
         return 4;
     }
     public String getBrand(){
