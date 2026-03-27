@@ -3,7 +3,6 @@ package com.ust.impl;
 import com.ust.VehicleAbstractLogesh;
 
 public class CycleAbstractLogesh extends VehicleAbstractLogesh {
-
     public Integer getNumberOfWheels() {
         return 2;
     }
@@ -19,5 +18,4 @@ public class CycleAbstractLogesh extends VehicleAbstractLogesh {
     public String getFuel() {
         return "no need";
     }
-
 }

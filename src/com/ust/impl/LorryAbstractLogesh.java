@@ -15,16 +15,20 @@ public class LorryAbstractLogesh extends HeavyVehicleLogesh {
     public String getModel() {
         return "Eicher";
     }
-    public boolean getAc(){
+
+    public boolean getAc() {
         return false;
     }
-    public boolean getLoadBed(){
+
+    public boolean getLoadBed() {
         return true;
     }
-    public int getNumberOfSeat(){
+
+    public int getNumberOfSeat() {
         return 2;
     }
-    public String getFuel(){
+
+    public String getFuel() {
         return "Diesel";
     }
 

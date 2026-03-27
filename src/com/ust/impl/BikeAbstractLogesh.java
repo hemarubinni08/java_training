@@ -2,8 +2,8 @@ package com.ust.impl;
 
 import com.ust.VehicleAbstractLogesh;
 
-public  class BikeAbstractLogesh extends VehicleAbstractLogesh {
-    public  Integer numberofWheels() {
+public class BikeAbstractLogesh extends VehicleAbstractLogesh {
+    public Integer numberofWheels() {
         return 2;
     }
 
