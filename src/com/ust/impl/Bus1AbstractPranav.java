@@ -1,8 +1,8 @@
 package com.ust.impl;
 
-import com.ust.VehicleAbstractPranav;
+import com.ust.HeavyVehicleAbstractPranav;
 
-public class Bus1AbstractPranav extends VehicleAbstractPranav {
+public class Bus1AbstractPranav extends HeavyVehicleAbstractPranav {
     @Override
     public int numberOfWheels() {
         return 8;
@@ -16,5 +16,20 @@ public class Bus1AbstractPranav extends VehicleAbstractPranav {
     @Override
     public String fuelType() {
         return "Diesel";
+    }
+
+    @Override
+    public boolean hasAc() {
+        return false;
+    }
+
+    @Override
+    public boolean isPublicTransport() {
+        return false;
+    }
+
+    @Override
+    public boolean hasSunRoof() {
+        return false;
     }
 }
