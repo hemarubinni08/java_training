@@ -65,6 +65,7 @@ public class Object{
     public static void main(String[] args){
         List<Integer> list1 = new ArrayList<>();
         List<Integer> list2 = new ArrayList<>();
+
         list1.add(1);
         list1.add(2);
         list1.add(3);
@@ -79,5 +80,7 @@ public class Object{
         List<Integer> result = mergelist(list1,list2);
         System.out.println(result);
 
+
     }
 }
+// names.stream().filter(name-> name.equalsIgnoreCase("shree")).forEach(name-> System.out.println(name));
