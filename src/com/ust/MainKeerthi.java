@@ -1,15 +1,33 @@
 package com.ust;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainKeerthi {
     public static void main(String[] args) {
-        Vehicle scooty = new ScootyKv();
-        Vehicle bike = new BikeKv();
-        CarKv car=new CarKv();
-        Vehicle truck = new TruckKv();
-        System.out.println("no of wheels:" + scooty.noOfWheels());
-        System.out.println("Max speed:" + car.maxSpeed());
-        System.out.println("Brand name:" + bike.getBrand());
-        System.out.println("Car has AC:" + car.hasAc());
-        System.out.println("No of passengers:" + car.noOfPassengers());
+
+        List<String> names = new ArrayList<>();
+        names.add("keerthi");
+        names.add("navya");
+        names.add("deepak");
+        names.add("gokul");
+        names.add("harsh");
+        names.add("rohit");
+        List<String> sree = new ArrayList<>();
+        sree.add("keerthi");
+        sree.add("anu");
+        sree.add("lekya");
+        sree.add("lali");
+        sree.add("jp");
+        sree.add("kush");
+        CollectionKv obj = new CollectionKv();
+        List<String> result = obj.getNonDuplicate(names, sree);
+        obj.collectionIterations(result);
+
+        //CollectionKv.collectionIterations(names);
+        //CollectionKv.collectionIteration(names);
+        //CollectionKv.listIteration(sree);
+
+
     }
 }
