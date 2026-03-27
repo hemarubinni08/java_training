@@ -2,6 +2,10 @@ package com.ust;
 
 import com.ust.impl.*;
 
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainNagarajan {
     public static void main(String[] args) {
 
@@ -43,7 +47,7 @@ public class MainNagarajan {
 //        System.out.println(bike.ride());
 //        System.out.println(bike.stop());
 //        System.out.println();
-
+//
 //        CarNagarajanImpl carI = new CarNagarajanImpl();
 //        carI.brand = "BMW";
 //        carI.speed = 160;
@@ -63,7 +67,7 @@ public class MainNagarajan {
 //        truck.load = 800;
 //        truck.door = 2;
 //        truck.ac = false;
-
+//
 //        System.out.println("Car Information");
 //        System.out.println(carI.start());
 //        System.out.println(carI.displayInfo());
@@ -83,50 +87,92 @@ public class MainNagarajan {
 //        System.out.println(truck.loadingInfo());
 //        System.out.println(truck.stop());
 //        System.out.println();
-
+//
 //        System.out.println("Bike Information");
 //        System.out.println(bikeI.start());
 //        System.out.println(bikeI.displayInfo());
 //        System.out.println(bikeI.ride());
 //        System.out.println(bikeI.stop());
 //        System.out.println();
+//
+//       Creating object and assigining values for abstract class
+//        CarAbstractNagarajanImpl carA = new CarAbstractNagarajanImpl();
+//        carA.brand = "BMW";
+//        carA.speed = 160;
+//
+//        BikeAbstractNagarajanImpl bikeA = new BikeAbstractNagarajanImpl();
+//        bikeA.brand = "DUCATI";
+//        bikeA.speed = 140;
+//
+//        TruckAbstractNagarajanImpl truckA = new TruckAbstractNagarajanImpl();
+//        truckA.brand = "VOLVO";
+//        truckA.speed = 80;
+//
+//        System.out.println("Car Information");
+//        System.out.println(carA.start());
+//        System.out.println(carA.displayInfo());
+//        System.out.println(carA.openCarDoor());
+//        System.out.println(carA.stop());
+//        System.out.println();
+//
+//        System.out.println("Truck Information");
+//        System.out.println(truckA.start());
+//        System.out.println(truckA.displayInfo());
+//        System.out.println(truckA.loadingInfo());
+//        System.out.println(truckA.stop());
+//        System.out.println();
+//
+//        System.out.println("Bike Information");
+//        System.out.println(bikeA.start());
+//        System.out.println(bikeA.displayInfo());
+//        System.out.println(bikeA.ride());
+//        System.out.println(bikeA.stop());
+//        System.out.println();
 
-        CarAbstractNagarajanImpl carA = new CarAbstractNagarajanImpl();
-        carA.brand = "BMW";
-        carA.speed = 160;
-
-        BikeAbstractNagarajanImpl bikeA = new BikeAbstractNagarajanImpl();
-        bikeA.brand = "DUCATI";
-        bikeA.speed = 140;
-
-        TruckAbstractNagarajanImpl truckA = new TruckAbstractNagarajanImpl();
-        truckA.brand = "VOLVO";
-        truckA.speed = 80;
-
-        System.out.println("Car Information");
-        System.out.println(carA.start());
-        System.out.println(carA.displayInfo());
-        System.out.println(carA.openCarDoor());
-        System.out.println(carA.stop());
+        ArthimeticNagarajan add = new ArthimeticNagarajan();
+        System.out.println(add.addNumber(1, 4));
+        System.out.println(add.addNumber(1, 3, 4));
         System.out.println();
 
-        System.out.println("Truck Information");
-        System.out.println(truckA.start());
-        System.out.println(truckA.displayInfo());
-        System.out.println(truckA.loadingInfo());
-        System.out.println(truckA.stop());
-        System.out.println();
+        CollectionsNagarajan listOfNames = new CollectionsNagarajan();
+        List<String> nameList1 = new ArrayList<>();
+        nameList1.add("Nagarajan");
+        nameList1.add("Chris");
+        nameList1.add("Mamtha");
+        nameList1.add("Deepshee");
+        nameList1.add("Bewin");
+        nameList1.add("Aiswarya");
 
-        System.out.println("Bike Information");
-        System.out.println(bikeA.start());
-        System.out.println(bikeA.displayInfo());
-        System.out.println(bikeA.ride());
-        System.out.println(bikeA.stop());
+        List<String> nameList2 = new ArrayList<>();
+        nameList2.add("Nagarajan");
+        nameList2.add("Virat Kohli");
+        nameList2.add("Ronaldo");
+        nameList2.add("Messi");
+        nameList2.add("Vijay");
+        nameList2.add("Curry");
+
+        System.out.println("Using for each!");
+        listOfNames.itreateList(nameList1);
         System.out.println();
+        System.out.println("Using Lamda!");
+        listOfNames.itreateUsingLamda(nameList1);
+
+        System.out.println();
+        System.out.println("Filter using For Each");
+        listOfNames.filterNameUsingForEach(nameList1);
+        System.out.println();
+        System.out.println("Filter using Lamda");
+        listOfNames.filterNameUsingLamda(nameList1);
+
+        System.out.println();
+        System.out.println("Removing name using For Each");
+        listOfNames.removeDuplicateUsingForEach(nameList1, nameList2);
+
+        System.out.println();
+        System.out.println("Removing name using Lambda");
+        listOfNames.removeDuplicateUsingLambda(nameList1, nameList2);
 
     }
-
-
 }
 
 /*
