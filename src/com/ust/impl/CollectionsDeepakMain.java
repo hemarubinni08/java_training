@@ -12,7 +12,7 @@ public class CollectionsDeepakMain {
 //        list.add("Gokul");
 //        list.add("Rohit");
 //        list.add("Harsh");
-//        list.add("Keerthi");....
+//        list.add("Keerthi");......
 
 
         ArrayList<Integer> list1 = new ArrayList<>();
