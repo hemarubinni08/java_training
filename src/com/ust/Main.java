@@ -17,8 +17,7 @@ public class Main {
         names.add("Anu");
         names.add("Akash");
         CollectionHemanth getNames = new CollectionHemanth();
-        getNames.doIterate(names);
-
+        getNames.eliminateNeighbour(names);
 
 
 
