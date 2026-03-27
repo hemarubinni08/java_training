@@ -1,15 +1,16 @@
 package com.ust;
 
 public class Arithmetic {
-    public static void main(String[] args)
-    {
-        Arithmetic obj=new Arithmetic();
-        obj.calculate(2,4);
+    public int add(int a, int b){
+        return a+b;
     }
+    public double add(double a, double b){
+        return a-b;
+    }
+    public static void main(String[] args){
 
-    public static void calculate(int a,int b){
-        System.out.println("Add: " + (a + b));
-        System.out.println("Sub: " + (a - b));
-        System.out.println("Mul: " + (a * b));
+        Arithmetic obj = new Arithmetic();
+        System.out.println(obj.add(5.5, 6.9));
+
     }
 }
