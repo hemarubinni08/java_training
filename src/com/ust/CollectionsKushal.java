@@ -20,6 +20,7 @@ public class CollectionsKushal {
                 System.out.println(podMember);
             }
         }
+
         System.out.println("c1");
         podMembersList.stream().filter(podMember -> !podMember.equals("Srujan")).toList().forEach(podMember-> System.out.println(podMember));
         System.out.println("c2");
