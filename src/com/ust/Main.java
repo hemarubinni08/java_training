@@ -1,13 +1,15 @@
 package com.ust;
 
+import com.ust.impl.FourWheelersHemanthImpl;
+import com.ust.impl.TwoWheelersHemanthImpl;
+
 public class Main {
     public static void main(String[] args) {
-        SixWheelersHemanth sixwheeler = new SixWheelersHemanth();
-        System.out.println(sixwheeler.modelName());
-        System.out.println(sixwheeler.hasAc());
-        System.out.println(sixwheeler.maximumSpeed());
-        System.out.println(sixwheeler.typeOfVehicle());
-        FourWheelersHemanth fourwheels = new FourWheelersHemanth();
-        System.out.println(fourwheels.numberOfWheels());
+        FourWheelersHemanthImpl four = new FourWheelersHemanthImpl();
+        System.out.println(four.typeOfVehicle());
+        System.out.println(four.hasAc());
+        VehicleInterfaceHemanth bike = new TwoWheelersHemanthImpl();
+        bike.typeOfVehicle();
+        bike.mileage();
     }
 }
