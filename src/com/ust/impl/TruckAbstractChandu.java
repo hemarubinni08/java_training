@@ -1,8 +1,9 @@
 package com.ust.impl;
 
+import com.ust.HeavyVehicleAbstractChandu;
 import com.ust.VehicleAbstarctChandu;
 
-public class TruckAbstractChandu extends VehicleAbstarctChandu {
+public class TruckAbstractChandu extends HeavyVehicleAbstractChandu {
     @Override
     public String fuel() {
         return "";
