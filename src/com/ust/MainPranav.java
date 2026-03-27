@@ -2,21 +2,32 @@ package com.ust;
 
 import com.ust.impl.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainPranav {
     public static void main(String[] args) {
-//        Bike1abstractPranav bp = new Bike1abstractPranav();
-//        Car1AbstractPranav cp = new Car1AbstractPranav();
-//        Truck1PranavImpl tp = new Truck1PranavImpl();
-//        Bus1AbstractPranav bsp = new Bus1AbstractPranav();
-//        System.out.println(
-//                "Bike = Bike Engine : " + bp.engineCapacity() + " | Bike Wheels : " + bp.numberOfWheels() + " | Bike Fuel : " + bp.fuelType());
-//        System.out.println("CAr = Car Engine : " +
-//                cp.engineCapacity() + " | Car wheels : " + cp.numberOfWheels() + " | Car Fuel : " + cp.fuelType());
-//        System.out.println("Truck = Truck Engine " +
-//                tp.engineCapacity() + " | Truck Wheels : " + tp.numberOfWheels() + " | Truck Fuel : " + tp.fuelType() + " | Has Sunroof : " + tp.hasSunRoof() + " | is Heavy : " + tp.isHeavy());
-//        System.out.println("Bus = " + bsp.engineCapacity() + " | Bus Wheels : " + bsp.numberOfWheels() + " | Bus Fuel : " + bsp.fuelType() + " | Has Sunroof : " + tp.hasSunRoof() + " | is Heavy : " + tp.isHeavy());
-    ArithemeticProgramPranav ap = new ArithemeticProgramPranav();
-    System.out.println(ap.multiplyNumbers(5,5));
-    System.out.println(ap.multiplyNumbers(5,5,5));
+
+        List<String> list1 = new ArrayList<>();
+        list1.add("Pranav");
+        list1.add("Harsha");
+        list1.add("Chandu");
+        list1.add("Navaneeth");
+        list1.add("Varsha");
+        list1.add("Deepa");
+
+        List<String> list2 = new ArrayList<>();
+        list2.add("Pranav");
+        list2.add("manu");
+        list2.add("kris");
+        list2.add("hari");
+        list2.add("ram");
+        list2.add("gopal");
+        list2.add("john");
+
+        CollectionJavaPranav cp = new CollectionJavaPranav();
+        cp.findDuplicate(list1, list2);
+
     }
 }
+
