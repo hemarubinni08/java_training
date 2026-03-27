@@ -13,6 +13,7 @@ public class CollectionsDeepa {
 
         namesList.forEach(name -> System.out.println(name));
     }
+
     public void ignoreName(List<String> namesList) {
 
         for (String nameIgnored : namesList) {
@@ -20,11 +21,11 @@ public class CollectionsDeepa {
                 System.out.println(nameIgnored);
             }
         }
-        namesList.stream().filter(name->!name.equalsIgnoreCase("Varsha")).toList().forEach(name->System.out.println(name));
+        namesList.stream().filter(name -> !name.equalsIgnoreCase("Varsha")).toList().forEach(name -> System.out.println(name));
 //        System.out.println(namesList.stream().filter(name->!name.equalsIgnoreCase("Varsha")).toList());
     }
 
-    public List removeDuplicates(List<String> nameList1,List<String> nameList2, List<String> result,List<String> combineList){
+    public List removeDuplicates(List<String> nameList1, List<String> nameList2, List<String> result, List<String> combineList) {
 
         combineList.addAll(nameList1);
         combineList.addAll(nameList2);
@@ -38,8 +39,8 @@ public class CollectionsDeepa {
 //                result.add(name);
 //            }
 //        }
-        for(String name: combineList){
-            if(!(nameList2.contains(name) && nameList1.contains(name))){
+        for (String name : combineList) {
+            if (!(nameList2.contains(name) && nameList1.contains(name))) {
                 result.add(name);
             }
         }
@@ -48,7 +49,7 @@ public class CollectionsDeepa {
 //        nameList1.stream().filter(name->!nameList2.contains(name)).forEach(name->result.add(name));
 //        nameList2.stream().filter(name->!nameList1.contains(name)).forEach(name->result.add(name));
 //
-        combineList.stream().filter(name->!(nameList1.contains(name) && nameList2.contains(name))).forEach(name->result.add(name));
+        combineList.stream().filter(name -> !(nameList1.contains(name) && nameList2.contains(name))).forEach(name -> result.add(name));
         return result;
     }
 }

@@ -14,8 +14,8 @@ public class MainDk {
         List<String> namesList = new ArrayList<>();
         List<String> nameList1 = new ArrayList<>();
         List<String> nameList2 = new ArrayList<>();
-        List<String> result=new ArrayList<>();
-        List<String>combineList=new ArrayList<>();
+        List<String> result = new ArrayList<>();
+        List<String> combineList = new ArrayList<>();
 
         namesList.add("Deepa");
         namesList.add("Varsha");
@@ -44,7 +44,7 @@ public class MainDk {
 //        cd.ignoreName(namesList);
 
 //        System.out.println(cd.removeDuplicates(nameList1,nameList2,result));
-        cd.removeDuplicates(nameList1,nameList2,result,combineList);
+        cd.removeDuplicates(nameList1, nameList2, result, combineList);
         result.forEach(System.out::println);
 
     }
