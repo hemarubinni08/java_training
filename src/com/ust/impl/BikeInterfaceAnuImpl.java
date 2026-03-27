@@ -2,7 +2,7 @@ package com.ust.impl;
 
 import com.ust.VehicleInterfaceAnu;
 
-public class ScootyInterfaceImpl implements VehicleInterfaceAnu {
+public class BikeInterfaceAnuImpl implements VehicleInterfaceAnu {
     @Override
     public int noOfWheels() {
         return 2;
@@ -10,11 +10,11 @@ public class ScootyInterfaceImpl implements VehicleInterfaceAnu {
 
     @Override
     public int maxSpeed() {
-        return 50;
+        return 70;
     }
 
     @Override
     public String getBrand() {
-        return "Activa";
+        return "Royal Enfield";
     }
 }

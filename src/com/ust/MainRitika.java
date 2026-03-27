@@ -7,31 +7,49 @@ import com.ust.impl.VechicleInterfaceImpl;
 
 public class MainRitika {
     public static void main(String[] args) {
-        VechicleInterfaceRitu car=new CarInterfaceImpl();
-        TruckInterfaceImpl truck=new TruckInterfaceImpl();
-        VechicleInterfaceRitu bike= new BikeInterfaceImpl();
-//        HeavyVechicleInterface truck=new TruckInterfaceImpl();
-
-
-        System.out.println("number of wheels in car: " + car.noOfWheels());
-        System.out.println("Mileage of Bike: " + bike.mileage());
-        System.out.println("Number of people in truck: " + truck.noOfPeople());
-
-
-
-/**        CarRitu car = new CarRitu();
-        VechicleRitu bike = new BikeRitu();
-        TruckRitu truck = new TruckRitu();
-        VechicleRitu bmw = new BmwRitu();
-
-        System.out.println("number of wheels in car: " + car.noOfWheels());
-        System.out.println("Mileage of Bike " + bike.mileage());
-        System.out.println("Speed of Truck: " + truck.speed());
-        System.out.println("number of wheels in BMW: " + bmw.noOfWheels());
-        System.out.println("Brand name of car: " + car.brandName());
-        System.out.println("In Truck ac is there or not: " + truck.hasAC());
-*/
-
+        ArithmeticRitika obj = new ArithmeticRitika();
+        System.out.println("Addition: " + " " + obj.addition(3, 4));
+        System.out.println("Multiple: " + " " + obj.multiple(10, 4));
 
     }
 }
+/**
+ * VechicleAbstractRitu car = new CarAbstractRitu();
+ * TruckAbstractRitu truck = new TruckAbstractRitu();
+ * VechicleAbstractRitu bike = new BikeAbstractRitu();
+ * <p>
+ * System.out.println("Number of wheels in car: " + car.noOfTyres());
+ * System.out.println("Mileage of Bike: " + bike.mileage());
+ * System.out.println("Number of people in truck: " + truck.noOfPeople());
+ * <p>
+ * }
+ * }
+ */
+
+/**
+ * VechicleInterfaceRitu car=new CarInterfaceImpl();
+ * TruckInterfaceImpl truck=new TruckInterfaceImpl();
+ * VechicleInterfaceRitu bike= new BikeInterfaceImpl();
+ * HeavyVechicleInterface truck=new TruckInterfaceImpl();
+ * <p>
+ * <p>
+ * System.out.println("number of wheels in car: " + car.noOfWheels());
+ * System.out.println("Mileage of Bike: " + bike.mileage());
+ * System.out.println("Number of people in truck: " + truck.noOfPeople());
+ */
+
+
+/**     CarRitu car = new CarRitu();
+ VechicleRitu bike = new BikeRitu();
+ TruckRitu truck = new TruckRitu();
+ VechicleRitu bmw = new BmwRitu();
+
+ System.out.println("number of wheels in car: " + car.noOfWheels());
+ System.out.println("Mileage of Bike " + bike.mileage());
+ System.out.println("Speed of Truck: " + truck.speed());
+ System.out.println("number of wheels in BMW: " + bmw.noOfWheels());
+ System.out.println("Brand name of car: " + car.brandName());
+ System.out.println("In Truck ac is there or not: " + truck.hasAC());
+ */
+
+

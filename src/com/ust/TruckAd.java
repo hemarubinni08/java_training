@@ -1,6 +1,6 @@
 package com.ust;
 
-public class TruckAd extends HeavyVehicles {
+public class TruckAd extends HeavyVehiclesAnu {
     public int noOfWheels() {
         return 4;
     }
