@@ -12,7 +12,10 @@ public class MainNavya {
         list.add("Navya");
         list.add("Gokul");
         list.add("Harsh");
+        list.add("Rohith");
 
-        CollectionNavya.iterationCollection(list);
+        //CollectionNavya.iterationCollection(list);
+        CollectionNavya.filterIteration(list);
     }
+
 }
