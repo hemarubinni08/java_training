@@ -15,10 +15,11 @@ public class Main_akash {
         System.out.println("Enter numbers");
         int first_number = sc.nextInt();
         int second_number = sc.nextInt();
-        System.out.println("Sum of numbers: " + ArithmeticAkash.add(first_number, second_number));
-        System.out.println("Difference of numbers: " + ArithmeticAkash.subtract(first_number, second_number));
-        System.out.println("Multiplication result of numbers: " + ArithmeticAkash.multiply(first_number, second_number));
-        System.out.println("Division of numbers: " + ArithmeticAkash.division(first_number, second_number));
+        int third_number = sc.nextInt();
+        System.out.println("Sum of numbers: " + ArithmeticAkash.add(first_number, second_number, third_number));
+        System.out.println("Difference of numbers: " + ArithmeticAkash.subtract(first_number, second_number, third_number));
+        System.out.println("Multiplication result of numbers: " + ArithmeticAkash.multiply(first_number, second_number, third_number));
+        System.out.println("Division of numbers: " + ArithmeticAkash.division(first_number, second_number, third_number));
         //Driver for Vehicle class
         VehicleAkash vehicleAkash = new VehicleAkash();
         System.out.println("The details from the parent");
