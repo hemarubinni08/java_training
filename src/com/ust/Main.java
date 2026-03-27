@@ -10,14 +10,21 @@ import com.ust.impl.TwoWheelersHemanthImpl;
 public class Main {
     public static void main(String[] args) {
         List<String> names = new ArrayList<>();
+        List<String> names1 = new ArrayList<>();
         names.add("Hemanth");
         names.add("Yesh");
         names.add("Ardra");
         names.add("Ritu");
         names.add("Anu");
         names.add("Akash");
+        names1.add("Hemanth");
+        names1.add("Yes");
+        names1.add("Ardra");
+        names1.add("Rit");
+        names1.add("An");
+        names1.add("Akas");
         CollectionHemanth getNames = new CollectionHemanth();
-        getNames.eliminateNeighbour(names);
+        System.out.print(getNames.duplicateElements(names,names1));
 
 
 
