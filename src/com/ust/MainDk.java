@@ -6,6 +6,7 @@ public class MainDk {
         System.out.println(a.addition(2, 3));
         System.out.println(a.subtraction(5, 4));
         System.out.println(a.multiplication(2, 3));
+        System.out.println(a.multiplication(3, 4, 5));
         System.out.println(a.division(10, 2));
     }
 }
