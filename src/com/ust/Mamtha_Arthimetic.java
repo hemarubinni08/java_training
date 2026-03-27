@@ -7,12 +7,16 @@ public class Mamtha_Arthimetic {
         System.out.println(oprators.subtraction(5, 3));
         System.out.println(oprators.multiplication(3, 5));
         System.out.println(oprators.division(8, 4));
+        System.out.println(oprators.addition(2,3,4));
     }
 }
 
 class Arithmetic {
     public static int addition(int num1, int num2) {
         return num1 + num2;
+    }
+    public static int addition(int num1, int num2, int num3) {
+        return num1+num2+num3;
     }
     public static int subtraction(int num1, int num2) {
         return num1 - num2;
