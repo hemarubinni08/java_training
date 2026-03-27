@@ -2,11 +2,11 @@ package com.ust;
 
 public class BikeAbstractChaila extends VehicleAbstractChaila{
     @Override
-    protected Integer getNumberOfSeats() {
+    public Integer getNumberOfSeats() {
         return 2;
     }
     @Override
-    protected Integer getNumberOfWheels() {
+    public Integer getNumberOfWheels() {
         return 2;
     }
 }
