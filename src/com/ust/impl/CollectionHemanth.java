@@ -29,6 +29,8 @@ public class CollectionHemanth {
     }
 
     public List<String> duplicateElements(List<String> batchNames, List<String> batchNames1) {
+        List<String> returnList = new ArrayList<>();
+        List<String> combinedList = new ArrayList<>();
         /*String temp = "";
         for (String names : batchNames1) {
             if(batchNames.contains(names)){
@@ -39,10 +41,16 @@ public class CollectionHemanth {
                 batchNames.add(names);
             }
             }
-        return  batchNames;*/
+        return  batchNames;
+        for(String names : combinedList){
+        if (!(batchName.contains(names) && batchName1.contains(names)){
+        resultList.add(names);
+        }
+        }
+        return resultList;
+        */
 
-        List<String> returnList = new ArrayList<>();
-       // batchNames.stream().filter(name-> !batchNames1.contains(name)).forEach(returnList::add);
+        // batchNames.stream().filter(name-> !batchNames1.contains(name)).forEach(returnList::add);
         //batchNames1.stream().filter(name-> !batchNames.contains(name)).forEach(returnList::add);
         returnList.addAll(batchNames);
         returnList.addAll(batchNames1);
