@@ -1,24 +1,24 @@
 package com.ust;
 
 public class VehiclesGopi {
-    public int WheelsCount() {
+    public int wheelsCount() {
         return 4;
     }
 
-    public String TyreName() {
+    public String tyreName() {
         return "MRF";
     }
 
-    public String SeatColour() {
+    public String seatColour() {
         return "Black";
     }
 
-    public int Mileage() {
+    public int mileage() {
         return 88;
     }
 
-    public boolean Gears() {
-        return true;
+    public boolean gears() {
+        return false;
     }
 
     public int price() {

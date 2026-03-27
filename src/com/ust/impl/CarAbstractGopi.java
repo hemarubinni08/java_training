@@ -1,6 +1,6 @@
-package com.ust;
+package com.ust.impl;
 
-public class CarGopi extends VehiclesGopi {
+public class CarAbstractGopi {
     public int price(){
         return 578998;
     }

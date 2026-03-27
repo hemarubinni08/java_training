@@ -1,7 +1,7 @@
 package com.ust;
 
 public class HeavyVehicles extends VehiclesGopi {
-    public Boolean gears() {
+    public boolean gears() {
         return true;
     }
     public int price() {

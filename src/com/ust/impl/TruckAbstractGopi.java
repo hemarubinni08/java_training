@@ -1,6 +1,8 @@
-package com.ust;
+package com.ust.impl;
 
-public class TruckGopi {
+import com.ust.VehicleAbstractGopi;
+
+public abstract class TruckAbstractGopi extends VehicleAbstractGopi {
     public int price() {
         return 1000000;
     }

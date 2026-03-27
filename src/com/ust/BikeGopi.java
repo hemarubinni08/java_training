@@ -1,13 +1,13 @@
 package com.ust;
 
 public class BikeGopi extends VehiclesGopi {
-    public int WheelsCount() {
+    public int wheelsCount() {
         return 2;
     }
-    public Boolean gears() {
+    public boolean gears() {
         return false;
     }
-    public String TyreName() {
+    public String tyreName() {
         return "TVS";
     }
 }
