@@ -1,8 +1,8 @@
 package com.ust.impl;
 
-import com.ust.VehicleInterfaceShashi;
+import com.ust.VehicleAbstractShashi;
 
-public class VehicleInterfaceShashiImpl implements VehicleInterfaceShashi {
+public class CarAbstractShashiImpl extends VehicleAbstractShashi {
     public int getNumberOfWheels() {
         return 4;
     }
@@ -24,6 +24,14 @@ public class VehicleInterfaceShashiImpl implements VehicleInterfaceShashi {
     }
 
     public int getYearsOfInsurance() {
-        return 5;
+        return 2;
+    }
+
+    public String getDoorOpeningType() {
+        return "Standard";
+    }
+
+    public boolean getAirConditioning() {
+        return true;
     }
 }
