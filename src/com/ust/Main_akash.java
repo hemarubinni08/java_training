@@ -1,16 +1,20 @@
 package com.ust;
 //Driver code for ArithmeticAkash and VehicleAkash and its child classes.
 
+import com.ust.collections.IterationAkash;
 import com.ust.impl.BikeInterfaceAkashImpl;
 import com.ust.impl.CarInterfaceAkashImpl;
 import com.ust.impl.LuxuryCarInterfaceAkashImpl;
 import com.ust.impl.TruckInterfaceAkashImpl;
 
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main_akash {
     public static void main(String[] args) {
-        ArithmeticAkash arithmeticObject = new ArithmeticAkash();
+        /*ArithmeticAkash arithmeticObject = new ArithmeticAkash();
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter numbers");
         int first_number = sc.nextInt();
@@ -279,6 +283,25 @@ public class Main_akash {
         } else {
             System.out.println("This is a single axle vehicle");
         }
-        System.out.println("----------------------------------------------------");
+        System.out.println("----------------------------------------------------");*/
+
+        IterationAkash iterationAkash = new IterationAkash();
+        Scanner sc=new Scanner(System.in);
+        List<String> names= new ArrayList<>();
+        System.out.println("Enter the names");
+        String name="";
+        for(int i=0;i<6;i++)
+        {
+            name=sc.nextLine();
+            names.add(name);
+        }
+        System.out.println();
+        System.out.println("Iteration using For loop");
+        iterationAkash.nameIterationForLoop(names);
+        System.out.println();
+        System.out.println("Iteration using Stream");
+        iterationAkash.nameIterationStream(names);
+        System.out.println("Iteration using Stream neighbour deletion");
+        iterationAkash.deleteNeighbour(names);
     }
 }
