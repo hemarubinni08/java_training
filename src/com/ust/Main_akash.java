@@ -2,6 +2,7 @@ package com.ust;
 //Driver code for ArithmeticAkash and VehicleAkash and its child classes.
 
 import com.ust.collections.IterationAkash;
+import com.ust.collections.RemoveDuplicateAkash;
 import com.ust.impl.BikeInterfaceAkashImpl;
 import com.ust.impl.CarInterfaceAkashImpl;
 import com.ust.impl.LuxuryCarInterfaceAkashImpl;
@@ -283,7 +284,7 @@ public class Main_akash {
         } else {
             System.out.println("This is a single axle vehicle");
         }
-        System.out.println("----------------------------------------------------");*/
+        System.out.println("----------------------------------------------------");
 
         IterationAkash iterationAkash = new IterationAkash();
         Scanner sc=new Scanner(System.in);
@@ -302,6 +303,31 @@ public class Main_akash {
         System.out.println("Iteration using Stream");
         iterationAkash.nameIterationStream(names);
         System.out.println("Iteration using Stream neighbour deletion");
-        iterationAkash.deleteNeighbour(names);
+        iterationAkash.deleteNeighbour(names);*/
+        RemoveDuplicateAkash removeDuplicateAkash = new RemoveDuplicateAkash();
+        Scanner sc=new Scanner(System.in);
+        List<String> names1= new ArrayList<>();
+        System.out.println("Enter the names");
+        String name1="";
+        for(int i=0;i<2;i++)
+        {
+            name1=sc.nextLine();
+            names1.add(name1);
+        }
+        List<String> names2= new ArrayList<>();
+        System.out.println("Enter the names");
+        String name2="";
+        for(int i=0;i<2;i++)
+        {
+            name2=sc.nextLine();
+            names2.add(name2);
+        }
+        System.out.println();
+        System.out.println("Elimination of duplicates using for loop");
+        removeDuplicateAkash.removeUSingFor(names1, names2);
+        System.out.println("Elimination of duplicates using stream");
+        removeDuplicateAkash.removeUSingStream(names1, names2);
+        System.out.println("Elimination of duplicates using one for loop");
+        removeDuplicateAkash.removeUSingForOptimised(names1, names2);
     }
 }
