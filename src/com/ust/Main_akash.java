@@ -1,18 +1,15 @@
 package com.ust;
 //Driver code for ArithmeticAkash and VehicleAkash and its child classes.
 
-import com.ust.collections.IterationAkash;
-import com.ust.collections.RemoveDuplicateAkash;
-import com.ust.impl.BikeInterfaceAkashImpl;
-import com.ust.impl.CarInterfaceAkashImpl;
-import com.ust.impl.LuxuryCarInterfaceAkashImpl;
-import com.ust.impl.TruckInterfaceAkashImpl;
+import com.ust.collections.HashMapAkash;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
 public class Main_akash {
     public static void main(String[] args) {
-        ArithmeticAkash arithmeticObject = new ArithmeticAkash();
+        /*ArithmeticAkash arithmeticObject = new ArithmeticAkash();
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter numbers");
         int first_number = sc.nextInt();
@@ -336,5 +333,22 @@ public class Main_akash {
         System.out.println("Elimination of duplicates using Hashset For loop");
         removeDuplicateAkash.removeUSingHashSetForLoop(namesHash1, namesHash2);
         System.out.println();
+         */
+        Scanner sc = new Scanner((System.in));
+        System.out.println("Enter EMPID and name of employees");
+        System.out.println();
+        Map<Integer, String> record = new HashMap<>();
+        int empid = 0;
+        String name = "";
+        for (int i = 0; i < 2; i++) {
+            System.out.println("Enter EMPID:");
+            empid = sc.nextInt();
+            sc.nextLine();
+            System.out.println("Enter name:");
+            name = sc.nextLine();
+            record.put(empid, name);
+        }
+        HashMapAkash hashMapAkash = new HashMapAkash();
+        hashMapAkash.printValues(record);
     }
 }
