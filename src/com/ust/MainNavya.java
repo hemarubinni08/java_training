@@ -49,7 +49,7 @@ public class MainNavya {
 //        CollectionSetNavya.iterationCollection(name);
 //        CollectionSetNavya.filterIteration(name);
 //        CollectionSetNavya.mergeWithoutDuplicates(set1, set2);
-        CollectionSetNavya.tempDuplicates(set1, set2);
+        //CollectionSetNavya.tempDuplicates(set1, set2);
 
 
         //mapppp
@@ -60,7 +60,7 @@ public class MainNavya {
         newMap.put("4", "harhs");
         newMap.put("5", "gokul");
         newMap.put("6", "keerthi");
-        CollectionHashMapNavya.iterationLoop(newMap);
+       // CollectionHashMapNavya.iterationLoop(newMap);
         CollectionHashMapNavya.checkEmployeeById(newMap);
     }
 }
