@@ -20,10 +20,7 @@ public class MainKeerthi {
         sree.add("lali");
         sree.add("jp");
         sree.add("kush");
-        CollectionKv obj = new CollectionKv();
-        List<String> result = obj.getNonDuplicate(names, sree);
-        obj.collectionIterations(result);
-
+        CollectionKv.getNonDuplicate(names,sree);
         //CollectionKv.collectionIterations(names);
         //CollectionKv.collectionIteration(names);
         //CollectionKv.listIteration(sree);

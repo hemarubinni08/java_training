@@ -2,32 +2,39 @@ package com.ust;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 
 public class CollectionKv {
-     public void collectionIterations(List<String> names) {
-         for (String name : names) {
-             System.out.println(name);
-         }
-     }
-    public void listIteration(List<String> sree) {
-       for (String name : sree) {
-            System.out.println(sree);
-        }
-    }
+//     public void collectionIterations(List<String> names) {
+  //       for (String name : names) {
+    //         System.out.println(name);
+      //   }
+     //}
+    //public void listIteration(List<String> sree) {
+      // for (String name : sree) {
+        //    System.out.println(sree);
+        //}
+    //}
 
-    public List<String> getNonDuplicate(List<String> names1, List<String> names2){
+    public static void getNonDuplicate(List<String> names, List<String> sree){
         List<String> mergedList = new ArrayList<>();
-        names1.forEach(name -> mergedList.add(name));
-        names2.forEach(name -> {
-            if (!mergedList.contains(name)) {
-                mergedList.add(name);
-            }
-        });
-        return mergedList;
+        //for(String name: names) {
+            //  if (!name.contains(name)) {
+            //   result.add(name);
+            //  }
+        //}
+        //for(String name: names) {
+            //  if (!name.contains(name)) {
+            //   result.add(name);}
+        //}
+        //names.stream().filter(name->!sree.contains(name)).forEach(result::add);
+        //sree.stream().filter(name->!names.contains(name)).forEach(result::add);
 
-
-
+        Stream.concat(
+                names.stream().filter(name->!sree.contains(name)),
+                sree.stream().filter(name->!names.contains(name))
+        ).forEach(System.out::println);
     }
 
      //public static void collectionIteration(List<String> names) {
