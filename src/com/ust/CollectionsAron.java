@@ -1,8 +1,6 @@
 package com.ust;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 // function to print all the names of people in your pod
 public class CollectionsAron {
@@ -63,7 +61,7 @@ public class CollectionsAron {
     public void removeDuplicateSet(HashSet<String> setNames1, HashSet<String> setNames2) {
         HashSet<String> duplicateSet = new HashSet<>();
         for (String setName1 : setNames1)
-            if(setNames2.contains(setName1))
+            if (setNames2.contains(setName1))
                 duplicateSet.add(setName1);
         HashSet<String> mergedSet = new HashSet<>();
         mergedSet.addAll(setNames1);
@@ -71,6 +69,53 @@ public class CollectionsAron {
         mergedSet.removeAll(duplicateSet);
         mergedSet.forEach(System.out::println);
         System.out.println();
-        mergedSet.stream().filter(Iterator->!duplicateSet.contains(Iterator)).forEach(System.out::println);
+        mergedSet.stream().filter(Iterator -> !duplicateSet.contains(Iterator)).forEach(System.out::println);
+    }
+
+    public void traverseMap(Map<String, String> employeesMap) {
+        for (Map.Entry<String, String> employee : employeesMap.entrySet()) {
+            System.out.println(employee.getKey() + " - " + employee.getValue());
+        }
+        System.out.println();
+        for (String key : employeesMap.keySet()) {
+            System.out.println(key + " - " + employeesMap.get(key));
+        }
+
+    }
+
+    public void removeMeMapKey(Map<String, String> employeesMap, String employeeKey) {
+        for (String key : employeesMap.keySet()) {
+            if (!key.equals("308336"))
+                System.out.println(key + " - " + employeesMap.get(key));
+        }
+        System.out.println();
+        if (employeesMap.containsKey(employeeKey))
+            employeesMap.remove(employeeKey);
+        for (Map.Entry<String, String> employee : employeesMap.entrySet()) {
+            System.out.println(employee.getKey() + " - " + employee.getValue());
+        }
+    }
+
+    public void removeMeMapValue(Map<String, String> employeesMap, String employeeName) {
+        if (employeesMap.containsValue(employeeName)) {
+            employeesMap.values().remove(employeeName);
+        }
+        System.out.println();
+        for (Map.Entry<String, String> employee : employeesMap.entrySet()) {
+            System.out.println(employee.getKey() + " - " + employee.getValue());
+        }
+    }
+
+    public void removeDuplicatesMap(Map<String, String> employeesMap1, Map<String, String> employeesMap2) {
+        HashSet<String> duplicateSet = new HashSet<>();
+        for (Map.Entry<String, String> employee : employeesMap1.entrySet()) {
+            if (employeesMap2.containsValue(employee.getValue())) {
+                employeesMap2.values().remove(employee.getValue());
+                duplicateSet.add(employee.getValue());
+            }
+        }
+        for(String duplicate: duplicateSet)
+            employeesMap2.values().remove(duplicate);
+
     }
 }
