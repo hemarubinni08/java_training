@@ -81,4 +81,25 @@ public class CollectionsShashi {
                 System.out.println(name);
         }
     }
+
+    public void setPrintUniqueName(Set<String> setNames, Set<String> setNames1) {
+        Set<String> duplicateName = new HashSet<>();
+
+        Set<String> mergedSet = new HashSet<>(setNames);
+        mergedSet.addAll(setNames1);
+        System.out.println("printing duplicate name");
+        for (String name : setNames) {
+            if (setNames1.contains(name)) {
+                duplicateName.add(name);
+                System.out.println(name);
+            }
+        }
+        System.out.println("printing only unique name");
+        for (String name : mergedSet) {
+            if (duplicateName.contains(name)) {
+                continue;
+            }
+            System.out.println(name);
+        }
+    }
 }

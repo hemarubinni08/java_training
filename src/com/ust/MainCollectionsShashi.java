@@ -41,6 +41,7 @@ public class MainCollectionsShashi {
         setNames1.add("i");
         collection.setPrintNames(setNames, setNames1);
         collection.setRemoveNeighbour(setNames);
+        collection.setPrintUniqueName(setNames,setNames1);
 
     }
 }
