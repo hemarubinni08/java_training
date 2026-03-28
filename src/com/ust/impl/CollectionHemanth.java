@@ -79,7 +79,7 @@ public class CollectionHemanth {
         //return finalSet.stream().filter(name -> !(batchNAmes.contains(name) && batchNAmes1.contains(name))).collect(Collectors.toSet());
         //return returnSet;
         batchNAmes.stream().filter((name -> batchNAmes1.contains(name))).forEach(tempSet::add);
-        tempSet.stream().forEach(combinedSet::remove);
+        tempSet.forEach(combinedSet::remove);
         //return combinedSet.stream().filter(name -> !(tempSet.contains(name))).collect(Collectors.toSet());
         return combinedSet;
     }
