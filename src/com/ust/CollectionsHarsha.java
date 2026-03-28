@@ -120,17 +120,31 @@ public class CollectionsHarsha {
     }
 
     public List<String> removeDuplicate6(List<String> nameList1, List<String> nameList2){
+        List<String> combine = new ArrayList<>();
+        combine.addAll(nameList1);
+        combine.addAll(nameList2);
+        List<String> result = new ArrayList<>();
+
+        for (String name:combine){
+            if(!(nameList1.contains(name) && nameList2.contains(name))){
+                result.add(name);
+            }
+        }
+
+        return result;
+    }
+
+    //facing some exception issue  in the below removeDuplicate7() method
+    public List<String> removeDuplicate7(List<String> nameList1, List<String> nameList2){
         List<String> result = new ArrayList<>();
         result.addAll(nameList1);
         result.addAll(nameList2);
-
-        String bufferName = "";
+        int count = 0;
         for (String name : result){
-            if(name.equalsIgnoreCase(bufferName)){
-                
+            count = result.stream().filter(name2-> name.equalsIgnoreCase(name2)).toList().size();
+            if (count!=1){
+                result.remove(name);
             }
-            
-          bufferName = name;
         }
         return result;
     }

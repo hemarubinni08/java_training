@@ -15,6 +15,7 @@ public class MainHarshavardhan {
         names.add("Navneeth");
         names.add("Varsha");
         names.add("Deepa");
+        names.add("Rohan");
 
         List<String> names2 = new ArrayList<>();
         names2.add("Anjan");
@@ -33,6 +34,6 @@ public class MainHarshavardhan {
 //          obj.igonreNeighbour(names);
 //          System.out.println();
 //          obj.ignoreNeighbourForLoop(names);
-        System.out.println( obj.removeDuplicate2(names,names2));
+        System.out.println( obj.removeDuplicate6(names,names2));
     }
 }
