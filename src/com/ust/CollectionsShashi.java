@@ -94,6 +94,13 @@ public class CollectionsShashi {
                 System.out.println(name);
             }
         }
+        System.out.println("printing duplicate name via lambda expression from set");
+        setNames.stream().filter(name -> setNames1.contains(name)).forEach(name -> System.out.println(name));
+        System.out.println("printing unique name via lambda expression from set1");
+        setNames.stream().filter(name -> !setNames1.contains(name)).forEach(name -> System.out.println(name));
+        System.out.println("printing unique name via lambda expression from set2");
+        setNames1.stream().filter(name1 -> !setNames.contains(name1)).forEach(name1 -> System.out.println(name1));
+
         System.out.println("printing only unique name");
         for (String name : mergedSet) {
             if (duplicateName.contains(name)) {
@@ -101,5 +108,11 @@ public class CollectionsShashi {
             }
             System.out.println(name);
         }
+        System.out.println("printing unique name via lambda expression from merged set");
+        mergedSet.stream().filter(mergeSet -> !(setNames.contains(mergeSet) && setNames1.contains(mergeSet))).forEach(mergeSet -> System.out.println(mergeSet));
+        System.out.println("printing unique name via lambda expression from merged set ver2");
+        mergedSet.stream().filter(mergeSet -> !setNames.contains(mergeSet) || !setNames1.contains(mergeSet)).forEach(mergeSet -> System.out.println(mergeSet));
+
+
     }
 }
