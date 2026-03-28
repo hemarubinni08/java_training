@@ -1,11 +1,10 @@
 package com.ust;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class MainBewin {
     public static void main(String[] args) {
-        //        int diff = differenceTwoNumbers(5, 2);
+//        int diff = differenceTwoNumbers(5, 2);
 //        int diff1 = differenceTwoNumbers(6, 3, 2) ;
 //        System.out.println(diff);
 //        System.out.println(diff1);
@@ -20,6 +19,7 @@ public class MainBewin {
 //    }
 
         CollectionBew collection = new CollectionBew();
+
         List<String> names1 = new ArrayList<>();
         names1.add("Bewin");
         names1.add("Aishu");
@@ -30,9 +30,25 @@ public class MainBewin {
         names2.add("Bewin");
         names2.add("Kanye");
 
-        collection.filterUsing1Stream(names1, names2);
+        HashSet<String> players1 = new HashSet<>();
+        players1.add("Cristiano");
+        players1.add("Valverde");
+        players1.add("Vini");
 
+        HashSet<String> players2 = new HashSet<>();
+        players2.add("Messi");
+        players2.add("DeBruyne");
+        players2.add("Vini");
 
+        Map<Integer, String> employee = new HashMap<>();
+        employee.put(308332, "Aish");
+        employee.put(308254, "Chris");
+        employee.put(308242, "Naga");
+        employee.put(308341, "Deep");
+        employee.put(308335, "Mamtha");
+        employee.put(308230, "Bewin");
+
+        collection.employeeMapStream(employee);
     }
 }
 
