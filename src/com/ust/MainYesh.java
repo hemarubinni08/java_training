@@ -51,5 +51,15 @@ public class MainYesh {
         firstList.add(4);
         firstList.add(5);
         System.out.println(collectionObject.removingDuplicate(firstList,secondList));
+        Set<Integer> firstSet=new HashSet<>();
+        Set<Integer> secondSet=new HashSet<>();
+        firstSet.add(1);
+        firstSet.add(2);
+        firstSet.add(3);
+        firstSet.add(4);
+        secondSet.add(4);
+        secondSet.add(5);
+        secondSet.add(6);
+        collectionObject.removingDuplicateInSet(firstSet,secondSet);
     }
 }
