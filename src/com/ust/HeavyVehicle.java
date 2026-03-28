@@ -1,11 +1,11 @@
 package com.ust;
 
-public class HeavyVehicle extends Vehicle  {
-    public boolean hasAc()
-    {
+public class HeavyVehicle extends Vehicle {
+    public boolean hasAc() {
         return true;
     }
-    public int noOfPassengers(){
+
+    public int noOfPassengers() {
         return 6;
     }
 
