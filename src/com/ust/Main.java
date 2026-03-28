@@ -1,6 +1,5 @@
 package com.ust;
 
-import com.ust.impl.FourWheelersHemanthImpl;
 import com.ust.impl.TwoWheelersHemanthImpl;
 
 public class Main {
