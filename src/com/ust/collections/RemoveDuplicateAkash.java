@@ -1,7 +1,9 @@
 package com.ust.collections;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class RemoveDuplicateAkash {
     public void removeUSingFor(List<String> names1, List<String> names2) {
@@ -37,5 +39,23 @@ public class RemoveDuplicateAkash {
             }
         }
         ansList.forEach(System.out::println);
+    }
+
+    public void removeUSingHashSet(List<String> names1, List<String> names2) {
+        Set<String> combine = new HashSet<>(names1);
+        combine.addAll(names2);
+        Set<String> duplicates = new HashSet<>(names1);
+        duplicates.retainAll(names2);
+        combine.removeAll(duplicates);
+        combine.forEach(System.out::println);
+    }
+
+    public void removeUSingHashSetLambda(List<String> names1, List<String> names2) {
+        Set<String> namesHash1 = new HashSet<>(names1);
+        Set<String> namesHash2 = new HashSet<>(names2);
+        List<String> combineList = new ArrayList<>();
+        combineList.addAll(names1);
+        combineList.addAll(names2);
+        System.out.println(combineList.stream().filter(name -> !(namesHash1.contains(name) && namesHash2.contains(name))).toList());
     }
 }
