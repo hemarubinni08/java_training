@@ -1,6 +1,5 @@
 package com.ust;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
@@ -18,18 +17,17 @@ public class CollectionKv {
         //}
     //}
 
+
     public static void getNonDuplicate(List<String> names, List<String> sree){
         List<String> mergedList = new ArrayList<>();
-
-        //System.out.println(result);
         //for(String name: names) {
             //  if (!sree.contains(name)) {
-            //   result.add(name);
+            //   mergedList.add(name);
             //  }
         //}
         //for(String name: sree) {
             //  if (!names.contains(name)) {
-            //   result.add(name);}
+            //   mergedList.add(name);}  //System.out.println(mergedList);
         //}
         names.stream().filter(name->!sree.contains(name)).forEach(mergedList::add);
         sree.stream().filter(name->!names.contains(name)).forEach(mergedList::add);

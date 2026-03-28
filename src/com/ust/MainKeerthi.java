@@ -30,21 +30,21 @@ public class MainKeerthi {
          //CollectionKv.getNonDuplicate(names,sree);
 //        CollectionKv.collectionIterations(names);
 //        CollectionKv.collectionIteration(names);
-//        CollectionKv.listIteration(sree);
-        HashSet<String> set1 = new HashSet<>();
-        set1.add("keerthi");
-        set1.add("navya");
-        set1.add("harsh");
-        set1.add("rohit");
-        set1.add("deepak");
-        set1.add("gokul");
-        HashSet<String> set2 = new HashSet<>();
-        set2.add("keerthi");
-        set2.add("anu");
-        set2.add("lekya");
-        set2.add("lali");
-        set2.add("jp");
-        set2.add("kush");
+////        CollectionKv.listIteration(sree);
+//        HashSet<String> set1 = new HashSet<>();
+//        set1.add("keerthi");
+//        set1.add("navya");
+//        set1.add("harsh");
+//        set1.add("rohit");
+//        set1.add("deepak");
+//        set1.add("gokul");
+//        HashSet<String> set2 = new HashSet<>();
+//        set2.add("keerthi");
+//        set2.add("anu");
+//        set2.add("lekya");
+//        set2.add("lali");
+//        set2.add("jp");
+//        set2.add("kush");
 //        CollectionSetKvNew collectionSetKvNew = new CollectionSetKvNew();
 //        collectionSetKvNew.collectionSetIterations(set1);
 //        collectionSetKvNew.hashIteration(set1);
@@ -53,6 +53,8 @@ public class MainKeerthi {
 //      CollectionSetKvNew obj=new CollectionSetKvNew();
 //       System.out.println(obj.removeDuplicateSet(set1,set2));
         CollectionHashMapKv.hashMapIteration((HashMap<String, String>) newMap);
+        CollectionHashMapKv.checkEmployee((HashMap<String, String>) newMap);
+
 
 
 
