@@ -1,9 +1,6 @@
 package com.ust;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class MainCollectionsShashi {
     static void main() {
@@ -42,5 +39,13 @@ public class MainCollectionsShashi {
         collection.setPrintNames(setNames, setNames1);
         collection.setRemoveNeighbour(setNames);
         collection.setPrintUniqueName(setNames, setNames1);
+
+        Map<Integer,String> employeeData=new HashMap<>();
+        employeeData.put(1,"a");
+        employeeData.put(2,"b");
+        employeeData.put(3,"c");
+        employeeData.put(4,"d");
+        employeeData.put(5,"e");
+        collection.mapPrintEmployee(employeeData);
     }
 }

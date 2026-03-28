@@ -1,9 +1,6 @@
 package com.ust;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class CollectionsShashi {
     public void doIterate(List<String> names) {
@@ -111,5 +108,16 @@ public class CollectionsShashi {
         mergedSet.stream().filter(mergeSet -> !(setNames.contains(mergeSet) && setNames1.contains(mergeSet))).forEach(mergeSet -> System.out.println(mergeSet));
         System.out.println("printing unique name via lambda expression from merged set ver2");
         mergedSet.stream().filter(mergeSet -> !setNames.contains(mergeSet) || !setNames1.contains(mergeSet)).forEach(mergeSet -> System.out.println(mergeSet));
+    }
+
+    public void mapPrintEmployee(Map<Integer,String>employeeData){
+        System.out.println("Printing employee data");
+        for (Map.Entry<Integer, String> name:employeeData.entrySet()){
+            System.out.println(name.getKey()+"-"+name.getValue());
+        }
+        System.out.println("Printing employee data");
+        for (Integer key:employeeData.keySet()){
+            System.out.println(key+"-"+employeeData.get(key));
+        }
     }
 }
