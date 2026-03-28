@@ -1,9 +1,6 @@
 package com.ust;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class MainNavya {
     public static void main(String[] args) {
@@ -52,6 +49,18 @@ public class MainNavya {
 //        CollectionSetNavya.iterationCollection(name);
 //        CollectionSetNavya.filterIteration(name);
 //        CollectionSetNavya.mergeWithoutDuplicates(set1, set2);
-        CollectionSetNavya.tempDuplicates(set1,set2);
+        CollectionSetNavya.tempDuplicates(set1, set2);
+
+
+        //mapppp
+        Map<String, String> newMap = new HashMap<>();
+        newMap.put("1", "navya");
+        newMap.put("2", "deepak");
+        newMap.put("3", "rohith");
+        newMap.put("4", "harhs");
+        newMap.put("5", "gokul");
+        newMap.put("6", "keerthi");
+        CollectionHashMapNavya.iterationLoop(newMap);
+        CollectionHashMapNavya.checkEmployeeById(newMap);
     }
 }
