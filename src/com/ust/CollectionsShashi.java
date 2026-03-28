@@ -145,4 +145,16 @@ public class CollectionsShashi {
             System.out.println(name.getKey() + "-" + name.getValue());
         }
     }
+
+    public void removeDuplicateValue(Map<Integer, String> employData, Map<Integer, String> employData1) {
+        Map<Integer, String> mergedMap = new HashMap<>(employData);
+        mergedMap.putAll(employData1);
+        if (mergedMap.containsValue("a")) {
+            employData.values().remove("b");
+        }
+        for (Map.Entry<Integer, String> name : mergedMap.entrySet()) {
+            System.out.println(name.getKey() + "-" + name.getValue());
+        }
+
+    }
 }

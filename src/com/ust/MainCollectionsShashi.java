@@ -40,13 +40,21 @@ public class MainCollectionsShashi {
         collection.setRemoveNeighbour(setNames);
         collection.setPrintUniqueName(setNames, setNames1);
 
-        Map<Integer,String> employeeData=new HashMap<>();
-        employeeData.put(1,"a");
-        employeeData.put(2,"b");
-        employeeData.put(3,"c");
-        employeeData.put(4,"d");
-        employeeData.put(5,"e");
+        Map<Integer, String> employeeData = new HashMap<>();
+        employeeData.put(1, "a");
+        employeeData.put(2, "b");
+        employeeData.put(3, "c");
+        employeeData.put(4, "d");
+        employeeData.put(5, "e");
+
+        Map<Integer, String> employeeData1 = new HashMap<>();
+        employeeData1.put(6, "f");
+        employeeData1.put(7, "g");
+        employeeData1.put(8, "h");
+        employeeData1.put(9, "a");
+        employeeData1.put(10, "i");
         collection.mapPrintEmployee(employeeData);
         collection.mapRemoveOurName(employeeData);
+        collection.removeDuplicateValue(employeeData, employeeData1);
     }
 }
