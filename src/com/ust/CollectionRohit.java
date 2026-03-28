@@ -37,10 +37,7 @@ public class CollectionRohit {
 
     public void combinedList(List<String> l1, List<String> l2) {
         List<String> result = new ArrayList<>();
-        Stream.concat(
-                l1.stream().filter(item -> !l2.contains(item)),
-                l2.stream().filter(item -> !l1.contains(item))
-        ).forEach(result::add);
+        Stream.concat(l1.stream().filter(item -> !l2.contains(item)), l2.stream().filter(item -> !l1.contains(item))).forEach(result::add);
 
         System.out.println("Combined list without duplicates:");
         for (String item : result) {
@@ -50,7 +47,6 @@ public class CollectionRohit {
         result.forEach(System.out::println);
 
     }
-
 
     public void removeNeighbour(List<String> l1) {
         System.out.println("Without neighbour:");
@@ -62,8 +58,7 @@ public class CollectionRohit {
 
         }
         System.out.println("Using lambda");
-        l1.stream().filter(name -> !name.contains("Rohit")).
-                forEach(name -> System.out.println(name));
+        l1.stream().filter(name -> !name.contains("Rohit")).forEach(name -> System.out.println(name));
 
     }
 
@@ -94,12 +89,43 @@ public class CollectionRohit {
 
     public void hashSetLambda(List<String> l1, List<String> l2) {
         Set<String> result = new HashSet<>();
-        Stream.concat(
-                l1.stream().filter(item -> !l2.contains(item)),
-                l2.stream().filter(item -> !l1.contains(item))
-        ).forEach(result::add);
+        Stream.concat(l1.stream().filter(item -> !l2.contains(item)), l2.stream().filter(item -> !l1.contains(item))).forEach(result::add);
         System.out.println("HashLambda:" + result);
     }
+
+    public void hashSetRemoveDupe(List<String> l1, List<String> l2) {
+
+        Set<String> result = new HashSet<>();
+
+        Set<String> duplicates = new HashSet<>();
+
+        result.addAll(l1);
+
+        for (String item : l2) {
+            if (!result.add(item)) {
+                result.remove(item);
+            }
+        }
+
+        System.out.println("Without dupes:");
+        System.out.println(result);
+    }
+
+    public void hashSetRemoveDupeLambda(List<String> l1, List<String> l2) {
+
+        Set<String> result = new HashSet<>();
+
+        result.addAll(l1);
+        result.addAll(l2);
+
+        result.removeAll(l1.stream().filter(item->l2.contains(item)).toList());
+        System.out.println(result);
+
+
+        System.out.println("Without dupes:");
+        System.out.println(result);
+    }
+
 
 
 }
