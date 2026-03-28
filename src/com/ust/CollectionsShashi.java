@@ -155,6 +155,5 @@ public class CollectionsShashi {
         for (Map.Entry<Integer, String> name : mergedMap.entrySet()) {
             System.out.println(name.getKey() + "-" + name.getValue());
         }
-
     }
 }
