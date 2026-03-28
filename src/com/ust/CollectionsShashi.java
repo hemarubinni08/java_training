@@ -111,7 +111,5 @@ public class CollectionsShashi {
         mergedSet.stream().filter(mergeSet -> !(setNames.contains(mergeSet) && setNames1.contains(mergeSet))).forEach(mergeSet -> System.out.println(mergeSet));
         System.out.println("printing unique name via lambda expression from merged set ver2");
         mergedSet.stream().filter(mergeSet -> !setNames.contains(mergeSet) || !setNames1.contains(mergeSet)).forEach(mergeSet -> System.out.println(mergeSet));
-
-
     }
 }
