@@ -44,14 +44,13 @@ public class Main {
         System.out.println(Arithematicoperation.multiplyTwoNumbers(3,5));*/
 
 
-
-        Map<String , String> newMap = new HashMap<>();
-        newMap.put("1","Hemanth");
-        newMap.put("2","Yesh");
-        newMap.put("3","Ardra");
-        newMap.put("4","Ritu");
-        newMap.put("5","Anu");
-        newMap.put("6","Akash");
+        Map<String, String> newMap = new HashMap<>();
+        newMap.put("1", "Hemanth");
+        newMap.put("2", "Yesh");
+        newMap.put("3", "Ardra");
+        newMap.put("4", "Ritu");
+        newMap.put("5", "Anu");
+        newMap.put("6", "Akash");
         CollectionHemanthMap printBatch = new CollectionHemanthMap();
         printBatch.printMap(newMap);
 
