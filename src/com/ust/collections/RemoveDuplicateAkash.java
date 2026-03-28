@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class RemoveDuplicateAkash {
     public void removeUSingFor(List<String> names1, List<String> names2) {
@@ -41,21 +42,33 @@ public class RemoveDuplicateAkash {
         ansList.forEach(System.out::println);
     }
 
-    public void removeUSingHashSet(List<String> names1, List<String> names2) {
-        Set<String> combine = new HashSet<>(names1);
+    public void removeUSingHashSetForLoop(Set<String> names1, Set<String> names2) {
+        Set<String> combineList = new HashSet<>(names1);
+        combineList.addAll(names2);
+        Set<String> ansList = new HashSet<>();
+        for (String name : combineList) {
+            if (!(names1.contains(name) && names2.contains(name))) {
+                ansList.add(name);
+            }
+        }
+        ansList.forEach(System.out::println);
+    }
+
+    public void removeUSingHashSet(Set<String> names1, Set<String> names2) {
+        Set<String> combine = new HashSet<>(names1); // combine list formation
         combine.addAll(names2);
-        Set<String> duplicates = new HashSet<>(names1);
+        Set<String> duplicates = new HashSet<>(names1); // getting the duplicates
         duplicates.retainAll(names2);
         combine.removeAll(duplicates);
         combine.forEach(System.out::println);
     }
 
-    public void removeUSingHashSetLambda(List<String> names1, List<String> names2) {
-        Set<String> namesHash1 = new HashSet<>(names1);
-        Set<String> namesHash2 = new HashSet<>(names2);
-        List<String> combineList = new ArrayList<>();
-        combineList.addAll(names1);
-        combineList.addAll(names2);
-        System.out.println(combineList.stream().filter(name -> !(namesHash1.contains(name) && namesHash2.contains(name))).toList());
+    public void removeUSingHashSetLambda(Set<String> names1, Set<String> names2) {
+        Set<String> combine = new HashSet<>();
+        combine.addAll(names1);
+        combine.addAll(names2);
+        Set<String> temp = names1.stream().filter(name -> names2.contains(name)).collect(Collectors.toSet());
+        Set<String> ansList = combine.stream().filter(name -> !temp.contains(name)).collect(Collectors.toSet());
+        ansList.forEach(System.out::println);
     }
 }
