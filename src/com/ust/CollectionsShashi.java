@@ -110,14 +110,39 @@ public class CollectionsShashi {
         mergedSet.stream().filter(mergeSet -> !setNames.contains(mergeSet) || !setNames1.contains(mergeSet)).forEach(mergeSet -> System.out.println(mergeSet));
     }
 
-    public void mapPrintEmployee(Map<Integer,String>employeeData){
+    public void mapPrintEmployee(Map<Integer, String> employeeData) {
         System.out.println("Printing employee data");
-        for (Map.Entry<Integer, String> name:employeeData.entrySet()){
-            System.out.println(name.getKey()+"-"+name.getValue());
+        for (Map.Entry<Integer, String> name : employeeData.entrySet()) {
+            System.out.println(name.getKey() + "-" + name.getValue());
         }
         System.out.println("Printing employee data");
-        for (Integer key:employeeData.keySet()){
-            System.out.println(key+"-"+employeeData.get(key));
+        for (Integer key : employeeData.keySet()) {
+            System.out.println(key + "-" + employeeData.get(key));
+        }
+        System.out.println("Printing employee data via lambda expression");
+        employeeData.forEach((id, name) -> System.out.println(id + "-" + name));
+    }
+
+    public void mapRemoveOurName(Map<Integer, String> employData) {
+        System.out.println("printing map after removing our name by using for loop");
+        for (Integer key : employData.keySet()) {
+            if (!key.equals(1)) {
+                System.out.println(key + "-" + employData.get(key));
+            }
+        }
+        if (employData.containsKey(1)) {
+            employData.remove(1);
+        }
+        System.out.println("printing map after removing our name by using contains key");
+        for (Map.Entry<Integer, String> name : employData.entrySet()) {
+            System.out.println(name.getKey() + "-" + name.getValue());
+        }
+        System.out.println("printing map after removing our name by using contains value");
+        if (employData.containsValue("b")) {
+            employData.values().remove("b");
+        }
+        for (Map.Entry<Integer, String> name : employData.entrySet()) {
+            System.out.println(name.getKey() + "-" + name.getValue());
         }
     }
 }

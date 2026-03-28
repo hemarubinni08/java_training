@@ -47,5 +47,6 @@ public class MainCollectionsShashi {
         employeeData.put(4,"d");
         employeeData.put(5,"e");
         collection.mapPrintEmployee(employeeData);
+        collection.mapRemoveOurName(employeeData);
     }
 }
