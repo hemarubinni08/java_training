@@ -2,7 +2,9 @@ package com.ust;
 
 import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class CollectionsShashi {
     public void doIterate(List<String> names) {
@@ -58,5 +60,25 @@ public class CollectionsShashi {
         System.out.println(" printing only unique letters lamda format via and ");
         mergedList.stream().filter(ml -> !(names1.contains(ml) && names.contains(ml))).forEach(ml -> System.out.println(ml));
 
+    }
+
+    public void setPrintNames(Set<String> setNames, Set<String> setNames1) {
+        Set<String> mergedSet = new HashSet<>(setNames);
+        mergedSet.addAll(setNames1);
+
+        System.out.println("printing names via set");
+        for (String name : mergedSet) {
+            System.out.println(name);
+        }
+        System.out.println("printing names via set in lambda expression");
+        mergedSet.forEach(name -> System.out.println(name));
+    }
+
+    public void setRemoveNeighbour(Set<String> setNames) {
+        System.out.println("printing remove neighbour via set");
+        for (String name : setNames) {
+            if (!name.equalsIgnoreCase("b"))
+                System.out.println(name);
+        }
     }
 }
