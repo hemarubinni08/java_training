@@ -21,6 +21,7 @@ package com.ust.impl;//package com.ust.impl;
 //}
 
 import java.util.List;
+import java.util.stream.Stream;
 
 
 public class CollectionsDeepak {
@@ -38,13 +39,17 @@ public class CollectionsDeepak {
 //                System.out.println(num);
 //            }
 //        } for loop.
-        list1.stream()
-                .filter(num -> !list2.contains(num))
-                .forEach(num -> System.out.println(num));
-
-        list2.stream()
-                .filter(num -> !list1.contains(num))
-                .forEach(num -> System.out.println(num));
+//        list1.stream()
+//                .filter(num -> !list2.contains(num))
+//                .forEach(num -> System.out.println(num));
+//
+//        list2.stream()
+//                .filter(num -> !list1.contains(num))
+//                .forEach(num -> System.out.println(num));
+        Stream.concat(
+                list1.stream().filter(num -> !list2.contains(num)),
+                list2.stream().filter(num -> !list1.contains(num))
+        ).forEach(System.out::println);
 
     }
 }
