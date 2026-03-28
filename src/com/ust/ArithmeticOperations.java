@@ -1,15 +1,15 @@
 package com.ust;
 
 public class ArithmeticOperations {
-    public int addTwoNumbers(int a, int b) {
-        return a + b;
+    public int addNumbers(int num1, int num2) {
+        return num1 + num2;
     }
 
-    public int subtractTwoNumbers(int a, int b) {
-        return a - b;
+    public int addNumbers(int num1, int num2, int num3) {
+        return num1 + num2 + num3;
     }
 
-    public int multiplicationTwoNumbers(int a, int b) {
-        return a * b;
+    public int addNumbers(int num1, int num2, int num3, int num4) {
+        return num1 + num2 + num3 + num4;
     }
 }
