@@ -25,11 +25,9 @@ public class CollectionLogesh {
 //    }
 
 //    public void doItration(List<String> names, List<String> names1) {
-//
 //        List<String> result = new ArrayList<>();
 //        List<String> mergeList = new ArrayList<>(names);
 //        mergeList.addAll(names1);
-//
 //        for (String n : names) {
 //            if (!names1.contains(n)) result.add(n);
 //        }
@@ -72,7 +70,7 @@ public class CollectionLogesh {
             System.out.println(s);
         }
 //        mergeSet.forEach(ml -> System.out.println(ml));
-//        mergeSet.stream().filter(ms -> !names.contains(ms) || !names1.contains(ms)).forEach(ms -> System.out.println(ms));
+        result.stream().filter(ms -> !names.contains(ms) || !names1.contains(ms)).forEach(ms -> System.out.println(ms));
     }
 }
 
