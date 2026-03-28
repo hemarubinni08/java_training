@@ -29,16 +29,28 @@ public class CollectionHashMapRohit {
         }
         System.out.println("Without one Employee using just remove: ");
 
-        newMap.remove("308237", "Rohit");
+//        newMap.remove("308237", "Rohit");
+//
+//        newMap.forEach((id, name) ->
+//                System.out.println(id + " - " + name));
 
-        newMap.forEach((id, name) ->
-                System.out.println(id + " - " + name));
+//        System.out.println("Without one Employee using contains: ");
+//        if(newMap.containsKey("308237")){
+//            newMap.remove("308237");
+//        }
+//        newMap.forEach((id,name)->
+//            System.out.println(id+"-"+name)
+//        );
+//        System.out.println("Without one Employee using stream:");
 
-        System.out.println("Without one Employee using contains: ");
-        newMap.forEach((id,name)->{
-            if(!newMap.containsValue("Rohit")){
-            System.out.println(id+"-"+name);
-        }});
+        newMap.entrySet()
+                .stream()
+                .filter(entry -> !"308237".equals(entry.getKey()))
+                .forEach(entry ->
+                        System.out.println(entry.getKey() + "-" + entry.getValue())
+                );
+
+
 
 
     }
