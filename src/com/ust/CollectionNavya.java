@@ -1,14 +1,16 @@
 package com.ust;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class CollectionNavya {
-    //public static void iterationCollection(List<String> list) {
-    //for (String name : list) {
-    //System.out.println(name);
-    //}
-    //}
+    public static void iterationCollection(List<String> list) {
+        for (String name : list) {
+            System.out.println(name);
+        }
+    }
 
 //    public static void filterIteration(List<String> names) {
 //        for (String name : names) {
@@ -17,7 +19,7 @@ public class CollectionNavya {
 //            }
 //        }
 
-    // names.stream().filter(name -> !name.equals("Keerthi")).toList().forEach(name -> System.out.println(name));
+    //names.stream().filter(name -> !name.equals("Keerthi")).toList().forEach(name -> System.out.println(name));
 //
 //
 //    }
@@ -43,15 +45,10 @@ public class CollectionNavya {
 //        }
 
 
-        l1.stream()
-                .filter(num -> !l2.contains(num))
-                .forEach(result::add);
+        l1.stream().filter(num -> !l2.contains(num)).forEach(result::add);
+        l2.stream().filter(num -> !l1.contains(num)).forEach(result::add);
+        Stream.concat(l1.stream().filter(num -> !l2.contains(num)), l2.stream().filter(num -> !l1.contains(num))).forEach(System.out::println);
 
-        l2.stream()
-                .filter(num -> !l1.contains(num))
-                .forEach(result::add);
-
-        result.forEach(System.out::println);
     }
 }
 
