@@ -1,6 +1,7 @@
 package com.ust;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class MainKeerthi {
@@ -20,10 +21,16 @@ public class MainKeerthi {
         sree.add("lali");
         sree.add("jp");
         sree.add("kush");
-        CollectionKv.getNonDuplicate(names,sree);
-        //CollectionKv.collectionIterations(names);
-        //CollectionKv.collectionIteration(names);
-        //CollectionKv.listIteration(sree);
+         CollectionKv.getNonDuplicate(names,sree);
+//        CollectionKv.collectionIterations(names);
+//        CollectionKv.collectionIteration(names);
+//        CollectionKv.listIteration(sree);
+//        HashSet<String> set = new HashSet<>();
+//        set.add("keerthi");
+//        set.add("navya");
+//        set.add("harsh");
+//        set.add("rohit");
+//        set.add("deepak");
 
 
     }
