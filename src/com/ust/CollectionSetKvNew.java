@@ -53,14 +53,15 @@ public class CollectionSetKvNew {
         Set<String> tempset = new HashSet<>();
         result.addAll(set1);
         result.addAll(set2);
-//        for (String name : tempset) {
-//            if (!(set1.contains(name) && set2.contains(name))) {
-//                result.add(name);
-//            }
-//        }
-//        return result;
+        for (String name : tempset) {
+            if (!(set1.contains(name) && set2.contains(name))) {
+                result.add(name);
+            }
+        }
+        return result;
 //        set1.stream().filter(name -> set2.contains(name)).forEach(tempset::add);
-//        return result.stream().filter(name -> !(tempset.contains(name))).collect(Collectors.toSet());
+//      result.removeAll(tempset);
+//        System.out.println(result);
 
 
     }
