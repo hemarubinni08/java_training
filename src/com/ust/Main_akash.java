@@ -8,9 +8,7 @@ import com.ust.impl.CarInterfaceAkashImpl;
 import com.ust.impl.LuxuryCarInterfaceAkashImpl;
 import com.ust.impl.TruckInterfaceAkashImpl;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main_akash {
     public static void main(String[] args) {
@@ -306,14 +304,14 @@ public class Main_akash {
         List<String> names1 = new ArrayList<>();
         System.out.println("Enter the names");
         String name1 = "";
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 6; i++) {
             name1 = sc.nextLine();
             names1.add(name1);
         }
         List<String> names2 = new ArrayList<>();
         System.out.println("Enter the names");
         String name2 = "";
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 6; i++) {
             name2 = sc.nextLine();
             names2.add(name2);
         }
@@ -327,11 +325,16 @@ public class Main_akash {
         System.out.println("Elimination of duplicates using one for loop");
         removeDuplicateAkash.removeUSingForOptimised(names1, names2);
         System.out.println();
+        Set<String> namesHash1 = new HashSet<>(names1);
+        Set<String> namesHash2 = new HashSet<>(names2);
         System.out.println("Elimination of duplicates using Hashset");
-        removeDuplicateAkash.removeUSingHashSet(names1, names2);
+        removeDuplicateAkash.removeUSingHashSet(namesHash1, namesHash2);
         System.out.println();
         System.out.println("Elimination of duplicates using Hashset Lambda function");
-        removeDuplicateAkash.removeUSingHashSetLambda(names1, names2);
+        removeDuplicateAkash.removeUSingHashSetLambda(namesHash1, namesHash2);
+        System.out.println();
+        System.out.println("Elimination of duplicates using Hashset For loop");
+        removeDuplicateAkash.removeUSingHashSetForLoop(namesHash1, namesHash2);
         System.out.println();
     }
 }
