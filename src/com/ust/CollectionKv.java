@@ -20,12 +20,12 @@ public class CollectionKv {
     public static void getNonDuplicate(List<String> names, List<String> sree){
         List<String> mergedList = new ArrayList<>();
         //for(String name: names) {
-            //  if (!name.contains(name)) {
+            //  if (!sree.contains(name)) {
             //   result.add(name);
             //  }
         //}
-        //for(String name: names) {
-            //  if (!name.contains(name)) {
+        //for(String name: sree) {
+            //  if (!names.contains(name)) {
             //   result.add(name);}
         //}
         //names.stream().filter(name->!sree.contains(name)).forEach(result::add);
