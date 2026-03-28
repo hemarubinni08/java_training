@@ -2,6 +2,7 @@ package com.ust;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class CollectionHemanthMap {
     public void printMap(Map<String, String> batchNames) {
@@ -31,6 +32,9 @@ public class CollectionHemanthMap {
         batchNames.entrySet().stream().filter(entry -> !(entry.getKey().
                 equals("1"))).forEach(entry ->
                 System.out.println(entry.getKey() + "->" + entry.getValue()));
+         Map<String,String> result = batchNames.entrySet().stream().filter(entry -> !(entry.getKey().
+                equals("1"))).collect(Collectors.toMap(Map.Entry::getKey , Map.Entry::getValue));
+
 
 
     }
