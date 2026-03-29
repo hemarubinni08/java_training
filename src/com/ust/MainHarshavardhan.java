@@ -1,42 +1,69 @@
 package com.ust;
 
-import com.ust.impl.*;
+import java.util.*;
 
 public class MainHarshavardhan {
     public static void main(String[] args) {
 
-        BikeAbstractHarshaImpl bikeObj = new BikeAbstractHarshaImpl();
-        System.out.println();
-        System.out.println("Number of wheels in bike: " + bikeObj.numberOfWheels());
-        System.out.println("Engine capacity in bike: " + bikeObj.engineCapacity());
-        System.out.println("fuel type of bike: " + bikeObj.fuelType());
-        System.out.println("Can do wheelie: "+ bikeObj.canDoWheelie());
+        List<String> namesList1 = new ArrayList<>();
+        namesList1.add("Harsha");
+        namesList1.add("Chandra");
+        namesList1.add("Pranav");
+        namesList1.add("Navneeth");
+        namesList1.add("Varsha");
+        namesList1.add("Deepa");
+        namesList1.add("Rohan");
 
-        HeavyVehiclesAbstractHarsha carObj = new CarAbstractHarshaImpl();
-        System.out.println();
-        System.out.println("Number of wheels in car: " + carObj.numberOfWheels());
-        System.out.println("Engine capacity in car: " + carObj.engineCapacity());
-        System.out.println("fuel type of car: " + carObj.fuelType());
-        System.out.println("car has AC: " + carObj.hasAc());
-        System.out.println("Is public transport: " + carObj.isPublicTransport());
-        System.out.println("Has sunroof: " + carObj.hasSunRoof());
+        List<String> namesList2 = new ArrayList<>();
+        namesList2.add("Anjan");
+        namesList2.add("Kushal");
+        namesList2.add("Divya");
+        namesList2.add("Harsha");
+        namesList2.add("Rohan");
+        namesList2.add("Moksha");
+        namesList2.add("Harsha");
+        namesList2.add("Deeksha");
 
-        HeavyVehiclesAbstractHarsha busObj = new BusAbstractHarshaImpl();
-        System.out.println();
-        System.out.println("Number of wheels in bus: " + busObj.numberOfWheels());
-        System.out.println("Engine capacity in bus: " + busObj.engineCapacity());
-        System.out.println("fuel type of bus: " + busObj.fuelType());
-        System.out.println("bus has AC: " + busObj.hasAc());
-        System.out.println("Is public transport: " + busObj.isPublicTransport());
-        System.out.println("Has sunroof: " + busObj.hasSunRoof());
 
-        HeavyVehiclesAbstractHarsha lorryObj = new LorryAbstractHarshaImpl();
-        System.out.println();
-        System.out.println("Number of wheels in Lorry: " + lorryObj.numberOfWheels());
-        System.out.println("Engine capacity in Lorry: " + lorryObj.engineCapacity());
-        System.out.println("fuel type of Lorry: " + lorryObj.fuelType());
-        System.out.println("lorry has AC: " + lorryObj.hasAc());
-        System.out.println("Is public transport: " + lorryObj.isPublicTransport());
-        System.out.println("Has sunroof: " + lorryObj.hasSunRoof());
+        CollectionsHarsha obj = new CollectionsHarsha();
+//        obj.doIteration(names);
+//        obj.doIterationByStream(names);
+//        obj.igonreNeighbour(names);
+//        System.out.println();
+//        obj.ignoreNeighbourForLoop(names);
+//        System.out.println( obj.removeDuplicate6(names,names2));
+
+        Set<String> nameSet1 = new HashSet<>();
+        nameSet1.add("Anjan");
+        nameSet1.add("Kushal");
+        nameSet1.add("Divya");
+        nameSet1.add("Harsha");
+        nameSet1.add("Rohan");
+        nameSet1.add("Moksha");
+        nameSet1.add("Harsha");
+        nameSet1.add("Deeksha");
+
+        Set<String> nameSet2 = new HashSet<>();
+        nameSet2.add("Harsha");
+        nameSet2.add("Chandra");
+        nameSet2.add("Pranav");
+        nameSet2.add("Navneeth");
+        nameSet2.add("Varsha");
+        nameSet2.add("Deepa");
+        nameSet2.add("Rohan");
+
+       // System.out.println(obj.removeDuplicateInSetByCombine2(nameSet1,nameSet2));
+
+        Map<String,String> newMap = new HashMap<>();
+        newMap.put("308227","Harshavardhan");
+        newMap.put("898766","Pranav");
+        newMap.put("454656","Deepa");
+        newMap.put("456366","Varsha");
+        newMap.put("234256","Navneeth");
+        newMap.put("234553","Chandra");
+        obj.StreamMap(newMap);
+
+//        System.out.println(obj.findOtherPodMembersNotincludeMe3(newMap));
+
     }
 }
