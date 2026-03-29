@@ -107,12 +107,13 @@ public class CollectionsDeepa {
 //        nameSet1.forEach(name->System.out.println(name));
 
     }
-    public void printMembers(Map<String,String> members){
-        for(Map.Entry<String, String> name:members.entrySet()){
-            System.out.println(name.getKey()+"-"+name.getValue());
+
+    public void printMembers(Map<String, String> members) {
+        for (Map.Entry<String, String> name : members.entrySet()) {
+            System.out.println(name.getKey() + "-" + name.getValue());
         }
-        for(String key: members.keySet()){
-            System.out.println(key+"-"+members.get(key));
+        for (String key : members.keySet()) {
+            System.out.println(key + "-" + members.get(key));
         }
 //
 //        Map<String,List<String>> mapList=new HashMap<>();
@@ -120,7 +121,8 @@ public class CollectionsDeepa {
 //
 //        }
     }
-    public void ignoreNameMap(Map<String,String> members){
+
+    public void ignoreNameMap(Map<String, String> members) {
 
 //        for(String nameIgnore: members.keySet()){
 //            if(!nameIgnore.equals("2")){
@@ -157,8 +159,8 @@ public class CollectionsDeepa {
 //        members.entrySet().stream().filter(name->!name.getValue().equalsIgnoreCase("Varsha")).toList()
 //                .forEach(name->System.out.println(name.getKey()+"-"+name.getValue()));
 
-        members.entrySet().stream().filter(name->!name.getKey().equalsIgnoreCase("2"))
-                .collect(Collectors.toMap(name->name.getKey(),name->name.getValue()))
-                .forEach((key, value)->System.out.println(key+"-"+value));
+        members.entrySet().stream().filter(name -> !name.getKey().equalsIgnoreCase("2"))
+                .collect(Collectors.toMap(name -> name.getKey(), name -> name.getValue()))
+                .forEach((key, value) -> System.out.println(key + "-" + value));
     }
 }

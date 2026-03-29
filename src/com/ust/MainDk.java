@@ -20,15 +20,15 @@ public class MainDk {
         Set<String> nameSet2 = new HashSet<>();
         Set<String> combineSet = new HashSet<>();
         Set<String> duplicateSet = new HashSet<>();
-        Map<String,String> members=new HashMap<>();
+        Map<String, String> members = new HashMap<>();
 
 
-        members.put("1","Deepa");
-        members.put("2","Varsha");
-        members.put("3","Harsha");
-        members.put("4","Pranav");
-        members.put("5","Navaneeth");
-        members.put("6","Chandu");
+        members.put("1", "Deepa");
+        members.put("2", "Varsha");
+        members.put("3", "Harsha");
+        members.put("4", "Pranav");
+        members.put("5", "Navaneeth");
+        members.put("6", "Chandu");
 
         namesList.add("Deepa");
         namesList.add("Varsha");
