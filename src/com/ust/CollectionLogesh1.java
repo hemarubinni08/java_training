@@ -28,6 +28,5 @@ public class CollectionLogesh1 {
         for (Map.Entry<String, String> name : podMember.entrySet()) {
             System.out.println(name.getKey() + "-" + name.getValue());
         }
-
     }
 }
