@@ -24,14 +24,8 @@ public class MainHarshavardhan {
         namesList2.add("Harsha");
         namesList2.add("Deeksha");
 
-
         CollectionsHarsha obj = new CollectionsHarsha();
-//        obj.doIteration(names);
-//        obj.doIterationByStream(names);
-//        obj.igonreNeighbour(names);
-//        System.out.println();
-//        obj.ignoreNeighbourForLoop(names);
-//        System.out.println( obj.removeDuplicate6(names,names2));
+        System.out.println( obj.removeDuplicateByTwoLoop(namesList1,namesList2));
 
         Set<String> nameSet1 = new HashSet<>();
         nameSet1.add("Anjan");
@@ -61,7 +55,7 @@ public class MainHarshavardhan {
         newMap.put("456366","Varsha");
         newMap.put("234256","Navneeth");
         newMap.put("234553","Chandra");
-        obj.StreamMap(newMap);
+//        obj.StreamMap(newMap);
 
 //        System.out.println(obj.findOtherPodMembersNotincludeMe3(newMap));
 

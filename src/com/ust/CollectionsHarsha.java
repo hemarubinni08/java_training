@@ -42,7 +42,6 @@ public class CollectionsHarsha {
                     count = 0;
                 }
             }
-            System.out.println(count);
             if (count == 0) {
                 result.add(name);
             } else {
@@ -58,7 +57,6 @@ public class CollectionsHarsha {
                     count = 0;
                 }
             }
-            System.out.println(count);
             if (count == 0) {
                 result.add(name2);
             } else {
