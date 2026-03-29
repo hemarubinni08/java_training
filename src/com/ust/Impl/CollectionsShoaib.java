@@ -134,13 +134,18 @@ public class CollectionsShoaib {
         System.out.println("Check & print method");
            if(map.containsKey(id))
            {
-              // map.remove(id);
+               map.remove(id);
            }
            for(Integer name:map.keySet())
            {
-              // System.out.println(name+"-"+map.get(name));
+               System.out.println(name+"-"+map.get(name));
            }
-           map.entrySet().stream().filter(name->name.getKey()!=id).forEach(System.out::println);
+
+        }
+        public void checkAndPrintUsingStream(HashMap<Integer, String> map, int id)
+        {
+            System.out.println("check & print using stream");
+            map.entrySet().stream().filter(name->name.getKey()!=id).forEach(System.out::println);
         }
 
     }
