@@ -1,21 +1,18 @@
 package com.ust.Impl;
 
-import com.ust.VehicleInterfaceSrujan;
-
-public class BikeSrujanImpl implements VehicleInterfaceSrujan {
-
+public class CarSrujanAbstract extends VehicleAbstractSrujan {
     @Override
     public int numberOfWheels() {
-        return 2;
+        return 4;
     }
 
     @Override
     public String fuelType() {
-        return "petrol";
+        return "Diesel";
     }
 
     @Override
     public int costOfVehicle() {
-        return 150000;
+        return 1000000;
     }
 }

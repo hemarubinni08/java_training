@@ -1,11 +1,9 @@
 package com.ust.Impl;
 
-import com.ust.VehicleInterfaceSrujan;
-
-public class AutoSrujanImpl implements VehicleInterfaceSrujan {
+public class LorrySrujanAbstract extends VehicleAbstractSrujan {
     @Override
     public int numberOfWheels() {
-        return 3;
+        return 18;
     }
 
     @Override
@@ -15,6 +13,6 @@ public class AutoSrujanImpl implements VehicleInterfaceSrujan {
 
     @Override
     public int costOfVehicle() {
-        return 300000;
+        return 2000000;
     }
 }

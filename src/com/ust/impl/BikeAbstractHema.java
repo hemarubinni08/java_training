@@ -1,24 +1,25 @@
 package com.ust.impl;
 
-import com.ust.vehicleInterfaceHema;
+import com.ust.VehicleAbstractHema;
 
-public class BikeHemaImpl implements vehicleInterfaceHema {
+public class BikeAbstractHema extends VehicleAbstractHema {
 
     @Override
     public String getBrand() {
-        return " ";
+        return "V3";
     }
 
+    @Override
     public int getWheelsCount() {
         return 2;
     }
 
+    @Override
     public String getFuelType() {
         return "Petrol";
     }
 
-    public int doorsCount() {
+    protected int doorsCount() {
         return 0;
     }
-
 }
