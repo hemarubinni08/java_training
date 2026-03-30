@@ -10,7 +10,7 @@ public class Arithmeticoperations {
             return a - b;
         }
 
-        public int mul(int a, int b) {
+        public int mul(int a, int b,int c) {
             return a * b;
         }
 

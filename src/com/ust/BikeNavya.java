@@ -4,13 +4,16 @@ public class BikeNavya extends HeavyVehicles {
     public int wheels() {
         return 2;
     }
+
     public int numbersOfSeats() {
         return 1;
     }
-    public boolean hasAc(){
+
+    public boolean hasAc() {
         return false;
     }
-    public int numberOfDoors(){
+
+    public int numberOfDoors() {
         return 0;
     }
 }

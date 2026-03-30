@@ -6,4 +6,5 @@ public interface HeavyVehicleInterfaceNavya {
     boolean hasAc();
 
     int noOfPassengers();
+
 }
