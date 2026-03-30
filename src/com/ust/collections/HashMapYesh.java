@@ -19,7 +19,7 @@ public class HashMapYesh {
                 System.out.println(entryset.getKey() + "-" + entryset.getValue());
             }
         }
-        employeesMap.entrySet().removeIf(employee-> employee.getKey().equals(id));
+        employeesMap.entrySet().removeIf(employee -> employee.getKey().equals(id));
         System.out.println(employeesMap);
         employeesMap.entrySet().stream().filter(employee -> !(employee.getKey().equals(id))).forEach(employee -> System.out.println(employee.getKey() + "-" + employee.getValue()));
     }

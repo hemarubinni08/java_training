@@ -51,7 +51,7 @@ public class MainYesh {
         firstList.add(3);
         firstList.add(4);
         firstList.add(5);
-        System.out.println(collectionObject.removingDuplicate(firstList, secondList));
+        //System.out.println(collectionObject.removingDuplicate(firstList, secondList));
         Set<Integer> firstSet = new HashSet<>();
         Set<Integer> secondSet = new HashSet<>();
         firstSet.add(1);
@@ -72,11 +72,11 @@ public class MainYesh {
         HashMapYesh mapObject = new HashMapYesh();
         mapObject.iterateEmployees(employees);
         mapObject.containsEmployee(employees, 308331, "Yeshwanth");
-        Map<Integer, String> secondMap= new HashMap<>();
-        secondMap.put(308331,"Yeshwanth");
-        secondMap.put(308279,"hemanth");
-        secondMap.put(4,"Ritika");
-        secondMap.put(5,"akash");
-        mapObject.checkForDuplicates(employees,secondMap);
+        Map<Integer, String> secondMap = new HashMap<>();
+        secondMap.put(308331, "Yeshwanth");
+        secondMap.put(308279, "hemanth");
+        secondMap.put(4, "Ritika");
+        secondMap.put(5, "akash");
+        mapObject.checkForDuplicates(employees, secondMap);
     }
 }
