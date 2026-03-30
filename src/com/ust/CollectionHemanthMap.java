@@ -32,10 +32,21 @@ public class CollectionHemanthMap {
         batchNames.entrySet().stream().filter(entry -> !(entry.getKey().
                 equals("1"))).forEach(entry ->
                 System.out.println(entry.getKey() + "->" + entry.getValue()));
-         Map<String,String> result = batchNames.entrySet().stream().filter(entry -> !(entry.getKey().
-                equals("1"))).collect(Collectors.toMap(Map.Entry::getKey , Map.Entry::getValue));
+        Map<String, String> result = batchNames.entrySet().stream().filter(entry -> !(entry.getKey().
+                equals("1"))).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 
+    }
 
-
+    public void removeDuplicateMap(Map<String, String> batchNames, Map<String, String> batchNames1) {
+        Map<String,String> resultMap= new HashMap<>(batchNames1);
+        resultMap.putAll(batchNames);
+        for (Map.Entry<String,String> name : batchNames.entrySet()){
+            if(batchNames1.containsKey(name.getKey())){
+                resultMap.remove(name.getKey());
+            }
+        }
+        for (Map.Entry<String,String>name : resultMap.entrySet()){
+            System.out.println(name.getKey()+"->"+name.getValue());
+        }
     }
 }

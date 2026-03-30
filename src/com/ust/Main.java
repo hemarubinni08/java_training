@@ -45,14 +45,21 @@ public class Main {
 
 
         Map<String, String> newMap = new HashMap<>();
+        Map<String, String> newMap1 = new HashMap<>();
         newMap.put("1", "Hemanth");
         newMap.put("2", "Yesh");
         newMap.put("3", "Ardra");
         newMap.put("4", "Ritu");
         newMap.put("5", "Anu");
         newMap.put("6", "Akash");
+        newMap1.put("7", "Hemanth");
+        newMap1.put("8", "Yesh");
+        newMap1.put("9", "Ardra");
+        newMap1.put("10", "Ritu");
+        newMap1.put("5", "Anu");
+        newMap1.put("6", "Akash");
         CollectionHemanthMap printBatch = new CollectionHemanthMap();
-        printBatch.printMap(newMap);
+        printBatch.removeDuplicateMap(newMap,newMap1);
 
     }
 }
