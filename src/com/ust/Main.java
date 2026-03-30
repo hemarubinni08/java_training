@@ -20,11 +20,11 @@ public class Main {
         names1.add("Rit");
         names1.add("An");
         names1.add("Akas");
-
         CollectionHemanth getNames = new CollectionHemanth();
         getNames.doIterate(names, names1);
         getNames.duplicateElements(names, names1);
         getNames.eliminateNeighbour(names, names1);
+
         Set<String> namesSet = new HashSet<>();
         Set<String> namesSet1 = new HashSet<>();
         namesSet.add("Hemanth");
