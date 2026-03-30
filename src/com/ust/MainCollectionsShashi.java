@@ -54,7 +54,7 @@ public class MainCollectionsShashi {
         employeeData1.put(8, "h");
         employeeData1.put(9, "a");
         employeeData1.put(10, "i");
-        collection.removeDuplicateValue(employeeData, employeeData1); //put first so all methods can be used
+        collection.removeDuplicateData(employeeData, employeeData1); //put first so all methods can be used
         collection.mapPrintEmployee(employeeData);
         collection.mapRemoveOurName(employeeData);
     }

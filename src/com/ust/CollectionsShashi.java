@@ -161,7 +161,7 @@ public class CollectionsShashi {
         }
     }
 
-    public void removeDuplicateValue(Map<Integer, String> employData, Map<Integer, String> employData1) {
+    public void removeDuplicateData(Map<Integer, String> employData, Map<Integer, String> employData1) {
         Map<Integer, String> duplicateMap = new HashMap<>();
 /*
         System.out.println("Printing unique names");
