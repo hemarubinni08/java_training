@@ -157,7 +157,7 @@ public class CollectionsShashi {
             System.out.println(name.getKey() + "-" + name.getValue());
         }
 */
-        System.out.println("printing unique value via lamda expression");
+        System.out.println("printing unique value via lambda expression");
         employData.entrySet().stream().filter(emplData -> !employData1.containsValue(emplData.getValue()) && !employData1.containsKey(emplData.getKey())).forEach(emplData -> System.out.println(emplData.getKey() + "-" + emplData.getValue()));
         employData1.entrySet().stream().filter(emplData -> !employData.containsValue(emplData.getValue()) && !employData.containsKey(emplData.getKey())).forEach(emplData -> System.out.println(emplData.getKey() + "-" + emplData.getValue()));
 
