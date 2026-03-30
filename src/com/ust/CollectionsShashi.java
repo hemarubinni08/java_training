@@ -13,7 +13,7 @@ public class CollectionsShashi {
             System.out.println(name);
         }
 
-        System.out.println("printing via lamda expression");
+        System.out.println("printing via lambda expression");
         names.forEach(name -> System.out.println(name));
         System.out.println("printing via stream");
     }
@@ -27,8 +27,8 @@ public class CollectionsShashi {
             System.out.println(name);
         }
 
-        // filter name via forEach loop in lamda format
-        System.out.println("filter name via forEach loop in lamda format");
+        // filter name via forEach loop in lambda format
+        System.out.println("filter name via forEach loop in lambda format");
         names.stream().filter(name -> !name.equalsIgnoreCase("Logesh")).forEach(name -> System.out.println(name));
     }
 
