@@ -12,7 +12,7 @@ public class CollectionMainRohit {
         l1.add("Navya");
         l1.add("Deepak");
         l1.add("Gokul");
-        CollectionRohit C = new CollectionRohit();
+        CollectionHarsh C = new CollectionHarsh();
 
         List<String> l2 = new ArrayList<>();
         l2.add("Sreelekshmi");
@@ -22,12 +22,7 @@ public class CollectionMainRohit {
 
         C.printValues(l1);
         C.removeNeighbour(l1);
-        C.combinedList(l1, l2);
-        C.combinedListUsingHashSet(l1, l2);
-        C.combinedHashSetForLoop(l1, l2);
-        C.hashSetLambda(l1,l2);
-        C.hashSetRemoveDupe(l1,l2);
-        C.hashSetRemoveDupeLambda(l1,l2);
+
 
 
     }

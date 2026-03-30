@@ -6,6 +6,9 @@ import com.ust.impl.BusInterfaceImpl;
 import com.ust.impl.CarInterfaceImpl;
 
 import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class MainHarsh {
     public static void main(String args[]) {
@@ -71,5 +74,40 @@ public class MainHarsh {
         System.out.println("Color of Bike is:" + c.color());
         System.out.println("Brand of Bike is:" + c.brand());
 
+        CollectionHarsh ch=new CollectionHarsh();
+
+        List<String> l1 = new ArrayList<>();
+        l1.add("Rohit");
+        l1.add("Harsh");
+        l1.add("Keerthi");
+        l1.add("Navya");
+        l1.add("Deepak");
+        l1.add("Gokul");
+
+        List<String> l2 = new ArrayList<>();
+        l2.add("Sreelekshmi");
+        l2.add("Gokul");
+        l2.add("Pranav");
+        l2.add("Chris");
+
+        HashMap<Integer,String>map1=new HashMap<>();
+        map1.put(121,"harsh");
+        map1.put(122,"Rohit");
+        map1.put(123,"Gokul");
+        map1.put(124,"Deepa");
+        map1.put(125,"Navya");
+        map1.put(126,"Keerti");
+
+        HashMap<Integer,String>map2=new HashMap<>();
+        map2.put(121,"harsh");
+        map2.put(128,"Ritika");
+        map2.put(129,"Choto");
+        map2.put(130,"Kushal");
+        map2.put(131,"Harhvardhan");
+        map2.put(132,"Ankita");
+
+//        ch.removingCommonFromTwoMap(map1,map2);
+//        ch.removingBothDuplicateFromMap(map1,map2);
+        ch.printNameOfHashmap(map1);
     }
 }

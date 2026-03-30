@@ -49,9 +49,5 @@ public class CollectionHashMapRohit {
                 .forEach(entry ->
                         System.out.println(entry.getKey() + "-" + entry.getValue())
                 );
-
-
-
-
     }
 }
