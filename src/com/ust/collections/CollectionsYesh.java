@@ -8,7 +8,9 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class CollectionsYesh {
+
     public void doIterate(List<String> names) {
+
         for (String member : names) {
             System.out.println(member);
         }
@@ -16,6 +18,7 @@ public class CollectionsYesh {
     }
 
     public void EliminateNeighbor(List<String> names) {
+
         for (String neighbor : names) {
             if (neighbor.equals("Akash")) {
                 continue;
@@ -28,11 +31,13 @@ public class CollectionsYesh {
 
     public void removingDuplicate(List<Integer> firstList, List<Integer> secondList) {
         List<Integer> combinedList = new ArrayList<>();
+
         for (Integer num : firstList) {
             if (!secondList.contains(num)) {
                 combinedList.add(num);
             }
         }
+
         for (Integer num : secondList) {
             if (!firstList.contains(num)) {
                 combinedList.add(num);
@@ -43,11 +48,13 @@ public class CollectionsYesh {
         combinedList.addAll(firstList);
         combinedList.addAll(secondList);
         List<Integer> resultList = new ArrayList<>();
+
         for (int num : combinedList) {
             if (!(firstList.contains(num) && secondList.contains(num))) {
                 resultList.add(num);
             }
         }
+
         System.out.println(resultList);
         combinedList.addAll(firstList);
         combinedList.addAll(secondList);
@@ -57,6 +64,7 @@ public class CollectionsYesh {
     public void removingDuplicateInSet(Set<Integer> firstSet, Set<Integer> secondSet) {
         int duplicate = 0;
         Set<Integer> resultSet = new HashSet<>();
+
         for (Integer num : firstSet) {
             if (secondSet.contains(num)) {
                 duplicate = num;
@@ -64,20 +72,25 @@ public class CollectionsYesh {
                 resultSet.add(num);
             }
         }
+
         secondSet.remove(duplicate);
         resultSet.addAll(secondSet);
         System.out.println(resultSet);
+
         Set<Integer> streamSet = new HashSet<>();
         streamSet.addAll(firstSet);
         streamSet.addAll(secondSet);
         System.out.println(streamSet.stream().filter(num -> !(firstSet.contains(num) && secondSet.contains(num))).collect(Collectors.toSet()));
+
         firstSet.stream().filter(num -> !secondSet.contains(num)).forEach(streamSet::add);
         secondSet.stream().filter(num -> !firstSet.contains(num)).forEach(streamSet::add);
         System.out.println(streamSet);
+
         Set<Integer> tempSet = new HashSet<>();
         Set<Integer> combinedSet = new HashSet<>();
         combinedSet.addAll(firstSet);
         combinedSet.addAll(secondSet);
+
         for (int num : firstSet) {
             if (secondSet.contains(num)) {
                 tempSet.add(num);

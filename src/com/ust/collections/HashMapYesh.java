@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HashMapYesh {
+
     public void iterateEmployees(Map<Integer, String> employeesMap) {
         for (Map.Entry<Integer, String> entrySet : employeesMap.entrySet()) {
             System.out.println(entrySet.getKey() + "-" + entrySet.getValue());
@@ -11,7 +12,7 @@ public class HashMapYesh {
         employeesMap.entrySet().forEach(entrySet -> System.out.println(entrySet.getKey() + "-" + entrySet.getValue()));
     }
 
-    public void containsEmployee(Map<Integer, String> employeesMap, Integer id, String name) {
+    public void containsEmployee(Map<Integer, String> employeesMap, Integer id) {
         for (Map.Entry<Integer, String> entryset : employeesMap.entrySet()) {
             if (entryset.getKey().equals(id)) {
                 continue;
@@ -21,7 +22,8 @@ public class HashMapYesh {
         }
         employeesMap.entrySet().removeIf(employee -> employee.getKey().equals(id));
         System.out.println(employeesMap);
-        employeesMap.entrySet().stream().filter(employee -> !(employee.getKey().equals(id))).forEach(employee -> System.out.println(employee.getKey() + "-" + employee.getValue()));
+        employeesMap.entrySet().stream().filter(employee -> !(employee.getKey().equals(id))).
+                forEach(employee -> System.out.println(employee.getKey() + "-" + employee.getValue()));
     }
 
     public void checkForDuplicates(Map<Integer, String> employees, Map<Integer, String> secondMap) {
@@ -36,7 +38,8 @@ public class HashMapYesh {
         for (Map.Entry<Integer, String> employee : resultMap.entrySet()) {
             System.out.println(employee.getKey() + "-" + employee.getValue());
         }
-        resultMap.entrySet().stream().filter(entry -> !(employees.containsKey(entry.getKey()) && secondMap.containsKey(entry.getKey()))).forEach(entrySet -> System.out.println(entrySet.getKey() + "-" + entrySet.getValue()));
+        resultMap.entrySet().stream().filter(entry -> !(employees.containsKey(entry.getKey()) && secondMap.containsKey(entry.getKey()))).
+                forEach(entrySet -> System.out.println(entrySet.getKey() + "-" + entrySet.getValue()));
         for (String value : employees.values()) {
             if (secondMap.containsValue(value)) {
                 resultMap.values().remove(value);
@@ -47,5 +50,3 @@ public class HashMapYesh {
         }
     }
 }
-
-
