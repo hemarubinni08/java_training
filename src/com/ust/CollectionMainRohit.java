@@ -25,9 +25,10 @@ public class CollectionMainRohit {
         C.combinedList(l1, l2);
         C.combinedListUsingHashSet(l1, l2);
         C.combinedHashSetForLoop(l1, l2);
-        C.hashSetLambda(l1,l2);
-        C.hashSetRemoveDupe(l1,l2);
-        C.hashSetRemoveDupeLambda(l1,l2);
+        C.hashSetLambda(l1, l2);
+        C.hashSetRemoveDupe(l1, l2);
+        C.hashSetRemoveDupeLambda(l1, l2);
+        C.combinedListFor(l1, l2);
 
 
     }

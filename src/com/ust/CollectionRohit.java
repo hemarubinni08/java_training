@@ -118,14 +118,13 @@ public class CollectionRohit {
         result.addAll(l1);
         result.addAll(l2);
 
-        result.removeAll(l1.stream().filter(item->l2.contains(item)).toList());
+        result.removeAll(l1.stream().filter(item -> l2.contains(item)).toList());
         System.out.println(result);
 
 
         System.out.println("Without dupes:");
         System.out.println(result);
     }
-
 
 
 }
