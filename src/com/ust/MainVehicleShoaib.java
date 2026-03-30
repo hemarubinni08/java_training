@@ -84,7 +84,7 @@ public class MainVehicleShoaib {
 
 
         System.out.println("\n=== Method: removeCommonElement (For Loop) ===");
-        obj1.removeCommonElement(names1, names2);
+        obj1.removeCommonElementUsingLoop(names1, names2);
 
         System.out.println("\n=== Method: removeCommonElementsUsingStreamForList ===");
         obj1.removeCommonElementsUsingStreamForList(names1, names2);
@@ -109,10 +109,27 @@ public class MainVehicleShoaib {
         map.put(308250,"Hema");
         map.put(308323,"Kushal");
         map.put(308340,"Gopi");
+        HashMap<Integer,String>map1=new HashMap<>();
+        map1.put(308232,"Shoaib");
+        map1.put(308351,"Fijul");
+        map1.put(308348,"Srujan");
+        map1.put(308250,"Hema");
+        map1.put(308323,"Kushal");
+        map1.put(308340,"Gopi");
+        HashMap<Integer,String>map2=new HashMap<>();
+        map2.put(308232,"Shoaib");
+        map2.put(001,"Fijul2");
+        map2.put(002,"Srujan2");
+        map2.put(003,"Hema2");
+        map2.put(004,"Kushal2");
+        map2.put(005,"Gopi2");
         obj1.printingNamesViaHashMap(map);
         //obj1.printingNameExcludingMy(map);
         //obj1.checkAndPrint(map,308351);
         obj1.checkAndPrintUsingStream(map,308232);
+        obj1.mergedSetsUsingLoops(set1,set2);
+        obj1.removeCommonElementsUsingHashMapsWithLoops(map1,map2);
+        obj1.removeCommonElementsUsingHashMapsWithStream(map1,map2);
 
     }
 }

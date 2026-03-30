@@ -1,4 +1,5 @@
 package com.ust.Impl;
+
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -20,8 +21,7 @@ public class CollectionsShoaib {
         names.stream().filter(name -> !name.equals("Fijul")).toList().forEach(name -> System.out.println(name));
     }
 
-    public void removeCommonElement(List<String> names1, List<String> names2) {
-
+    public void removeCommonElementUsingLoop(List<String> names1, List<String> names2) {
         List<String> temp = new ArrayList<>();
         for (String iterator : names1) {
             if (!names2.contains(iterator)) {
@@ -40,28 +40,24 @@ public class CollectionsShoaib {
     }
 
     public void removeCommonElementsUsingStreamForList(List<String> names1, List<String> names2) {
-        System.out.println("--- Remove Elements Using Stream For List");
-
+        System.out.println("Remove Elements Using Stream For List");
         List<String> temp = Stream.concat(
                 names1.stream().filter(name -> !names2.contains(name)),
                 names2.stream().filter(name -> !names1.contains(name))
         ).collect(Collectors.toList());
-
-
         temp.forEach(System.out::println);
     }
-    public void mergedLists(List<String>names1,List<String>names2)
-    {
+
+    public void mergedLists(List<String> names1, List<String> names2) {
         List<String> combinedList = new ArrayList<>();
         combinedList.addAll(names1);
         combinedList.addAll(names2);
-        var temp1 = combinedList.stream().filter(name->!names1.contains(name));
-        var temp2 = combinedList.stream().filter(name->!names2.contains(name));
-        Stream.concat(temp1,temp2).forEach(System.out::println);
+        var temp1 = combinedList.stream().filter(name -> !names1.contains(name));
+        var temp2 = combinedList.stream().filter(name -> !names2.contains(name));
+        Stream.concat(temp1, temp2).forEach(System.out::println);
     }
 
     public void hashMethodPrintNames(HashSet<String> set1, HashSet<String> set2) {
-
         System.out.println("Priniting names from HashSet Using Stream");
         Stream.concat(set1.stream(), set2.stream()).forEach(i -> System.out.println(i));
     }
@@ -97,57 +93,101 @@ public class CollectionsShoaib {
         set1.stream()
                 .filter(set2::contains)
                 .forEach(name -> System.out.println("Common Element: " + name));
-        List<String> result = Stream.concat(
+                        List<String> result = Stream.concat(
                         set1.stream().filter(name -> !set2.contains(name)),
                         set2.stream().filter(name -> !set1.contains(name))
                 )
                 .collect(Collectors.toList());
         result.forEach(System.out::println);
     }
-    public void  printingNamesViaHashMap(HashMap<Integer, String> map)
-    {
-
-            for(Integer keyValue:map.keySet())
-            {
-                System.out.println("Name->"+keyValue+"ID->"+map.get(keyValue));
+    public void mergedSetsUsingLoops(HashSet<String> set1, HashSet<String> set2) {
+        System.out.println("Merged Sets Using Loops");
+        HashSet<String> combinedSet = new HashSet<>();
+        combinedSet.addAll(set1);
+        combinedSet.addAll(set2);
+        HashSet<String> result = new HashSet<>();
+        for (String name : combinedSet) {
+            if (!set1.contains(name)) {
+                result.add(name);
             }
-            for(Map.Entry<Integer, String> name : map.entrySet()){
-                String nameval = name.getValue();
-                Integer idval = name.getKey();
-                System.out.println(nameval + "-" + idval);
+        }
+        for (String name : combinedSet) {
+            if (!set2.contains(name)) {
+                result.add(name);
             }
+        }
+        for (String name : result) {
+            System.out.println(name);
+        }
     }
-    public void printingNameExcludingMy(HashMap<Integer, String> map)
-    {
-        System.out.println("Printing all names except mine");
-        for(Map.Entry<Integer, String> name : map.entrySet()){
+
+    public void printingNamesViaHashMap(HashMap<Integer, String> map) {
+        for (Integer keyValue : map.keySet()) {
+            System.out.println("Name->" + keyValue + "ID->" + map.get(keyValue));
+        }
+        for (Map.Entry<Integer, String> name : map.entrySet()) {
             String nameval = name.getValue();
             Integer idval = name.getKey();
-            if(idval!=308232) {
+            System.out.println(nameval + "-" + idval);
+        }
+    }
+
+    public void printingNameExcludingMy(HashMap<Integer, String> map) {
+        System.out.println("Printing all names except mine");
+        for (Map.Entry<Integer, String> name : map.entrySet()) {
+            String nameval = name.getValue();
+            Integer idval = name.getKey();
+            if (idval != 308232) {
                 System.out.println(nameval + "-" + idval);
             }
         }
-
-
     }
+
     public void checkAndPrint(HashMap<Integer, String> map, int id) {
         System.out.println("Check & print method");
-           if(map.containsKey(id))
-           {
-               map.remove(id);
-           }
-           for(Integer name:map.keySet())
-           {
-               System.out.println(name+"-"+map.get(name));
-           }
-
+        if (map.containsKey(id)) {
+            map.remove(id);
         }
-        public void checkAndPrintUsingStream(HashMap<Integer, String> map, int id)
-        {
-            System.out.println("check & print using stream");
-            map.entrySet().stream().filter(name->name.getKey()!=id).forEach(System.out::println);
+        for (Integer name : map.keySet()) {
+            System.out.println(name + "-" + map.get(name));
         }
-
     }
+
+    public void checkAndPrintUsingStream(HashMap<Integer, String> map, int id) {
+        System.out.println("check & print using stream");
+        map.entrySet().stream().filter(name -> name.getKey() != id).forEach(System.out::println);
+    }
+
+    public void removeCommonElementsUsingHashMapsWithLoops(HashMap<Integer, String> map1, HashMap<Integer, String> map2) {
+        System.out.println("Removing Common Elements Using HashMaps");
+        HashMap<Integer, String> resultMap = new HashMap<>();
+        for (Map.Entry<Integer, String> entry : map1.entrySet()) {
+            if (!map2.containsValue(entry.getValue())) {
+                resultMap.put(entry.getKey(), entry.getValue());
+            }
+        }
+        for (Map.Entry<Integer, String> entry : map2.entrySet()) {
+            if (!map1.containsValue(entry.getValue())) {
+                resultMap.put(entry.getKey(), entry.getValue());
+            }
+        }
+        for (Map.Entry<Integer, String> entry : resultMap.entrySet()) {
+            System.out.println("Key: " + entry.getKey() + " --- Value: " + entry.getValue());
+        }
+    }
+    public void removeCommonElementsUsingHashMapsWithStream(HashMap<Integer,String>map1,HashMap<Integer,String>map2)
+    {
+        System.out.println("Remove Common Elements Using HashMap With Stream");
+        Map<Integer, String> uniqueToMap1 = map1.entrySet().stream()
+                .filter(entry -> !map2.containsValue(entry.getValue()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+        Map<Integer, String> uniqueToMap2 = map2.entrySet().stream()
+                .filter(entry -> !map1.containsValue(entry.getValue()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+        Map<Integer, String> finalMap = new HashMap<>(uniqueToMap1);
+        finalMap.putAll(uniqueToMap2);
+        finalMap.forEach((key, value) -> System.out.println("Key: " + key + " --- Value: " + value));
+    }
+}
 
 
