@@ -27,9 +27,6 @@ public class Main {
         names1.add("Akas");
         CollectionHemanth getNames = new CollectionHemanth();
         System.out.print(getNames.setDuplicateElements(names, names1));
-
-
-
         /*FourWheelersHemanthImpl four = new FourWheelersHemanthImpl();
         System.out.println(four.typeOfVehicle());
         System.out.println(four.hasAc());
@@ -42,8 +39,7 @@ public class Main {
         System.out.println(Arithematicoperation.addTwoNumbers(2,5));
         System.out.println(Arithematicoperation.addTwoNumbers(2, 5.1F));
         System.out.println(Arithematicoperation.multiplyTwoNumbers(3,5));*/
-
-
+        //Set<String> batchName = new HashSet<>();
         Map<String, String> newMap = new HashMap<>();
         Map<String, String> newMap1 = new HashMap<>();
         newMap.put("1", "Hemanth");
@@ -59,7 +55,6 @@ public class Main {
         newMap1.put("5", "Anu");
         newMap1.put("6", "Akash");
         CollectionHemanthMap printBatch = new CollectionHemanthMap();
-        printBatch.removeDuplicateMap(newMap,newMap1);
-
+        printBatch.removeDuplicateMap(newMap, newMap1);
     }
 }
