@@ -48,8 +48,18 @@ public class MainSrujan {
         namesPod1Map.put(308323,"Kushal");
         namesPod1Map.put(308340, "Gopi");
 
+        Map<Integer ,String> namesPod2Map = new HashMap<>();
+        namesPod2Map.put(308348,"Srujan");
+        namesPod2Map.put(123457,"Durga");
+        namesPod2Map.put(123458,"Hema");
+        namesPod2Map.put(123459,"Abhinav");
+        namesPod2Map.put(123450,"Vishnu");
+        namesPod2Map.put(012345, "Madhav");
+
+
+
 
         CollectionsSrujan2 objectToTestSrujan = new CollectionsSrujan2();
-        objectToTestSrujan.doIterationContainValue(namesPod1Map);
+        System.out.println(objectToTestSrujan.doIteration2MapsSrujan(namesPod1Map,namesPod2Map));
     }
 }
