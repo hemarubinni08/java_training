@@ -1,5 +1,4 @@
 package com.ust;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -17,8 +16,6 @@ public class CollectionHemanthMap {
             System.out.println(key1);
         }
         batchNames.entrySet().forEach(entry -> System.out.println(entry.getKey() + "->" + entry.getValue()));
-
-
         batchNames.containsValue("Hemanth");
         // batchNames.entrySet().removeIf(entry -> (entry.getKey().equals("1")));
         batchNames.entrySet().stream().filter(entry -> !(entry.getKey().
@@ -27,7 +24,6 @@ public class CollectionHemanthMap {
         Map<String, String> result = batchNames.entrySet().stream().filter(entry -> !(entry.getKey().
                 equals("1"))).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
     }
-
     public void removeDuplicateMap(Map<String, String> batchNames, Map<String, String> batchNames1) {
         Map<String, String> resultMap = new HashMap<>(batchNames1);
         Map<String, String> temporaryMap = new HashMap<>();
