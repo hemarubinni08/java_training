@@ -4,13 +4,20 @@ import java.util.*;
 
 public class MainKeerthi {
     public static void main(String[] args){
-        Map<String,String> newMap=new HashMap<>();
+        HashMap<String,String> newMap=new HashMap<>();
         newMap.put("1","keerthi");
         newMap.put("2","navya");
         newMap.put("3","harsh");
         newMap.put("4","gokul");
         newMap.put("5","deepak");
         newMap.put("6","rohit");
+        HashMap<String,String> newMap1=new HashMap<>();
+        newMap1.put("1","keerthi");
+        newMap1.put("7","lekhya");
+        newMap1.put("8","harshith");
+        newMap1.put("9","gowha");
+        newMap1.put("10","anu");
+        newMap1.put("11","amu");
 
 
 //        List<String> names = new ArrayList<>();
@@ -52,8 +59,9 @@ public class MainKeerthi {
 //    CollectionSetKvNew.removeDuplicateSet(set1,set2);
 //      CollectionSetKvNew obj=new CollectionSetKvNew();
 //       System.out.println(obj.removeDuplicateSet(set1,set2));
-        CollectionHashMapKv.hashMapIteration((HashMap<String, String>) newMap);
-        CollectionHashMapKv.checkEmployee((HashMap<String, String>) newMap);
+//        CollectionHashMapKv.hashMapIteration((HashMap<String, String>) newMap);
+//        CollectionHashMapKv.checkEmployee((HashMap<String, String>) newMap);
+        CollectionHashMapKv.removeDupilcateValues(newMap,newMap1);
 
 
 
