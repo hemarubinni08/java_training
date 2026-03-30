@@ -16,4 +16,8 @@ public class ArithmeticOperationsArdra {
     float divide(int a, int b) {
         return (float) a / (float) b;
     }
+
+    int addition(int a, int b, int c) {
+        return a + b + c;
+    }
 }

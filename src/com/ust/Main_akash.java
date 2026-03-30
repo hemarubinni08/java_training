@@ -1,12 +1,15 @@
 package com.ust;
 //Driver code for ArithmeticAkash and VehicleAkash and its child classes.
 
+import com.ust.collections.HashMapAkash;
+import com.ust.collections.IterationAkash;
+import com.ust.collections.RemoveDuplicateAkash;
 import com.ust.impl.BikeInterfaceAkashImpl;
 import com.ust.impl.CarInterfaceAkashImpl;
 import com.ust.impl.LuxuryCarInterfaceAkashImpl;
 import com.ust.impl.TruckInterfaceAkashImpl;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Main_akash {
     public static void main(String[] args) {
@@ -15,10 +18,11 @@ public class Main_akash {
         System.out.println("Enter numbers");
         int first_number = sc.nextInt();
         int second_number = sc.nextInt();
-        System.out.println("Sum of numbers: " + ArithmeticAkash.add(first_number, second_number));
-        System.out.println("Difference of numbers: " + ArithmeticAkash.subtract(first_number, second_number));
-        System.out.println("Multiplication result of numbers: " + ArithmeticAkash.multiply(first_number, second_number));
-        System.out.println("Division of numbers: " + ArithmeticAkash.division(first_number, second_number));
+        int third_number = sc.nextInt();
+        System.out.println("Sum of numbers: " + ArithmeticAkash.add(first_number, second_number, third_number));
+        System.out.println("Difference of numbers: " + ArithmeticAkash.subtract(first_number, second_number, third_number));
+        System.out.println("Multiplication result of numbers: " + ArithmeticAkash.multiply(first_number, second_number, third_number));
+        System.out.println("Division of numbers: " + ArithmeticAkash.division(first_number, second_number, third_number));
         //Driver for Vehicle class
         VehicleAkash vehicleAkash = new VehicleAkash();
         System.out.println("The details from the parent");
@@ -279,5 +283,85 @@ public class Main_akash {
             System.out.println("This is a single axle vehicle");
         }
         System.out.println("----------------------------------------------------");
+
+        IterationAkash iterationAkash = new IterationAkash();
+        List<String> names= new ArrayList<>();
+        System.out.println("Enter the names");
+        String name="";
+        for(int i=0;i<6;i++)
+        {
+            name=sc.nextLine();
+            names.add(name);
+        }
+        System.out.println();
+        System.out.println("Iteration using For loop");
+        iterationAkash.nameIterationForLoop(names);
+        System.out.println();
+        System.out.println("Iteration using Stream");
+        iterationAkash.nameIterationStream(names);
+        System.out.println("Iteration using Stream neighbour deletion");
+        iterationAkash.deleteNeighbour(names);
+        RemoveDuplicateAkash removeDuplicateAkash = new RemoveDuplicateAkash();
+        List<String> names1 = new ArrayList<>();
+        System.out.println("Enter the names");
+        String name1 = "";
+        for (int i = 0; i < 6; i++) {
+            name1 = sc.nextLine();
+            names1.add(name1);
+        }
+        List<String> names2 = new ArrayList<>();
+        System.out.println("Enter the names");
+        String name2 = "";
+        for (int i = 0; i < 6; i++) {
+            name2 = sc.nextLine();
+            names2.add(name2);
+        }
+        System.out.println();
+        System.out.println("Elimination of duplicates using for loop");
+        removeDuplicateAkash.removeUSingFor(names1, names2);
+        System.out.println();
+        System.out.println("Elimination of duplicates using stream");
+        removeDuplicateAkash.removeUSingStream(names1, names2);
+        System.out.println();
+        System.out.println("Elimination of duplicates using one for loop");
+        removeDuplicateAkash.removeUSingForOptimised(names1, names2);
+        System.out.println();
+        Set<String> namesHash1 = new HashSet<>(names1);
+        Set<String> namesHash2 = new HashSet<>(names2);
+        System.out.println("Elimination of duplicates using Hashset");
+        removeDuplicateAkash.removeUSingHashSet(namesHash1, namesHash2);
+        System.out.println();
+        System.out.println("Elimination of duplicates using Hashset Lambda function");
+        removeDuplicateAkash.removeUSingHashSetLambda(namesHash1, namesHash2);
+        System.out.println();
+        System.out.println("Elimination of duplicates using Hashset For loop");
+        removeDuplicateAkash.removeUSingHashSetForLoop(namesHash1, namesHash2);
+        System.out.println();
+        System.out.println("Enter EMPID and name of employees");
+        System.out.println();
+        Map<Integer, String> record = new HashMap<>();
+        int empid = 0;
+        String employeeName = "";
+        for (int i = 0; i < 2; i++) {
+            System.out.println("Enter EMPID:");
+            empid = sc.nextInt();
+            sc.nextLine();
+            System.out.println("Enter name:");
+            employeeName = sc.nextLine();
+            record.put(empid, employeeName);
+        }
+        HashMapAkash hashMapAkash = new HashMapAkash();
+        hashMapAkash.printValues(record);
+        System.out.println("EMPID to be removed:");
+        int removalEmpId = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Employee name to be removed:");
+        String removalName = sc.nextLine();
+        System.out.println("Filter using For loop");
+        hashMapAkash.filterEmployeeUsingForLoop(record, removalEmpId, removalName);
+        System.out.println("Filter using Functions");
+        hashMapAkash.filterEmployeeUsingFunctions(record, removalEmpId, removalName);
+        System.out.println("Filter using Lambda");
+        hashMapAkash.filterEmployeeUsingLambda(record, removalEmpId, removalName);
     }
 }
