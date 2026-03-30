@@ -1,6 +1,7 @@
 package com.ust;
 
 import com.ust.collections.CollectionsYesh;
+import com.ust.collections.HashMapYesh;
 import com.ust.impl.HeavyVehicleInterfaceYeshImpl;
 import com.ust.impl.VehicleBusYeshImpl;
 import com.ust.impl.VehicleCarYeshImpl;
@@ -30,29 +31,29 @@ public class MainYesh {
         System.out.println(carObject.itHasAc());
         ArithimeticYesh addObject=new ArithimeticYesh();
         System.out.println(addObject.addition(3,4,6));*/
-        List<String> teamMembersNames=new ArrayList<String>();
+        List<String> teamMembersNames = new ArrayList<String>();
         teamMembersNames.add("Yeshwanth");
         teamMembersNames.add("Hemanth");
         teamMembersNames.add("Ritika");
         teamMembersNames.add("Anudeepika");
         teamMembersNames.add("Ardra");
         teamMembersNames.add("Akash");
-        CollectionsYesh collectionObject=new CollectionsYesh();
+        CollectionsYesh collectionObject = new CollectionsYesh();
         collectionObject.doIterate(teamMembersNames);
         collectionObject.EliminateNeighbor(teamMembersNames);
-        List<Integer> secondList=new ArrayList<>();
+        List<Integer> secondList = new ArrayList<>();
         secondList.add(5);
         secondList.add(6);
         secondList.add(7);
-        List<Integer> firstList=new ArrayList<>();
+        List<Integer> firstList = new ArrayList<>();
         firstList.add(1);
         firstList.add(2);
         firstList.add(3);
         firstList.add(4);
         firstList.add(5);
-        System.out.println(collectionObject.removingDuplicate(firstList,secondList));
-        Set<Integer> firstSet=new HashSet<>();
-        Set<Integer> secondSet=new HashSet<>();
+        System.out.println(collectionObject.removingDuplicate(firstList, secondList));
+        Set<Integer> firstSet = new HashSet<>();
+        Set<Integer> secondSet = new HashSet<>();
         firstSet.add(1);
         firstSet.add(2);
         firstSet.add(3);
@@ -60,6 +61,22 @@ public class MainYesh {
         secondSet.add(4);
         secondSet.add(5);
         secondSet.add(6);
-        collectionObject.removingDuplicateInSet(firstSet,secondSet);
+        collectionObject.removingDuplicateInSet(firstSet, secondSet);
+        Map<Integer, String> employees = new HashMap<>();
+        employees.put(308260, "Ritika Kumari");
+        employees.put(308347, "Anudeepika");
+        employees.put(308279, "Hemanth");
+        employees.put(308339, "Ardra");
+        employees.put(308303, "Akash");
+        employees.put(308331, "Yeshwanth");
+        HashMapYesh mapObject = new HashMapYesh();
+        mapObject.iterateEmployees(employees);
+        mapObject.containsEmployee(employees, 308331, "Yeshwanth");
+        Map<Integer, String> secondMap= new HashMap<>();
+        secondMap.put(308331,"Yeshwanth");
+        secondMap.put(308279,"hemanth");
+        secondMap.put(4,"Ritika");
+        secondMap.put(5,"akash");
+        mapObject.checkForDuplicates(employees,secondMap);
     }
 }
