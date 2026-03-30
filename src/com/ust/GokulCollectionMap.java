@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 public class GokulCollectionMap {
-    public static void Names(Map<Integer,String> Map) {
+    public static void Names(Map<Integer, String> Map) {
 //        for (Integer key : Map.keySet()) {
 //            System.out.println(key);
 //        }
@@ -36,17 +36,9 @@ public class GokulCollectionMap {
             System.out.println(key + ":" + Map.get(key));
         }
 
-      for (Map.Entry<Integer, String> entry : Map.entrySet()) {
-       System.out.println(entry.getKey() + ":" + entry.getValue());
-       }
-
-
-
-
-
-
-
-
+        for (Map.Entry<Integer, String> entry : Map.entrySet()) {
+            System.out.println(entry.getKey() + ":" + entry.getValue());
+        }
 
 
 //        Map.entrySet().forEach(entry ->
@@ -56,8 +48,6 @@ public class GokulCollectionMap {
 //        Map.keySet().forEach(key ->
 //                System.out.println(key + ":" +Map.get(key))
 //        );
-
-
 
 
     }
