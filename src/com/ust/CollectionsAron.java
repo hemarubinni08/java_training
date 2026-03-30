@@ -110,12 +110,18 @@ public class CollectionsAron {
         HashSet<String> duplicateSet = new HashSet<>();
         for (Map.Entry<String, String> employee : employeesMap1.entrySet()) {
             if (employeesMap2.containsValue(employee.getValue())) {
+                employeesMap1.values().remove(employee.getValue());
                 employeesMap2.values().remove(employee.getValue());
-                duplicateSet.add(employee.getValue());
             }
         }
-        for(String duplicate: duplicateSet)
-            employeesMap2.values().remove(duplicate);
-
+//        System.out.println(duplicateSet);
+//        for(String duplicate: duplicateSet)
+//            employeesMap2.values().remove(duplicate);
+        for (Map.Entry<String, String> employee : employeesMap1.entrySet()) {
+            System.out.println(employee.getKey() + " - " + employee.getValue());
+        }
+        for (Map.Entry<String, String> employee : employeesMap2.entrySet()) {
+            System.out.println(employee.getKey() + " - " + employee.getValue());
+        }
     }
 }
