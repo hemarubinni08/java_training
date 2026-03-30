@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 
 public class CollectionRitika {
+
     public void doIterate(List<String> lists) {
         for (String list : lists) {
             System.out.println(list);
@@ -18,9 +19,7 @@ public class CollectionRitika {
     public void filterIterate(List<String> members) {
 
         for (String name : members) {
-            if (name == "Anu") {
-                continue;
-            } else {
+            if (!name.equalsIgnoreCase("Anu")) {
                 System.out.println(name);
             }
         }
@@ -32,22 +31,26 @@ public class CollectionRitika {
         List<String> newL2 = new ArrayList<>();
         newL1.addAll(list1);
         newL1.addAll(list2);
+
         for (String value : list1) {
             if (!list2.contains(value)) {
                 newL1.add(value);
             }
         }
+
         for (String value : list2) {
             if (!list1.contains(value)) {
                 newL1.add(value);
             }
         }
+
         // Combined list
         for (String value : newL1) {
             if (!(list2.contains(value) && (list1.contains(value)))) {
                 newL2.add(value);
             }
         }
+
         //Lambda expression
         newL1.addAll(list1.stream().filter(value -> !list2.contains(value)).toList());
         newL1.addAll(list2.stream().filter(value -> !list1.contains(value)).toList());
@@ -91,27 +94,25 @@ public class CollectionRitika {
     }
 
     //Map
-    public void idRitu(Map<String, String> newmap) {
+    public void doIterate(Map<String, String> newmap) {
         //ForEach
         newmap.forEach((empid, name) -> System.out.println(empid + "-" + name));
         //Keyset
         for (String empid : newmap.keySet()) {
             System.out.println(empid + "-" + newmap.get(empid));
         }
-        //Lambda expression
-        newmap.entrySet().stream().forEach(entry -> System.out.println(entry.getKey() + "-" + entry.getValue()));
-    }
-
-    public void idMapEntrySetRitu(Map<String, String> newMap) {
-        for (Map.Entry<String, String> entry : newMap.entrySet()) {
+        //entryset
+        for (Map.Entry<String, String> entry : newmap.entrySet()) {
             if (entry.getKey().equalsIgnoreCase("101") && entry.getValue().equalsIgnoreCase("Ritu")) {
                 continue;
             }
             System.out.println(entry.getKey() + "-" + entry.getValue());
         }
+        //Lambda expression
+        newmap.forEach((key, value) -> System.out.println(key + "-" + value));
     }
 
-    public void specificId(Map<String, String> newMap) {
+    public void removeByKey(Map<String, String> newMap) {
         if (newMap.containsKey("101")) {
             newMap.remove("101");
         }
@@ -120,7 +121,7 @@ public class CollectionRitika {
         }
     }
 
-    public void specificIdLambda(Map<String, String> newMap) {
+    public void removeByKeyLambda(Map<String, String> newMap) {
         newMap.entrySet().stream().filter(entry -> !(entry.getKey().equalsIgnoreCase("101"))).forEach(entry -> System.out.println(entry.getKey() + "-" + entry.getValue()));
     }
 
