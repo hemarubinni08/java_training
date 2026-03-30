@@ -1,8 +1,11 @@
-package com.ust.impl;
+package com.ust;
 
 //import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Set;
+import java.util.Map;
+
+import static com.ust.CollectionsHashMapDeepak.printHashMap;
 
 public class CollectionsDeepakMain {
     public static void main(String[] args) {
@@ -32,21 +35,31 @@ public class CollectionsDeepakMain {
 //
 //        CollectionsDeepak.iterationCollections(list1, list2);
 //HashSet
-        HashSet<Integer> set1 = new HashSet<>();
-        set1.add(1);
-        set1.add(2);
-        set1.add(3);
-        set1.add(4);
-        set1.add(5);
+//        HashSet<Integer> set1 = new HashSet<>();
+//        set1.add(1);
+//        set1.add(2);
+//        set1.add(3);
+//        set1.add(4);
+//        set1.add(5);
+//
+//        HashSet<Integer> set2 = new HashSet<>();
+//        set2.add(3);
+//        set2.add(5);
+//        set2.add(6);
+//        set2.add(7);
+//        set2.add(8);
+//
+//        CollectionsDeepakHashSet.iterationCollections(set1, set2);
+        Map<Integer, String> map = new HashMap<>();
 
-        HashSet<Integer> set2 = new HashSet<>();
-        set2.add(3);
-        set2.add(5);
-        set2.add(6);
-        set2.add(7);
-        set2.add(8);
+        map.put(1, "Navya");
+        map.put(2, "Deepak");
+        map.put(3, "Gokul");
+        map.put(4,"rohit");
+        map.put(5,"harsh");
+        map.put(6,"keerthi");
 
-        CollectionsDeepakHashSet.iterationCollections(set1, set2);
+        printHashMap(map);
 
     }
 }

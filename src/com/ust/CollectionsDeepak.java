@@ -1,4 +1,4 @@
-package com.ust.impl;//package com.ust.impl;
+package com.ust;//package com.ust.impl;
 //
 //import java.util.List;
 //

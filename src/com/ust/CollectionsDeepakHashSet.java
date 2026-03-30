@@ -1,8 +1,6 @@
-package com.ust.impl;
+package com.ust;
 
-import java.sql.SQLOutput;
 import java.util.HashSet;
-import java.util.Set;
 
 public class CollectionsDeepakHashSet {
 
