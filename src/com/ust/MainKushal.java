@@ -1,6 +1,6 @@
 package com.ust;
-import java.util.ArrayList;
-import java.util.List;
+
+import java.util.*;
 
 public class MainKushal {
     static void main() {
@@ -53,20 +53,42 @@ public class MainKushal {
 //        System.out.println("Bike Comes Under Category of type : " + bak.getVehicleType());
 //        System.out.println("Truck Has Windows : " + tak.hasWindows());
 //        System.out.println("Truck Has This many Doors : " + tak.hasWindows());
-
-        List<String> podMembers = new ArrayList<>();
-        List<String> nonPodMembers = new ArrayList<>(List.of("Raja","Vignesh","Rajith","Sanjay","Srujan"));
-        podMembers.add("Kushal");
-        podMembers.add("Srujan");
-        podMembers.add("Faijul");
-        podMembers.add("Shoaib");
-        podMembers.add("Hema");
-        podMembers.add("Gopi");
-
         CollectionsKushal ck = new CollectionsKushal();
 
-        //ck.doIteration(podMembers);
-        //ck.doIterationExcludingNeighbour(podMembers);
-        ck.doIterationRemoveDuplicatesFromTwoLists(podMembers,nonPodMembers);
+//        List<String> podMembers = new ArrayList<>();
+//        List<String> nonPodMembers = new ArrayList<>(List.of("Raja","Kushal","Vignesh","Rajith","Sanjay","Srujan","Srujan"));
+//        podMembers.add("Kushal");
+//        podMembers.add("Srujan");
+//        podMembers.add("Faijul");
+//        podMembers.add("Shoaib");
+//        podMembers.add("Hema");
+//        podMembers.add("Gopi");
+//
+//        HashSet<String> podMembersSet = new HashSet<>();
+//        HashSet<String> nonPodMembersSet = new HashSet<>(Set.of("Raja","Kushal","Vignesh","Rajith","Sanjay","Srujan"));
+//        podMembersSet.add("Kushal");
+//        podMembersSet.add("Srujan");
+//        podMembersSet.add("Faijul");
+//        podMembersSet.add("Shoaib");
+//        podMembersSet.add("Hema");
+//        podMembersSet.add("Gopi");
+
+//        ck.doIteration(podMembers);
+//        ck.doIterationExcludingNeighbour(podMembers);
+//        ck.doIterationRemoveDuplicatesFromTwoLists1(podMembers,nonPodMembers);
+//        ck.doIteration(podMembersSet,nonPodMembersSet);
+//        ck.doIterationRemoveDuplicatesFromTwoSets(podMembersSet,nonPodMembersSet);
+//        ck.doIterationRemoveDuplicatesFromTwoSets1(podMembersSet,nonPodMembersSet);
+
+        Map<Integer, String> podMembers = new HashMap<>();
+        podMembers.put(308323, "Kushal");
+        podMembers.put(308348, "Srujan");
+        podMembers.put(308351, "Fijul");
+        podMembers.put(308232, "Shoaib");
+        podMembers.put(308250, "Hema");
+        podMembers.put(308340, "Gopinath");
+
+//        ck.doIteration(podMembers);
+        ck.doIterationExcludingMyName(podMembers);
     }
 }

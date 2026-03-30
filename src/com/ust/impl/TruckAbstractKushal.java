@@ -1,6 +1,6 @@
-package com.ust.impl;
+package com.ust.Impl;
 
-public class TruckAbstractKushal extends VehicleAbstractKushal {
+public class TruckAbstractKushal extends com.ust.impl.VehicleAbstractKushal {
 
     @Override
     public int getWheelsCount() {
