@@ -1,9 +1,7 @@
 package com.ust;
-//Driver code for ArithmeticAkash and VehicleAkash and its child classes.
+//Driver code
 
-import com.ust.collections.HashMapAkash;
-import com.ust.collections.IterationAkash;
-import com.ust.collections.RemoveDuplicateAkash;
+import com.ust.collections.*;
 import com.ust.impl.BikeInterfaceAkashImpl;
 import com.ust.impl.CarInterfaceAkashImpl;
 import com.ust.impl.LuxuryCarInterfaceAkashImpl;
@@ -13,7 +11,6 @@ import java.util.*;
 
 public class Main_akash {
     public static void main(String[] args) {
-        ArithmeticAkash arithmeticObject = new ArithmeticAkash();
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter numbers");
         int first_number = sc.nextInt();
@@ -23,6 +20,7 @@ public class Main_akash {
         System.out.println("Difference of numbers: " + ArithmeticAkash.subtract(first_number, second_number, third_number));
         System.out.println("Multiplication result of numbers: " + ArithmeticAkash.multiply(first_number, second_number, third_number));
         System.out.println("Division of numbers: " + ArithmeticAkash.division(first_number, second_number, third_number));
+
         //Driver for Vehicle class
         VehicleAkash vehicleAkash = new VehicleAkash();
         System.out.println("The details from the parent");
@@ -31,6 +29,7 @@ public class Main_akash {
         System.out.println("Seating capacity: " + vehicleAkash.seatingCapacity());
         System.out.println("Power Generated: " + vehicleAkash.powerGenerated());
         System.out.println("----------------------------------------------------");
+
         //Driver for Car class
         CarVehicleAkash carVehicleAkash = new CarVehicleAkash();
         System.out.println("The details from the Car");
@@ -40,6 +39,7 @@ public class Main_akash {
         System.out.println("Power Generated: " + carVehicleAkash.powerGenerated());
         System.out.println("Number of doors: " + carVehicleAkash.numberOfDoors());
         System.out.println("This is a heavy vehicle");
+
         if (carVehicleAkash.isCommercial()) {
             System.out.println("This is a commercial vehicle.");
         } else {
@@ -56,6 +56,7 @@ public class Main_akash {
             System.out.println("This is a single axle vehicle");
         }
         System.out.println("----------------------------------------------------");
+
         //Driver for Bike class
         BikeAkash bikeAkash = new BikeAkash();
         System.out.println("The details from the Bike");
@@ -65,6 +66,7 @@ public class Main_akash {
         System.out.println("Power Generated: " + bikeAkash.powerGenerated());
         System.out.println("This is a light vehicle");
         System.out.println("----------------------------------------------------");
+
         //Driver for Truck class
         TruckAkash truckAkash = new TruckAkash();
         System.out.println("The details from the Truck");
@@ -90,6 +92,7 @@ public class Main_akash {
             System.out.println("This is a single axle vehicle");
         }
         System.out.println("----------------------------------------------------");
+
         //Driver for Luxury class
         LuxuryCarAkash luxuryCarAkash = new LuxuryCarAkash();
         System.out.println("The details from the Luxury car");
@@ -99,6 +102,7 @@ public class Main_akash {
         System.out.println("Power Generated: " + luxuryCarAkash.powerGenerated());
         System.out.println("Number of doors: " + luxuryCarAkash.numberOfDoors());
         System.out.println("This is a heavy vehicle");
+
         if (luxuryCarAkash.isCommercial()) {
             System.out.println("This is a commercial vehicle.");
         } else {
@@ -117,6 +121,7 @@ public class Main_akash {
         System.out.println("----------------------------------------------------");
         System.out.println();
         System.out.println("Inheritance using interface");
+
         //Driver for Car class
         CarInterfaceAkashImpl carInterfaceAkash = new CarInterfaceAkashImpl();
         System.out.println("The details from the Car");
@@ -126,6 +131,7 @@ public class Main_akash {
         System.out.println("Power Generated: " + carInterfaceAkash.powerGenerated());
         System.out.println("Number of doors: " + carInterfaceAkash.numberOfDoors());
         System.out.println("This is a heavy vehicle");
+
         if (carInterfaceAkash.isCommercial()) {
             System.out.println("This is a commercial vehicle.");
         } else {
@@ -142,6 +148,7 @@ public class Main_akash {
             System.out.println("This is a single axle vehicle");
         }
         System.out.println("----------------------------------------------------");
+
         //Driver for Bike class
         BikeInterfaceAkashImpl bikeInterfaceAkash = new BikeInterfaceAkashImpl();
         System.out.println("The details from the Bike");
@@ -151,6 +158,7 @@ public class Main_akash {
         System.out.println("Power Generated: " + bikeInterfaceAkash.powerGenerated());
         System.out.println("This is a light vehicle");
         System.out.println("----------------------------------------------------");
+
         //Driver for Truck class
         TruckInterfaceAkashImpl truckInterfaceAkash = new TruckInterfaceAkashImpl();
         System.out.println("The details from the Truck");
@@ -176,6 +184,7 @@ public class Main_akash {
             System.out.println("This is a single axle vehicle");
         }
         System.out.println("----------------------------------------------------");
+
         //Driver for Luxury class
         LuxuryCarInterfaceAkashImpl luxuryCarInterfaceAkash = new LuxuryCarInterfaceAkashImpl();
         System.out.println("The details from the Luxury car");
@@ -318,37 +327,37 @@ public class Main_akash {
         }
         System.out.println();
         System.out.println("Elimination of duplicates using for loop");
-        removeDuplicateAkash.removeUSingFor(names1, names2);
+        removeDuplicateAkash.removeUsingFor(names1, names2);
         System.out.println();
         System.out.println("Elimination of duplicates using stream");
-        removeDuplicateAkash.removeUSingStream(names1, names2);
+        removeDuplicateAkash.removeUsingStream(names1, names2);
         System.out.println();
         System.out.println("Elimination of duplicates using one for loop");
-        removeDuplicateAkash.removeUSingForOptimised(names1, names2);
+        removeDuplicateAkash.removeUsingForOptimised(names1, names2);
         System.out.println();
         Set<String> namesHash1 = new HashSet<>(names1);
         Set<String> namesHash2 = new HashSet<>(names2);
         System.out.println("Elimination of duplicates using Hashset");
-        removeDuplicateAkash.removeUSingHashSet(namesHash1, namesHash2);
+        removeDuplicateAkash.removeUsingHashSet(namesHash1, namesHash2);
         System.out.println();
         System.out.println("Elimination of duplicates using Hashset Lambda function");
-        removeDuplicateAkash.removeUSingHashSetLambda(namesHash1, namesHash2);
+        removeDuplicateAkash.removeUsingHashSetLambda(namesHash1, namesHash2);
         System.out.println();
         System.out.println("Elimination of duplicates using Hashset For loop");
-        removeDuplicateAkash.removeUSingHashSetForLoop(namesHash1, namesHash2);
+        removeDuplicateAkash.removeUsingHashSetForLoop(namesHash1, namesHash2);
         System.out.println();
         System.out.println("Enter EMPID and name of employees");
         System.out.println();
         Map<Integer, String> record = new HashMap<>();
-        int empid = 0;
+        int empId = 0;
         String employeeName = "";
         for (int i = 0; i < 2; i++) {
             System.out.println("Enter EMPID:");
-            empid = sc.nextInt();
+            empId = sc.nextInt();
             sc.nextLine();
             System.out.println("Enter name:");
             employeeName = sc.nextLine();
-            record.put(empid, employeeName);
+            record.put(empId, employeeName);
         }
         HashMapAkash hashMapAkash = new HashMapAkash();
         hashMapAkash.printValues(record);
@@ -363,5 +372,40 @@ public class Main_akash {
         hashMapAkash.filterEmployeeUsingFunctions(record, removalEmpId, removalName);
         System.out.println("Filter using Lambda");
         hashMapAkash.filterEmployeeUsingLambda(record, removalEmpId, removalName);
+        System.out.println("Enter EMPID and name for Map 1");
+        Map<Integer, String> map1 = new HashMap<>();
+        Map<Integer, String> map2 = new HashMap<>();
+        for (int i = 0; i < 2; i++) {
+            System.out.println("Enter EMPID:");
+            int empIdForMap = sc.nextInt();
+            sc.nextLine();
+            System.out.println("Enter name:");
+            String nameForMap = sc.nextLine();
+            map1.put(empIdForMap, nameForMap);
+        }
+        System.out.println("Enter the details for Map 2:");
+        for (int i = 0; i < 2; i++) {
+            System.out.println("Enter EMPID:");
+            int empIdForMap = sc.nextInt();
+            sc.nextLine();
+            System.out.println("Enter name:");
+            String nameForMap = sc.nextLine();
+            map2.put(empIdForMap, nameForMap);
+        }
+
+        RemoveDuplicateKeysHashMapAkash removeDuplicateKeysHashMapAkash = new RemoveDuplicateKeysHashMapAkash();
+        System.out.println("Removal of duplicate keys using single for loop:");
+        removeDuplicateKeysHashMapAkash.removeDuplicatesUsingForLoop(map1, map2);
+        System.out.println();
+        System.out.println("Removal of duplicate keys using Lambda function:");
+        removeDuplicateKeysHashMapAkash.removeDuplicatesUsingLambda(map1, map2);
+        System.out.println();
+        RemoveDuplicateValueHashMapAkash removeDuplicateValueHashMapAkash = new RemoveDuplicateValueHashMapAkash();
+        System.out.println("Removal of duplicate values using single for loop:");
+        removeDuplicateValueHashMapAkash.removeDuplicatesUsingForLoop(map1, map2);
+        System.out.println();
+        System.out.println("Removal of duplicate values using Lambda function:");
+        removeDuplicateValueHashMapAkash.removeDuplicatesUsingLambda(map1, map2);
+        System.out.println();
     }
 }
