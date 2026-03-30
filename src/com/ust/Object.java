@@ -4,7 +4,9 @@ import com.ust.impl.CarInterfaceChailaImpl;
 import com.ust.impl.TruckInterfaceChailaImpl;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import static com.ust.ListChaila.mergelist;
 
@@ -63,9 +65,10 @@ public class Object {
  */
 public class Object{
     public static void main(String[] args){
-        List<Integer> list1 = new ArrayList<>();
-        List<Integer> list2 = new ArrayList<>();
-
+       // List<Integer> list1 = new ArrayList<>();
+        // List<Integer> list2 = new ArrayList<>();
+        HashSet<Integer> list1 = new HashSet<>();
+        HashSet<Integer> list2 = new HashSet<>();
         list1.add(1);
         list1.add(2);
         list1.add(3);
@@ -77,8 +80,16 @@ public class Object{
         list2.add(9);
         list2.add(10);
         list2.add(1);
-        List<Integer> result = mergelist(list1,list2);
-        System.out.println(result);
+        CollectionHashsetChaila obj = new CollectionHashsetChaila();
+        //obj.hashset(list1,list2);
+        //obj.removeDuplicate(list1,list2);
+
+        //obj.mapPodMembers();
+        //obj.removeMyNameUsingKey();
+        obj.removeMyNameUsingValue();
+        //obj.checkUsingId();
+
+
 
 
     }
