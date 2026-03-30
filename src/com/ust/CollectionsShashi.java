@@ -149,11 +149,27 @@ public class CollectionsShashi {
     public void removeDuplicateValue(Map<Integer, String> employData, Map<Integer, String> employData1) {
         Map<Integer, String> mergedMap = new HashMap<>(employData);
         mergedMap.putAll(employData1);
-        if (mergedMap.containsValue("a")) {
-            employData.values().remove("b");
+        Map<Integer, String> duplicateMap = new HashMap<>();
+//        System.out.println("Printing unique names");
+//        if (mergedMap.containsValue("b")) {
+//            employData.values().remove("b");
+//        }
+//        for (Map.Entry<Integer, String> name : mergedMap.entrySet()) {
+//            System.out.println(name.getKey() + "-" + name.getValue());
+//        }
+        System.out.println("printing duplicate value");
+        for (Map.Entry<Integer, String> emplData : employData.entrySet()) {
+            if (employData1.containsValue(emplData.getValue())) {
+                duplicateMap.put(emplData.getKey(), emplData.getValue());
+            }
         }
-        for (Map.Entry<Integer, String> name : mergedMap.entrySet()) {
-            System.out.println(name.getKey() + "-" + name.getValue());
+        System.out.println(duplicateMap);
+        System.out.println("printing unique values only");
+        for (Map.Entry<Integer, String> emplData : mergedMap.entrySet()) {
+            if (duplicateMap.containsValue(emplData.getValue())) {
+                continue;
+            }
+            System.out.println(emplData.getKey() + "-" + emplData.getValue());
         }
     }
 }
