@@ -52,9 +52,9 @@ public class Main {
         newMap.put("4", "Ritu");
         newMap.put("5", "Anu");
         newMap.put("6", "Akash");
-        newMap1.put("7", "Hemanth");
-        newMap1.put("8", "Yesh");
-        newMap1.put("9", "Ardra");
+        newMap1.put("7", "Hemant");
+        newMap1.put("8", "Yes");
+        newMap1.put("9", "Ardr");
         newMap1.put("10", "Ritu");
         newMap1.put("5", "Anu");
         newMap1.put("6", "Akash");

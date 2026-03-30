@@ -41,8 +41,9 @@ public class CollectionHemanthMap {
         Map<String,String> resultMap= new HashMap<>(batchNames1);
         resultMap.putAll(batchNames);
         for (Map.Entry<String,String> name : batchNames.entrySet()){
-            if(batchNames1.containsKey(name.getKey())){
+            if(batchNames1.containsKey(name.getKey()) || batchNames1.containsValue(name.getValue()) ){
                 resultMap.remove(name.getKey());
+                resultMap.values().remove(name.getValue());
             }
         }
         for (Map.Entry<String,String>name : resultMap.entrySet()){
