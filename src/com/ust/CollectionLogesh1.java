@@ -30,6 +30,7 @@ public class CollectionLogesh1 {
         for (Map.Entry<String, String> name : podMember.entrySet()) {
             System.out.println(name.getKey() + "-" + name.getValue());
         }
+
     }
 
     public void findDuplicates(Map<String, String> podMember, Map<String, String> podMember1) {
@@ -45,11 +46,5 @@ public class CollectionLogesh1 {
         for (Map.Entry<String, String> name : result.entrySet()) {
             System.out.println(name.getKey() + "-" + name.getValue());
         }
-//        for (Map.Entry<String, String> name : podMember1.entrySet()){
-//            if(result.containsValue(name.getValue())){
-//                continue;
-//            }
-//            System.out.println(name.getKey()+"-"+name.getValue());
-//        }
     }
 }
