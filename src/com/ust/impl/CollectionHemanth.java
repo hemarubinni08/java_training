@@ -5,7 +5,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-
 public class CollectionHemanth {
     public void doIterate(List<String> batchNames) {
         for (String names : batchNames) {
@@ -42,7 +41,6 @@ public class CollectionHemanth {
                 returnList.add(names);
             }
         }
-
         // batchNames.stream().filter(name-> !batchNames1.contains(name)).forEach(returnList::add);
         //batchNames1.stream().filter(name-> !batchNames.contains(name)).forEach(returnList::add);
        /* returnList.addAll(batchNames);
@@ -53,7 +51,6 @@ public class CollectionHemanth {
     public Set<String> setDuplicateElements(Set<String> batchNAmes, Set<String> batchNAmes1) {
         Set<String> combinedSet = new HashSet<>();
         Set<String> tempSet = new HashSet<>();
-
         combinedSet.addAll(batchNAmes);
         combinedSet.addAll(batchNAmes1);
         String temp = "";
