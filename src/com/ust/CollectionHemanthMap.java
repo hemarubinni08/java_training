@@ -49,6 +49,5 @@ public class CollectionHemanthMap {
         resultMap.entrySet().stream().filter(entry -> !(temporaryMap.containsKey(entry.getKey()) ||
                 temporaryMap.containsValue(entry.getValue()))).forEach(entry -> System.out.println(entry.getKey() + "->" + entry.getValue()));
         //resultMap.entrySet().removeIf(entry-> temporaryMap.containsKey(entry.getKey()) || temporaryMap.containsValue(entry.getValue()));
-
     }
 }
