@@ -30,11 +30,24 @@ public class CollectionHashMapKv {
             map.remove("1");
         }
         for (Map.Entry<String, String> entry : map.entrySet()) {
-            System.out.println(entry.getKey() + " -> " + entry.getValue());
+            System.out.println(entry.getKey() + " - " + entry.getValue());
         }
         for(String key:map.keySet()){
             System.out.println(key+"-"+map.get(key));
         }
+        if (map.containsValue("keerthi")){
+            map.values().remove("keerthi");
+        }
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            if(!(entry.getValue().equals("keerthi"))) {
+                System.out.println(entry.getKey() + "-" + entry.getValue());
+            }
+        }
+        map.entrySet().removeIf(entry -> (entry.getValue().equals("keerthi")));
+        System.out.println(map);
+        map.entrySet().stream().filter(entry ->
+                !(entry.getValue().equals("keerthi"))).forEach(entry ->
+                System.out.println(entry.getKey()+"->"+entry.getValue()));
     }
 
 }
