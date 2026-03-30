@@ -1,17 +1,25 @@
 package com.ust;
 
+import com.ust.impl.HeavyVehicleInterfaceImpl;
+import com.ust.impl.RohitBikeImpl;
+import com.ust.impl.RohitCarImpl;
+import com.ust.impl.RohitTruckImpl;
+
 class Rohit {
     public static void main(String[] args) {
-        BikeRohit B = new BikeRohit();
-        System.out.println("This bike is a " + B.brand() + " with a top speed of " + B.speed() + "\nDoes it have doors: " + B.doors() + "\nDoes it have AC: " + B.hasAc() + "\nNo of people that can be seated:" + B.noOfSeats());
+        VehicleInterfaceRohit B = new RohitBikeImpl();
+        System.out.println("This bike is a " + B.brand() + " with a top speed of " + B.speed() + "\nDoes it have doors: " + B.doors() + "\nDoes it have AC: " + B.hasAc() + "\nNo of seats: " + B.noOfSeats());
 
-        CarRohit C = new CarRohit();
-        System.out.println("A " + C.brand() + " car has " + C.noOfWheels() + " wheels" + "" + "\nDoes it have doors: " + C.doors() + "" + "\nDoes it have AC: " + C.hasAc() + "\nNo of people that can be seated:" + C.noOfSeats());
+        VehicleInterfaceRohit C = new RohitCarImpl();
+        System.out.println("A " + C.brand() + " car has " + C.noOfWheels() + " wheels \nDoes it have doors: " + C.doors() + "\nDoes it have AC: " + C.hasAc() + "\nNo of seats: " + C.noOfSeats());
         System.out.println("Color of car is " + C.color());
 
-        TruckRohit T = new TruckRohit();
-        System.out.println("Truck has " + T.noOfWheels() + " wheels.");
-        System.out.println("Color of truck is " + T.color());
-        System.out.println("Truck is a " + T.heavy() + " which is " + T.color() + " in color" + "" + "\nDoes it have doors: " + T.doors() + "" + "\nDoes it have AC: " + T.hasAc() + "\nNo of people that can be seated:" + T.noOfSeats());
+        HeavyVehicleInterfaceRohit T = new RohitTruckImpl();
+        System.out.println(" can truck carry heavy load? " + T.carryHeavy());
+        System.out.println("To drive truck do we need heavy licence? " + T.needHeavyLicense());
+
+        VehicleAbstractRohit Train = new TrainAbstractRohit();
+        System.out.println("Train");
+        System.out.println("Fast: "+Train.fast()+"\nMileage: "+Train.mileage()+"\nSpeed: "+Train.speed());
     }
 }
