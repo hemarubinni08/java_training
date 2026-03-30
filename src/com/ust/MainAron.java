@@ -24,9 +24,9 @@ public class MainAron {
         names2.add("Aron");
         // Class Object
         CollectionsAron collection = new CollectionsAron();
-//        collection.doIteration(names);
-//        collection.filteredIteration(names);
-//        collection.uniqueElement(names1, names2);
+        collection.doIteration(names1);
+        collection.filteredIteration(names1);
+        collection.uniqueElement(names1, names2);
         HashSet<String> setNames1 = new HashSet<>();
         setNames1.add("Aron");
         setNames1.add("Lekhya");
@@ -41,12 +41,11 @@ public class MainAron {
         setNames2.add("Raja");
         setNames2.add("Chris");
         setNames2.add("Aron");
-//        collection.traverseSet(setNames1, setNames2);
+        collection.traverseSet(setNames1, setNames2);
         System.out.println();
-//        collection.filterSet(setNames1);
+        collection.filterSet(setNames1);
         System.out.println();
-//        collection.removeDuplicateSet(setNames1, setNames2);
-
+        collection.removeDuplicateSet(setNames1, setNames2);
         // HashMap with key as employee id and value as team member name
         Map<String, String> employeesMap1 = new HashMap<>();
         employeesMap1.put("308336", "Aron");
@@ -54,15 +53,14 @@ public class MainAron {
         employeesMap1.put("308337", "Lekhya");
         employeesMap1.put("308343", "Logesh");
         employeesMap1.put("308333", "Chaila");
-
         Map<String, String> employeesMap2 = new HashMap<>();
         employeesMap2.put("308336", "Aron");
         employeesMap2.put("308239", "Ram");
         employeesMap2.put("308331", "Charan");
-
-//        collection.traverseMap(employeesMap);
-//        collection.removeMeMapKey(employeesMap1, "308336");
-//        collection.removeMeMapValue(employeesMap1, "Aron");
-        collection.removeDuplicatesMap(employeesMap1, employeesMap2);
+        collection.traverseMap(employeesMap1);
+        collection.removeMeMapKey(employeesMap1, "308336");
+        collection.removeMeMapValue(employeesMap1, "Aron");
+        collection.removeDuplicatesValueMap(employeesMap1, employeesMap2);
+        collection.removeDuplicatesKeyMap(employeesMap1, employeesMap2);
     }
 }

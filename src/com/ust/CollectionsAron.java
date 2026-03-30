@@ -1,6 +1,7 @@
 package com.ust;
 
 import java.util.*;
+import java.util.stream.Stream;
 
 // function to print all the names of people in your pod
 public class CollectionsAron {
@@ -106,7 +107,7 @@ public class CollectionsAron {
         }
     }
 
-    public void removeDuplicatesMap(Map<String, String> employeesMap1, Map<String, String> employeesMap2) {
+    public void removeDuplicatesValueMap(Map<String, String> employeesMap1, Map<String, String> employeesMap2) {
         HashSet<String> duplicateSet = new HashSet<>();
         for (Map.Entry<String, String> employee : employeesMap1.entrySet()) {
             if (employeesMap2.containsValue(employee.getValue())) {
@@ -114,14 +115,29 @@ public class CollectionsAron {
                 employeesMap2.values().remove(employee.getValue());
             }
         }
-//        System.out.println(duplicateSet);
-//        for(String duplicate: duplicateSet)
-//            employeesMap2.values().remove(duplicate);
+        System.out.println(duplicateSet);
+        for (String duplicate : duplicateSet)
+            employeesMap2.values().remove(duplicate);
         for (Map.Entry<String, String> employee : employeesMap1.entrySet()) {
             System.out.println(employee.getKey() + " - " + employee.getValue());
         }
         for (Map.Entry<String, String> employee : employeesMap2.entrySet()) {
             System.out.println(employee.getKey() + " - " + employee.getValue());
         }
+    }
+
+    public void removeDuplicatesKeyMap(Map<String, String> employeesMap1, Map<String, String> employeesMap2) {
+        for (String key : employeesMap1.keySet()) {
+            if (employeesMap2.containsKey(key)) {
+                employeesMap1.remove(key);
+                employeesMap2.remove(key);
+            }
+        }
+        Map<String, String> mergedMap = new HashMap<>(employeesMap1);
+        mergedMap.putAll(employeesMap2);
+        for (Map.Entry<String, String> employee : mergedMap.entrySet()) {
+            System.out.println(employee.getKey() + " - " + employee.getValue());
+        }
+        Stream.concat(employeesMap1.entrySet().stream().filter(e1 -> !employeesMap2.containsKey(e1.getKey())), employeesMap2.entrySet().stream().filter(e2 -> !employeesMap1.containsKey(e2.getKey()))).forEach(e -> System.out.println(e.getKey() + " - " + e.getValue()));
     }
 }
