@@ -148,21 +148,25 @@ public class CollectionsShashi {
 
     public void removeDuplicateValue(Map<Integer, String> employData, Map<Integer, String> employData1) {
         Map<Integer, String> duplicateMap = new HashMap<>();
-//        System.out.println("Printing unique names");
-//        if (mergedMap.containsValue("b")) {
-//            employData.values().remove("b");
-//        }
-//        for (Map.Entry<Integer, String> name : mergedMap.entrySet()) {
-//            System.out.println(name.getKey() + "-" + name.getValue());
-//        }
+/*
+        System.out.println("Printing unique names");
+        if (mergedMap.containsValue("b")) {
+            employData.values().remove("b");
+        }
+        for (Map.Entry<Integer, String> name : mergedMap.entrySet()) {
+            System.out.println(name.getKey() + "-" + name.getValue());
+        }
+*/
         System.out.println("printing duplicate value");
         for (Map.Entry<Integer, String> emplData : employData.entrySet()) {
             if (employData1.containsValue(emplData.getValue())) {
                 duplicateMap.put(emplData.getKey(), emplData.getValue());
             }
-//            if(employData1.containsKey(emplData.getKey())){
-//                duplicateMap.put(emplData.getKey(),emplData.getValue());
-//            }
+/*
+            if(employData1.containsKey(emplData.getKey())){
+                duplicateMap.put(emplData.getKey(),emplData.getValue());
+            }
+*/
         }
         // to remove duplicate keys
         for (Integer key : employData.keySet()) {
