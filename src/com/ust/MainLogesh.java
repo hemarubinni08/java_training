@@ -12,9 +12,16 @@ public class MainLogesh {
         podMember.put("3", "Aron");
         podMember.put("4", "chaila");
         podMember.put("5", "Lekhya");
+        Map<String, String> podMember1 = new HashMap<>();
+        podMember.put("1", "logesh");
+        podMember.put("7", "Vijay");
+        podMember.put("8", "Rohit");
+        podMember.put("9", "rgff");
+        podMember.put("10", "Lekhvbvya");
         CollectionLogesh1 printname = new CollectionLogesh1();
         printname.podName(podMember);
         printname.removeOwn(podMember);
+        printname.findDuplicates(podMember, podMember1);
 
         List<String> names = new ArrayList<>();
         names.add("Logesh");
