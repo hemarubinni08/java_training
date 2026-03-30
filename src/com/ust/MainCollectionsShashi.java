@@ -46,6 +46,7 @@ public class MainCollectionsShashi {
         employeeData.put(3, "c");
         employeeData.put(4, "d");
         employeeData.put(5, "e");
+        employeeData.put(6, "z");
 
         Map<Integer, String> employeeData1 = new HashMap<>();
         employeeData1.put(6, "f");
