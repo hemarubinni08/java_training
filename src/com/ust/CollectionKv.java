@@ -4,31 +4,31 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
+import static java.util.stream.Collectors.toList;
+
 
 public class CollectionKv {
-//     public void collectionIterations(List<String> names) {
-  //       for (String name : names) {
-    //         System.out.println(name);
-      //   }
-     //}
-    //public void listIteration(List<String> sree) {
-      // for (String name : sree) {
-        //    System.out.println(sree);
-        //}
-    //}
+    public static void collectionIterations(List<String> names) {
+         for (String name : names) {
+             System.out.println(name);
+         }
+     }
 
 
-    public static void getNonDuplicate(List<String> names, List<String> sree){
+    public static void getNonDuplicate(List<String> names, List<String> sree) {
         List<String> mergedList = new ArrayList<>();
-        //for(String name: names) {
-            //  if (!sree.contains(name)) {
-            //   mergedList.add(name);
-            //  }
-        //}
-        //for(String name: sree) {
-            //  if (!names.contains(name)) {
-            //   mergedList.add(name);}  //System.out.println(mergedList);
-        //}
+        for(String name: names) {
+              if (!sree.contains(name)) {
+               mergedList.add(name);
+              }
+        }
+        for(String name: sree) {
+              if (!names.contains(name)) {
+               mergedList.add(name);}
+
+        }
+        System.out.println(mergedList);
+//        mergedList.stream().filter(name -> !names.contains(name) && !sree.contains(name)).toList().forEach(System.out::println);
         names.stream().filter(name->!sree.contains(name)).forEach(mergedList::add);
         sree.stream().filter(name->!names.contains(name)).forEach(mergedList::add);
 
@@ -38,14 +38,14 @@ public class CollectionKv {
            ).forEach(System.out::println);
     }
 
-     //public static void collectionIteration(List<String> names) {
-     // for(String name: names) {
-       // if (!name.equals("navya")) {
-         //   System.out.println(name);
-        //}
-      //}
-      //names.stream().filter(name->!name.equals("navya")).toList().forEach( name-> System.out.println(name));
-      //}
+     public static void collectionIteration(List<String> names) {
+      for(String name: names) {
+        if (!name.equals("navya")) {
+            System.out.println(name);
+        }
+      }
+      names.stream().filter(name->!name.equals("navya")).toList().forEach( name-> System.out.println(name));
+      }
 }
 
 
