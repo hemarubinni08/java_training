@@ -61,6 +61,7 @@ public class CollectionSetNavya {
         }
         combinedSet.removeAll(tempSet);
         System.out.println(combinedSet);
+
         set1.stream().filter(num -> set2.contains(num)).forEach(tempSet::add);
         combinedSet.removeAll(tempSet);
         System.out.println(combinedSet);

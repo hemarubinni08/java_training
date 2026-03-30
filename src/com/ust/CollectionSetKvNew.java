@@ -50,17 +50,20 @@ public class CollectionSetKvNew {
 
     public Set<String> removeDuplicateSet(Set<String> set1, Set<String> set2) {
         Set<String> result = new HashSet<>();
-        Set<String> tempset = new HashSet<>();
+        Set<String> tempSet = new HashSet<>();
         result.addAll(set1);
         result.addAll(set2);
-//        for (String name : tempset) {
-//            if (!(set1.contains(name) && set2.contains(name))) {
-//                result.add(name);
-//            }
-//        }
-//        return result;
-//        set1.stream().filter(name -> set2.contains(name)).forEach(tempset::add);
-//        return result.stream().filter(name -> !(tempset.contains(name))).collect(Collectors.toSet());
+        for (String name : tempSet) {
+            if (!(set1.contains(name) && set2.contains(name))) {
+                result.add(name);
+            }
+        }
+        return result;
+//        set1.stream().filter(name -> set2.contains(name)).forEach(tempSet::add);
+//          tempSet.forEach(result::remove);
+//          return result;
+//        return result.stream().filter(name->!(tempSet.contains(name))).collect(Collectors.toSet());
+
 
 
     }
