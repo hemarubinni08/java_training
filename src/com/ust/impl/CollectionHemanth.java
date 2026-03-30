@@ -6,11 +6,10 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 public class CollectionHemanth {
-    public void doIterate(List<String> batchNames) {
+    public void doIterate(List<String> batchNames, List<String> names1) {
         for (String names : batchNames) {
             System.out.println(names);
         }
-        batchNames.forEach(name -> System.out.println(name));
         batchNames.forEach(System.out::println);
     }
     public void eliminateNeighbour(List<String> batchNames, List<String> names1) {
@@ -41,10 +40,14 @@ public class CollectionHemanth {
                 returnList.add(names);
             }
         }
-        // batchNames.stream().filter(name-> !batchNames1.contains(name)).forEach(returnList::add);
-        //batchNames1.stream().filter(name-> !batchNames.contains(name)).forEach(returnList::add);
-       /* returnList.addAll(batchNames);
-        returnList.addAll(batchNames1);*/
+        batchNames.stream().
+                filter(name -> !batchNames1.contains(name)).
+                forEach(returnList::add);
+        batchNames1.stream().
+                filter(name -> !batchNames.contains(name)).
+                forEach(returnList::add);
+        returnList.addAll(batchNames);
+        returnList.addAll(batchNames1);
         return returnList.stream().filter(name -> !(batchNames.contains(name) && batchNames1.contains(name))).toList();
     }
 
@@ -61,13 +64,10 @@ public class CollectionHemanth {
         }
         batchNAmes.addAll(batchNAmes1);
         batchNAmes.remove(temp);
-        //batchNAmes.stream().filter(name -> !(batchNAmes1.contains(name))).forEach(returnSet::add);
-        //batchNAmes1.stream().filter(name -> !(batchNAmes.contains(name))).forEach(returnSet::add);
-        //return finalSet.stream().filter(name -> !(batchNAmes.contains(name) && batchNAmes1.contains(name))).collect(Collectors.toSet());
-        //return returnSet;
-        batchNAmes.stream().filter((name -> batchNAmes1.contains(name))).forEach(tempSet::add);
+        batchNAmes.stream().filter((name -> batchNAmes1.contains(name))).
+                forEach(tempSet::add);
         tempSet.forEach(combinedSet::remove);
-        //return combinedSet.stream().filter(name -> !(tempSet.contains(name))).collect(Collectors.toSet());
+        combinedSet.stream().filter(name -> !(tempSet.contains(name))).collect(Collectors.toSet());
         return combinedSet;
     }
 }
