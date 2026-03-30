@@ -9,7 +9,7 @@ import static com.ust.WhileFijul.printCharacters;
 
 public class MainFijul {
     public static void main(String[] args) {
-        /*System.out.println(reverseString("fijul"));
+        System.out.println(reverseString("fijul"));
         printCharacters("hfgdyais");
         BankDetails object = new BankDetails();
         System.out.println(object.addBalance(2000, 3000, 4000));
@@ -35,7 +35,7 @@ public class MainFijul {
         VehicleAbstractFijul carabstract = new CarAbstractFijulImpl();
         VehicleAbstractFijul bikeabtract = new BikeAbstractFijulimpl();
         System.out.println(bikeabtract.brandName());
-        System.out.println(carabstract.getTopSpeed());*/
+        System.out.println(carabstract.getTopSpeed());
 
         List<String> newlist = new ArrayList<>();
         newlist.add("fijul");
@@ -69,7 +69,7 @@ public class MainFijul {
         newset1.add("kushal");
         newset1.add("gopi");
 
-        Map<Integer, String> newMap= new HashMap<>();
+        Map<Integer, String> newMap = new HashMap<>();
         newMap.put(308351, "Fijul");
         newMap.put(308348, "Srujan");
         newMap.put(308232, "Shoaib");
@@ -77,7 +77,7 @@ public class MainFijul {
         newMap.put(308323, "Kushal");
         newMap.put(308340, "Gopi");
 
-        Map<Integer, String> newMap1= new HashMap<>();
+        Map<Integer, String> newMap1 = new HashMap<>();
         newMap1.put(308351, "Fijul");
         newMap1.put(308347, "Bewin");
         newMap1.put(308231, "Aiswarya");
@@ -91,7 +91,7 @@ public class MainFijul {
         coll.doIteration(newlist);
         coll.filterWithFor(newlist);
         coll.twoListIteration(newlist, newlist1);
-        coll.twoListIterationMergeFirst(newlist,newlist1);
+        coll.twoListIterationMergeFirst(newlist, newlist1);
         coll.usingHashSet(newset, newset1);
         coll.usingHashmap(newMap);
         coll.filterInMap(newMap, id);
