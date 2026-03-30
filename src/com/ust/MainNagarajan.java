@@ -1,15 +1,14 @@
 package com.ust;
 
 import com.ust.impl.*;
-
-import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 public class MainNagarajan {
     public static void main(String[] args) {
-
-//        CarNagarajan car = new CarNagarajan();
+        //CarNagarajan car = new CarNagarajan();
 //        car.brand = "BMW";
 //        car.speed = 150;
 //        car.door = 4;
@@ -151,31 +150,93 @@ public class MainNagarajan {
         nameList2.add("Vijay");
         nameList2.add("Curry");
 
-        System.out.println("Using for each!");
+        System.out.println("Using for each! - LIST");
         listOfNames.itreateList(nameList1);
         System.out.println();
-        System.out.println("Using Lamda!");
+        System.out.println("Using Lamda - LIST!");
         listOfNames.itreateUsingLamda(nameList1);
 
         System.out.println();
-        System.out.println("Filter using For Each");
+        System.out.println("Filter using For Each - LIST");
         listOfNames.filterNameUsingForEach(nameList1);
         System.out.println();
-        System.out.println("Filter using Lamda");
+        System.out.println("Filter using Lamda - LIST");
         listOfNames.filterNameUsingLamda(nameList1);
 
         System.out.println();
-        System.out.println("Removing name using For Each");
+        System.out.println("Removing name using For Each - LIST");
         listOfNames.removeDuplicateUsingForEach(nameList1, nameList2);
 
         System.out.println();
-        System.out.println("Removing name using Lambda");
+        System.out.println("Removing name using Lambda - LIST");
         listOfNames.removeDuplicateUsingLambda(nameList1, nameList2);
+        System.out.println();
+
+        //Hash Set Exercise!!
+        HashSet<String> nameSet1 = new HashSet<>();
+        HashSet<String> nameSet2 = new HashSet<>();
+
+        nameSet1.add("Nagarajan");
+        nameSet1.add("Chris");
+        nameSet1.add("Mamtha");
+        nameSet1.add("Deepshee");
+        nameSet1.add("Bewin");
+        nameSet1.add("Aiswarya");
+
+        nameSet2.add("Nagarajan");
+        nameSet2.add("Virat Kohli");
+        nameSet2.add("Ronaldo");
+        nameSet2.add("Messi");
+        nameSet2.add("Vijay");
+        nameSet2.add("Curry");
+
+        System.out.println("Remove Using ForEach - SET");
+        listOfNames.removeDuplicateFromSetUsingForEach(nameSet1, nameSet2);
+        System.out.println();
+
+        System.out.println("Remove Using Lambda - SET");
+        listOfNames.removeDuplicateFromSetUsingLambda(nameSet1, nameSet2);
+        System.out.println();
+
+        System.out.println("HashMap Exercise!!");
+        HashMap<Integer, String> nameMap1 = new HashMap<>();
+        nameMap1.put(308242, "Nagarajan");
+        nameMap1.put(308254, "Chris");
+        nameMap1.put(308255, "Mamtha");
+        nameMap1.put(308256, "Bewin");
+        nameMap1.put(308257, "Aiswarya");
+
+        System.out.println("Printing Name from Map");
+        System.out.println();
+
+        System.out.println("Printing Using Entry Set");
+        listOfNames.toPrintMap(nameMap1);
+        System.out.println();
+
+        System.out.println("Printing Using Lambda");
+        listOfNames.toPrintMapUsingLambda(nameMap1);
+        System.out.println();
+
+        System.out.println("Printing Using KeySet");
+        listOfNames.toPrintMapUsingKeySet(nameMap1);
+        System.out.println();
+
+//        int[] numArr = {1, 1, 1, 2, 2, 3, 3, 4};
+//        System.out.println("Finding out occurence");
+//        listOfNames.countOccurence(numArr);
+//        System.out.println();
+
+        System.out.println("Remove Name from Map ");
+        listOfNames.removeNameFromMap(nameMap1);
+        System.out.println();
+
+        System.out.println("Remove Name from Map using forEach");
+        listOfNames.removeNameFromMapUsingforEach(nameMap1);
+        System.out.println();
+
+        System.out.println("Remove Name using Lambda");
+        listOfNames.removeNameFromMapUsingLambda(nameMap1);
+        System.out.println();
 
     }
 }
-
-/*
-    carI.door = 4;
-    car.ac = true;
-*/
