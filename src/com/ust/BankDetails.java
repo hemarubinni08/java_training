@@ -1,14 +1,17 @@
 package com.ust;
 
 public class BankDetails {
-    public static int addBalance(int a, int b) {
-        return a + b;
+    public static int addBalance(int num1, int num2) {
+        return num1 + num2;
     }
 
-    public static int minusBalance(int a, int b) {
-        if (a < b) {
+    public static int minusBalance(int num1, int num2) {
+        if (num1 < num2) {
             System.out.println("insufficent balance");
         }
-        return a - b;
+        return num1 - num2;
+    }
+    public static int addBalance(int num1, int num2, int num3){
+        return num1+num2+num3;
     }
 }

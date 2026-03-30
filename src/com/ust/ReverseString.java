@@ -1,9 +1,6 @@
 package com.ust;
 
 public class ReverseString {
-    public static void main(String[] args) {
-        System.out.println(reverseString("fijul"));
-    }
 
     public static String reverseString(String s) {
         int length = s.length();
