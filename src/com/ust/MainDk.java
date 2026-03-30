@@ -21,7 +21,9 @@ public class MainDk {
         Set<String> combineSet = new HashSet<>();
         Set<String> duplicateSet = new HashSet<>();
         Map<String, String> members = new HashMap<>();
-
+        Map<String, String> map1 = new HashMap<>();
+        Map<String, String> map2 = new HashMap<>();
+        Map<String, String> combinedMap = new HashMap<>();
 
         members.put("1", "Deepa");
         members.put("2", "Varsha");
@@ -29,6 +31,20 @@ public class MainDk {
         members.put("4", "Pranav");
         members.put("5", "Navaneeth");
         members.put("6", "Chandu");
+
+        map1.put("1", "Deepa");
+        map1.put("2", "Varsha");
+        map1.put("3", "Harsha");
+        map1.put("4", "Pranav");
+        map1.put("5", "Navaneeth");
+        map1.put("6", "Chandu");
+
+        map2.put("1", "Deepa");
+        map2.put("8", "karthika");
+        map2.put("9", "thammi");
+        map2.put("10", "chaila");
+        map2.put("11", "Nava");
+        map2.put("12", "sruthi");
 
         namesList.add("Deepa");
         namesList.add("Varsha");
@@ -44,14 +60,12 @@ public class MainDk {
         nameSet1.add("Navaneeth");
         nameSet1.add("Chandu");
 
-
         nameSet2.add("Deepa");
         nameSet2.add("karthika");
         nameSet2.add("thammi");
         nameSet2.add("chaila");
         nameSet2.add("Nava");
         nameSet2.add("sruthi");
-
 
         nameSet.add("Deepa");
         nameSet.add("Varsha");
@@ -60,18 +74,17 @@ public class MainDk {
         nameSet.add("Navaneeth");
         nameSet.add("Chandu");
 
-
         CollectionsDeepa cd = new CollectionsDeepa();
-//        cd.printNames(namesList);
-//        cd.ignoreName(namesList);
+        cd.printNamesUsingList(namesList);
+        cd.ignoreNameUsingList(namesList);
+        cd.removeDuplicatesUsingList(nameList1, nameList2, result, combineList);
 
-//        System.out.println(cd.removeDuplicates(nameList1,nameList2,result));
-//        cd.removeDuplicates(nameList1, nameList2, result, combineList);
-//        result.forEach(System.out::println);
-//        cd.printNamesUsingSet(nameSet);
-//        cd.ignoreNameUsingSet(nameSet);
-//        cd.removeDuplicatesSet(nameSet1, nameSet2, combineSet, duplicateSet);
-        cd.ignoreNameMap(members);
+        cd.printNamesUsingSet(nameSet);
+        cd.ignoreNameUsingSet(nameSet);
+        cd.removeDuplicatesSet(nameSet1, nameSet2, combineSet, duplicateSet);
 
+        cd.printMembersUsingMap(members);
+        cd.ignoreNameUsingMap(members);
+        cd.removeDuplicateFromTwoMaps(map1, map2, combinedMap);
     }
 }
