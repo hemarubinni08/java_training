@@ -7,10 +7,12 @@ public class CollectionsShashi {
         for (int i = 0; i < names.size(); i++) {
             System.out.println(names.get(i));
         }
+
         System.out.println("Printing via enhanced for loop");
         for (String name : names) {
             System.out.println(name);
         }
+
         System.out.println("printing via lamda expression");
         names.forEach(name -> System.out.println(name));
         System.out.println("printing via stream");
@@ -24,6 +26,7 @@ public class CollectionsShashi {
             }
             System.out.println(name);
         }
+
         // filter name via forEach loop in lamda format
         System.out.println("filter name via forEach loop in lamda format");
         names.stream().filter(name -> !name.equalsIgnoreCase("Logesh")).forEach(name -> System.out.println(name));
@@ -48,14 +51,16 @@ public class CollectionsShashi {
         for (String res : result) {
             System.out.println(res);
         }
+
         System.out.println(" printing only unique letters lamda format");
         names.stream().filter(name -> !names1.contains(name)).forEach(name -> System.out.println(name));
         names1.stream().filter(name1 -> !names.contains(name1)).forEach(name -> System.out.println(name));
-        System.out.println(" printing only unique letters lamda format");
-        mergedList.stream().filter(ml -> !names1.contains(ml) || !names.contains(ml)).forEach(ml -> System.out.println(ml));
-        System.out.println(" printing only unique letters lamda format via and ");
-        mergedList.stream().filter(ml -> !(names1.contains(ml) && names.contains(ml))).forEach(ml -> System.out.println(ml));
 
+        System.out.println(" printing only unique letters lamda format via or format");
+        mergedList.stream().filter(ml -> !names1.contains(ml) || !names.contains(ml)).forEach(ml -> System.out.println(ml));
+
+        System.out.println(" printing only unique letters lamda format via and logic ");
+        mergedList.stream().filter(ml -> !(names1.contains(ml) && names.contains(ml))).forEach(ml -> System.out.println(ml));
     }
 
     public void setPrintNames(Set<String> setNames, Set<String> setNames1) {
@@ -66,6 +71,7 @@ public class CollectionsShashi {
         for (String name : mergedSet) {
             System.out.println(name);
         }
+
         System.out.println("printing names via set in lambda expression");
         mergedSet.forEach(name -> System.out.println(name));
     }
@@ -90,10 +96,13 @@ public class CollectionsShashi {
                 System.out.println(name);
             }
         }
+
         System.out.println("printing duplicate name via lambda expression from set");
         setNames.stream().filter(name -> setNames1.contains(name)).forEach(name -> System.out.println(name));
+
         System.out.println("printing unique name via lambda expression from set1");
         setNames.stream().filter(name -> !setNames1.contains(name)).forEach(name -> System.out.println(name));
+
         System.out.println("printing unique name via lambda expression from set2");
         setNames1.stream().filter(name1 -> !setNames.contains(name1)).forEach(name1 -> System.out.println(name1));
 
@@ -104,9 +113,11 @@ public class CollectionsShashi {
             }
             System.out.println(name);
         }
-        System.out.println("printing unique name via lambda expression from merged set");
+
+        System.out.println("printing unique name via lambda expression from merged set via and logic");
         mergedSet.stream().filter(mergeSet -> !(setNames.contains(mergeSet) && setNames1.contains(mergeSet))).forEach(mergeSet -> System.out.println(mergeSet));
-        System.out.println("printing unique name via lambda expression from merged set ver2");
+
+        System.out.println("printing unique name via lambda expression from merged set via or logic");
         mergedSet.stream().filter(mergeSet -> !setNames.contains(mergeSet) || !setNames1.contains(mergeSet)).forEach(mergeSet -> System.out.println(mergeSet));
     }
 
@@ -115,10 +126,12 @@ public class CollectionsShashi {
         for (Map.Entry<Integer, String> name : employeeData.entrySet()) {
             System.out.println(name.getKey() + "-" + name.getValue());
         }
+
         System.out.println("Printing employee data");
         for (Integer key : employeeData.keySet()) {
             System.out.println(key + "-" + employeeData.get(key));
         }
+
         System.out.println("Printing employee data via lambda expression");
         employeeData.forEach((id, name) -> System.out.println(id + "-" + name));
     }
@@ -130,13 +143,15 @@ public class CollectionsShashi {
                 System.out.println(key + "-" + employData.get(key));
             }
         }
+
+        System.out.println("printing map after removing our name by using contains key");
         if (employData.containsKey(1)) {
             employData.remove(1);
         }
-        System.out.println("printing map after removing our name by using contains key");
         for (Map.Entry<Integer, String> name : employData.entrySet()) {
             System.out.println(name.getKey() + "-" + name.getValue());
         }
+
         System.out.println("printing map after removing our name by using contains value");
         if (employData.containsValue("b")) {
             employData.values().remove("b");
