@@ -1,4 +1,4 @@
-package com.ust;
+/*package com.ust;
 
 public class MainHema {
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class MainHema {
         String fuel = bh.getFuelType();
         System.out.println(fuel);
         System.out.println("That,s All I Learned Inheritance");
-import com.ust.impl.*;
+//import com.ust.impl.*;
 
 public class MainHema {
     public static void main(String[] args) {
@@ -97,3 +97,6 @@ public class MainHema {
     }
 }
 
+
+
+*/

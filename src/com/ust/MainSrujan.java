@@ -23,4 +23,3 @@ public class MainSrujan {
 //        VehicleAbstractSrujan LorryObject = new LorrySrujanAbstract();
 //        System.out.println(LorryObject.hasWindows());
     }
-}

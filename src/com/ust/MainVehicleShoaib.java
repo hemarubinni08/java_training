@@ -35,7 +35,7 @@ public class MainVehicleShoaib {
         System.out.println(scooty.vehicleBrand());
         ShoaibArithmetic obj=new ShoaibArithmetic();
         System.out.println(obj.addition(9,9,9));*/
-        CollectionsShoaib obj=new CollectionsShoaib();
+        CollectionsShoaib obj = new CollectionsShoaib();
 
        /* ArrayList<String> myNames=new ArrayList<>();
         myNames.add("Shoaib");
@@ -102,34 +102,34 @@ public class MainVehicleShoaib {
         System.out.println("\n=== Method: removeCommonElementsUsingStreamForSet ===");
         obj1.removeCommonElementsUsingStreamForSet(set1, set2);
 
-        HashMap<Integer,String>map=new HashMap<>();
-        map.put(308232,"Shoaib");
-        map.put(308351,"Fijul");
-        map.put(308348,"Srujan");
-        map.put(308250,"Hema");
-        map.put(308323,"Kushal");
-        map.put(308340,"Gopi");
-        HashMap<Integer,String>map1=new HashMap<>();
-        map1.put(308232,"Shoaib");
-        map1.put(308351,"Fijul");
-        map1.put(308348,"Srujan");
-        map1.put(308250,"Hema");
-        map1.put(308323,"Kushal");
-        map1.put(308340,"Gopi");
-        HashMap<Integer,String>map2=new HashMap<>();
-        map2.put(308232,"Shoaib");
-        map2.put(001,"Fijul2");
-        map2.put(002,"Srujan2");
-        map2.put(003,"Hema2");
-        map2.put(004,"Kushal2");
-        map2.put(005,"Gopi2");
+        HashMap<Integer, String> map = new HashMap<>();
+        map.put(308232, "Shoaib");
+        map.put(308351, "Fijul");
+        map.put(308348, "Srujan");
+        map.put(308250, "Hema");
+        map.put(308323, "Kushal");
+        map.put(308340, "Gopi");
+        HashMap<Integer, String> map1 = new HashMap<>();
+        map1.put(308232, "Shoaib");
+        map1.put(308351, "Fijul");
+        map1.put(308348, "Srujan");
+        map1.put(308250, "Hema");
+        map1.put(308323, "Kushal");
+        map1.put(308340, "Gopi");
+        HashMap<Integer, String> map2 = new HashMap<>();
+        map2.put(308232, "Shoaib");
+        map2.put(001, "Fijul2");
+        map2.put(002, "Srujan2");
+        map2.put(003, "Hema2");
+        map2.put(004, "Kushal2");
+        map2.put(005, "Gopi2");
         obj1.printingNamesViaHashMap(map);
         //obj1.printingNameExcludingMy(map);
         //obj1.checkAndPrint(map,308351);
-        obj1.checkAndPrintUsingStream(map,308232);
-        obj1.mergedSetsUsingLoops(set1,set2);
-        obj1.removeCommonElementsUsingHashMapsWithLoops(map1,map2);
-        obj1.removeCommonElementsUsingHashMapsWithStream(map1,map2);
+        obj1.checkAndPrintUsingStream(map, 308232);
+        obj1.mergedSetsUsingLoops(set1, set2);
+        obj1.removeCommonElementsUsingHashMapsWithLoops(map1, map2);
+        obj1.removeCommonElementsUsingHashMapsWithStream(map1, map2);
 
     }
 }
