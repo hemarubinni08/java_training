@@ -1,4 +1,4 @@
-package com.ust;
+package com.ust.collections;
 
 import java.util.*;
 import java.util.ArrayList;
@@ -56,6 +56,21 @@ public class CollectionRitika {
         newL1.addAll(list2.stream().filter(value -> !list1.contains(value)).toList());
         return newL1.stream().filter(value -> !(list2.contains(value) && (list1.contains(value)))).toList();//combined
         //return newL2;
+    }
+
+    public List<String> sortedList(ArrayList<String> newlist){
+        int num=newlist.size();
+        for(int i=0;i<num-1;i++){
+            for(int j=0;j<num-1-i;j++){
+                if(newlist.get(j).compareTo(newlist.get(j+1))>0){
+                    String t=newlist.get(j);
+                    newlist.set(j, newlist.get(j + 1));
+                    newlist.set(j + 1, t);
+
+                }
+            }
+        }
+        return newlist;
     }
 
     //Set
