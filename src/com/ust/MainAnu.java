@@ -1,29 +1,103 @@
 package com.ust;
 
-//import com.ust.impl.*;
+import com.ust.impl.CollectionAnu01;
 
-import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class MainAnu {
-    public static void main(String[] args) {
+    public static void main(String[] args){
+        //list
         List<String> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
         list1.add("Anudeepika");
         list1.add("Ritika");
         list1.add("Hemanth");
-        list1.add("Ardra");
+        list1.add("Adra");
         list1.add("Akash");
         list1.add("Yeshwanth");
         list2.add("Hemanth");
         list2.add("Keerthi");
         list2.add("Lekhya");
-        list2.add("Kuswanth");
-        list2.add("JP");
         CollectionAnu object = new CollectionAnu();
-        object.combinelists(list1,list2);
-//        object.filterName(list);
+        object.iteration(list1);
+        object.filterName(list1);
+        object.removeDuplicates(list1,list2);
+
+        //Set
+        Set<String> set1 = new HashSet<>();
+        Set<String> set2 = new HashSet<>();
+        set1.add("Anudeepika");
+        set1.add("Ritika");
+        set1.add("Hemanth");
+        set1.add("Adra");
+        set1.add("Akash");
+        set1.add("Yeshwanth");
+        set2.add("Hemanth");
+        set2.add("Keerthi");
+        set2.add("Lekhya");
+        CollectionSetAnu obj = new CollectionSetAnu();
+        obj.iterationSet(set1);
+        obj.filterNameSet(set1);
+        obj.removeDuplicatesSet(set1,set2);
+
+        // Map
+        Map<String, String> new1 = new HashMap<>();
+        Map<String, String> new2 = new HashMap<>();
+        new1.put("01", "Anu");
+        new1.put("02", "Ritika");
+        new1.put("03", "Hemath");
+        new1.put("04", "Ardra");
+        new1.put("05", "Akash");
+        new1.put("06", "Yeshwanth");
+        new2.put("02", "Ritika");
+        new2.put("08", "Keerti");
+        new2.put("09", "Lekhya");
+        CollectionAnu01 object1 = new CollectionAnu01();
+        object1.hashMapIteration(new1);
+        object1.remove(new1);
+        object1.duplicates(new1,new2);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //        MainArithemetic object = new MainArithemetic();
 //        System.out.println("Addition: " + object.addition(30, 50));
@@ -61,6 +135,4 @@ public class MainAnu {
 //        System.out.println("Car has Ac : " + car.hasAc());
 //        System.out.println("Truck has GPS: " + truck.hasGps());
 //        System.out.println("No of passengers in car: " + car.noOfPassengers());
-    }
 
-}
