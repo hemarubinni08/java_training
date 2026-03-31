@@ -1,132 +1,13 @@
 package com.ust;
 
-import com.ust.impl.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 
 public class MainNagarajan {
+
     public static void main(String[] args) {
-        //CarNagarajan car = new CarNagarajan();
-//        car.brand = "BMW";
-//        car.speed = 150;
-//        car.door = 4;
-//        car.ac = true;
-//
-//        BikeNagarajan bike = new BikeNagarajan();
-//        bike.brand = "DUCATI";
-//        bike.speed = 140;
-//        bike.helmet = true;
-//
-//        TruckNagarajan truck = new TruckNagarajan();
-//        truck.brand = "VOLVO";
-//        truck.speed = 80;
-//        truck.load = 800;
-//        truck.door = 2;
-//        truck.ac = false;
-//
-//        System.out.println("Car Information");
-//        System.out.println(car.start());
-//        System.out.println(car.carInfo());
-//        System.out.println(car.openCarDoor());
-//        System.out.println(car.stop());
-//        System.out.println();
-//
-//        System.out.println("Truck Information");
-//        System.out.println(truck.start());
-//        System.out.println(truck.truckInfo());
-//        System.out.println(truck.loadingInfo());
-//        System.out.println(truck.stop());
-//        System.out.println();
-//
-//        System.out.println("Bike Information");
-//        System.out.println(bike.start());
-//        System.out.println(bike.bikeInfo());
-//        System.out.println(bike.ride());
-//        System.out.println(bike.stop());
-//        System.out.println();
-//
-//        CarNagarajanImpl carI = new CarNagarajanImpl();
-//        carI.brand = "BMW";
-//        carI.speed = 160;
-//
-//        BikeNagarajanImpl bikeI = new BikeNagarajanImpl();
-//        bikeI.brand = "DUCATI";
-//        bikeI.speed = 140;
-//        bikeI.helmet = true;
-//
-//        TruckNagarajanImpl truck = new TruckNagarajanImpl();
-//        truck.brand = "VOLVO";
-//        truck.speed = 80;
-//        truck.load = 800;
-//        TruckNagarajan truck = new TruckNagarajan();
-//        truck.brand = "VOLVO";
-//        truck.speed = 80;
-//        truck.load = 800;
-//        truck.door = 2;
-//        truck.ac = false;
-//
-//        System.out.println("Car Information");
-//        System.out.println(carI.start());
-//        System.out.println(carI.displayInfo());
-//        System.out.println(carI.openCarDoor());
-//        System.out.println(carI.stop());
-//        System.out.println();
-//
-//        System.out.println("Truck Information");
-//        System.out.println(truck.start());
-//        System.out.println(truck.displayInfo());
-//        System.out.println(truck.loadingInfo());
-//        System.out.println(truck.stop());
-//        System.out.println();
-//        System.out.println("Truck Information");
-//        System.out.println(truck.start());
-//        System.out.println(truck.truckInfo());
-//        System.out.println(truck.loadingInfo());
-//        System.out.println(truck.stop());
-//        System.out.println();
-//
-//        System.out.println("Bike Information");
-//        System.out.println(bikeI.start());
-//        System.out.println(bikeI.displayInfo());
-//        System.out.println(bikeI.ride());
-//        System.out.println(bikeI.stop());
-//        System.out.println();
-//
-//       Creating object and assigining values for abstract class
-//        CarAbstractNagarajanImpl carA = new CarAbstractNagarajanImpl();
-//        carA.brand = "BMW";
-//        carA.speed = 160;
-//
-//        BikeAbstractNagarajanImpl bikeA = new BikeAbstractNagarajanImpl();
-//        bikeA.brand = "DUCATI";
-//        bikeA.speed = 140;
-//
-//        TruckAbstractNagarajanImpl truckA = new TruckAbstractNagarajanImpl();
-//        truckA.brand = "VOLVO";
-//        truckA.speed = 80;
-//
-//        System.out.println("Car Information");
-//        System.out.println(carA.start());
-//        System.out.println(carA.displayInfo());
-//        System.out.println(carA.openCarDoor());
-//        System.out.println(carA.stop());
-//        System.out.println();
-//
-//        System.out.println("Truck Information");
-//        System.out.println(truckA.start());
-//        System.out.println(truckA.displayInfo());
-//        System.out.println(truckA.loadingInfo());
-//        System.out.println(truckA.stop());
-//        System.out.println();
-//
-//        System.out.println("Bike Information");
-//        System.out.println(bikeA.start());
-//        System.out.println(bikeA.displayInfo());
-//        System.out.println(bikeA.ride());
-//        System.out.println(bikeA.stop());
-//        System.out.println();
 
         ArthimeticNagarajan add = new ArthimeticNagarajan();
         System.out.println(add.addNumber(1, 4));
@@ -151,17 +32,17 @@ public class MainNagarajan {
         nameList2.add("Curry");
 
         System.out.println("Using for each! - LIST");
-        listOfNames.itreateList(nameList1);
+        listOfNames.iterateList(nameList1);
         System.out.println();
         System.out.println("Using Lamda - LIST!");
-        listOfNames.itreateUsingLamda(nameList1);
-
+        listOfNames.iterateUsingLambda(nameList1);
         System.out.println();
+
         System.out.println("Filter using For Each - LIST");
         listOfNames.filterNameUsingForEach(nameList1);
         System.out.println();
-        System.out.println("Filter using Lamda - LIST");
-        listOfNames.filterNameUsingLamda(nameList1);
+        System.out.println("Filter using Lambda - LIST");
+        listOfNames.filterNameUsingLambda(nameList1);
 
         System.out.println();
         System.out.println("Removing name using For Each - LIST");
@@ -200,11 +81,18 @@ public class MainNagarajan {
 
         System.out.println("HashMap Exercise!!");
         HashMap<Integer, String> nameMap1 = new HashMap<>();
-        nameMap1.put(308242, "Nagarajan");
-        nameMap1.put(308254, "Chris");
-        nameMap1.put(308255, "Mamtha");
-        nameMap1.put(308256, "Bewin");
-        nameMap1.put(308257, "Aiswarya");
+        nameMap1.put(1, "Nagarajan");
+        nameMap1.put(2, "Chris");
+        nameMap1.put(3, "Mamtha");
+        nameMap1.put(4, "Bewin");
+        nameMap1.put(5, "Aiswarya");
+
+        HashMap<Integer, String> nameMap2 = new HashMap<>();
+        nameMap2.put(1, "Nagarajan");
+        nameMap2.put(18, "Virat");
+        nameMap2.put(7, "Ronaldo");
+        nameMap2.put(30, "Curry");
+        nameMap2.put(10, "Messi");
 
         System.out.println("Printing Name from Map");
         System.out.println();
@@ -221,22 +109,23 @@ public class MainNagarajan {
         listOfNames.toPrintMapUsingKeySet(nameMap1);
         System.out.println();
 
-//        int[] numArr = {1, 1, 1, 2, 2, 3, 3, 4};
-//        System.out.println("Finding out occurence");
-//        listOfNames.countOccurence(numArr);
-//        System.out.println();
-
         System.out.println("Remove Name from Map ");
         listOfNames.removeNameFromMap(nameMap1);
         System.out.println();
 
         System.out.println("Remove Name from Map using forEach");
-        listOfNames.removeNameFromMapUsingforEach(nameMap1);
+        listOfNames.removeNameFromMapUsingForEach(nameMap1);
         System.out.println();
 
         System.out.println("Remove Name using Lambda");
         listOfNames.removeNameFromMapUsingLambda(nameMap1);
         System.out.println();
 
+        System.out.println("Remove Duplicate From Two Map Using ForEach");
+        listOfNames.removeDuplicateFromTwoMapUsingForEach(nameMap1, nameMap2);
+        System.out.println();
+
+        System.out.println("Remove Duplicate From Two Map Using Lambda");
+        listOfNames.removeDuplicateFromTwoMapUsingLambda(nameMap1, nameMap2);
     }
 }
