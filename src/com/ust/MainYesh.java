@@ -2,6 +2,7 @@ package com.ust;
 
 import com.ust.collections.CollectionsYesh;
 import com.ust.collections.HashMapYesh;
+import com.ust.collections.SortedListYesh;
 import com.ust.impl.HeavyVehicleInterfaceYeshImpl;
 import com.ust.impl.VehicleBusYeshImpl;
 import com.ust.impl.VehicleCarYeshImpl;
@@ -19,7 +20,7 @@ public class MainYesh {
         teamMembersNames.add("Ardra");
         teamMembersNames.add("Akash");
 
-        CollectionsYesh collectionObject = new CollectionsYesh();
+        /*CollectionsYesh collectionObject = new CollectionsYesh();
         collectionObject.doIterate(teamMembersNames);
         collectionObject.EliminateNeighbor(teamMembersNames);
 
@@ -65,6 +66,8 @@ public class MainYesh {
         secondMap.put(4, "Ritika");
         secondMap.put(5, "akash");
 
-        mapObject.checkForDuplicates(employees, secondMap);
+        mapObject.checkForDuplicates(employees, secondMap);*/
+        SortedListYesh sortedNames=new SortedListYesh();
+        sortedNames.sortingList(teamMembersNames);
     }
 }
