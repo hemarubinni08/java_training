@@ -21,7 +21,7 @@ public class CollectionsShashi {
     public void filterNeighbour(List<String> names) {
         // filter name via for loop
         for (String name : names) {
-            if (name.equals("logesh")) {
+            if (name.equals("e")) {
                 continue;
             }
             System.out.println(name);
@@ -29,7 +29,7 @@ public class CollectionsShashi {
 
         // filter name via forEach loop in lambda format
         System.out.println("filter name via forEach loop in lambda format");
-        names.stream().filter(name -> !name.equalsIgnoreCase("logesh")).forEach(name -> System.out.println(name));
+        names.stream().filter(name -> !name.equalsIgnoreCase("e")).forEach(name -> System.out.println(name));
     }
 
     public void removeDuplicate(List<String> names, List<String> names1) {
