@@ -5,10 +5,11 @@ import java.util.*;
 
 public class MainDeepshika {
     public static void main(String[] args) {
-//        System.out.println("The product of two numbers are:" +productOfTwoNumbers(5,10));
+//        System.out.println("The product of two numbers are:" + productOfTwoNumbers(5, 10));
 //
-//   public static int productOfTwoNumbers(int a,int b){
-//       return a*b;}
+//        public static int productOfTwoNumbers ( int a, int b){
+//            return a * b;
+//        }
         List<String> names = new ArrayList<>();
         names.add("Deepshika");
         names.add("Mamatha");
@@ -21,9 +22,20 @@ public class MainDeepshika {
         names2.add("Deepshika");
         names2.add("Hema");
         names2.add("NathiPriya");
-        names2.add("parneesh");
+        names2.add("praneesh");
         names2.add("visagan");
         names2.add("Deepak");
+
+        CollectionsDeepshika collectionsDeepshika = new CollectionsDeepshika();
+        collectionsDeepshika.iteration(names);
+        System.out.println();
+        collectionsDeepshika.printNames(names);
+        System.out.println();
+        System.out.println(collectionsDeepshika.toRemoveDuplicateUsingLoop(names, names2));
+        System.out.println();
+        collectionsDeepshika.removeDuplicateUsingForEach(names, names2);
+        System.out.println();
+        collectionsDeepshika.removeDuplicateUsingSingleLoop(names, names2);
 
         HashSet<String> hashNames = new HashSet<>();
         hashNames.add("Deepshika");
@@ -37,6 +49,13 @@ public class MainDeepshika {
         hashNames1.add("priya");
         hashNames1.add("praneesh");
 
+        collectionsDeepshika.hashIteration(hashNames, hashNames1);
+        System.out.println();
+        collectionsDeepshika.hashRemoveDuplicateUsingLoop(hashNames, hashNames1);
+        System.out.println();
+        collectionsDeepshika.hashRemoveDuplicateUsingLamda(hashNames, hashNames1);
+        System.out.println();
+
         Map<Integer, String> mapNames = new HashMap<>();
         mapNames.put(308341, "Deepshika");
         mapNames.put(308335, "Mamatha");
@@ -45,34 +64,41 @@ public class MainDeepshika {
         mapNames.put(308335, "Aishu");
         mapNames.put(308336, "Bewin");
 
-        CollectionsDeepshika pod2 = new CollectionsDeepshika();
-        pod2.iteration(names);
+        Map<Integer,String> mapNames1 = new HashMap<>();
+        mapNames1.put(330822,"Hema");
+        mapNames1.put(308341,"Deepshika");
+        mapNames1.put(308263,"nathipriya");
+        mapNames1.put(308273,"Bhavana");
+
+        collectionsDeepshika.toPrintMapNames(mapNames);
+        System.out.println();
+        collectionsDeepshika.toPrintMapNamesKeySet(mapNames);
+        System.out.println();
+        collectionsDeepshika.toRemoveWithKeyUsingCondition(mapNames);
+        System.out.println();
+        collectionsDeepshika.toRemoveWithKey(mapNames);
+        System.out.println();
+        collectionsDeepshika.toRemoveKeyUsingLamda(mapNames);
+        System.out.println();
+        collectionsDeepshika.toRemoveDuplicateMap(mapNames, mapNames1);
+        System.out.println();
+        collectionsDeepshika.toRemoveDuplicateMapSingleLoop(mapNames, mapNames1);
+        System.out.println();
+        collectionsDeepshika.toRemoveDuplicateMapUsingLamda(mapNames, mapNames1);
         System.out.println();
 
-        pod2.printNames(names);
-        System.out.println();
+        List<String> lnames = new ArrayList<>();
+        lnames.add("Deepshika");
+        lnames.add("Mamatha");
+        lnames.add("Nagarajan");
+        lnames.add("Chris");
+        lnames.add("Aishu");
+        lnames.add("Bewin");
+        lnames.add("Deepak");
+        lnames.add("Hema");
+        lnames.add("visagan");
 
-        System.out.println(pod2.compareNames(names, names2));
-        System.out.println();
+        collectionsDeepshika.toSortNames(lnames);
 
-
-        pod2.removeDuplicateUsingForEach(names, names2);
-        System.out.println();
-
-        pod2.removeDuplicateSingleLoop(names, names2);
-        //  pod2.hashIteration(hashNames, hashNames1);
-        System.out.println();
-        pod2.hashRemove(hashNames, hashNames1);
-        System.out.println();
-        pod2.removeDuplicateUsingLamda(hashNames, hashNames1);
-        pod2.toPrintMapNames(mapNames);
-        System.out.println();
-        pod2.toPrintMapNamesKeySet(mapNames);
-        System.out.println();
-        pod2.toCheckWithKey(mapNames);
-        System.out.println();
-        pod2.toCheckWithKeyRemove(mapNames);
-        System.out.println();
-        pod2.toRemoveKeyUsingLamda(mapNames);
     }
 }
