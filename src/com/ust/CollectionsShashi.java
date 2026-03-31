@@ -16,11 +16,25 @@ public class CollectionsShashi {
 
         System.out.println("printing via lambda expression");
         names.forEach(name -> System.out.println(name));
-        System.out.println("printing via stream");
+    }
+
+    public void sortedList(List<String> names) {
+        System.out.println("printing the sorted list");
+        for (int i = 0; i < names.size(); i++) {
+            for (int j = 0; j < names.size() - i - 1; j++) {
+                if (names.get(j).compareTo(names.get(j + 1)) > 0) {
+                    String temp = names.get(j);
+                    names.set(j, names.get(j + 1));
+                    names.set(j + 1, temp);
+                }
+            }
+        }
+        names.forEach(name -> System.out.println(name));
     }
 
     public void filterNeighbour(List<String> names) {
         // filter name via for loop
+        System.out.println("printing the list by removing the neighbour");
         for (String name : names) {
             if (name.equals("e")) {
                 continue;

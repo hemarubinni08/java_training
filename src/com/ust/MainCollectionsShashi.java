@@ -6,10 +6,10 @@ public class MainCollectionsShashi {
     static void main() {
         List<String> names = new ArrayList<>();
         names.add("a");
-        names.add("b");
         names.add("c");
         names.add("d");
         names.add("e");
+        names.add("b");
 
         List<String> names1 = new ArrayList<>();
         names1.add("f");
@@ -21,6 +21,7 @@ public class MainCollectionsShashi {
 
         CollectionsShashi collection = new CollectionsShashi();
         collection.doIterate(names);
+        collection.sortedList(names);
         collection.filterNeighbour(names);
         collection.removeDuplicate(names, names1);
 
