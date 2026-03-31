@@ -61,5 +61,15 @@ public class Main {
         CollectionHemanthMap printBatch = new CollectionHemanthMap();
         printBatch.printMap(newMap, newMap1);
         printBatch.removeDuplicateMap(newMap, newMap1);
+
+        List<String> namesList = new ArrayList<>();
+        namesList.add("Hemanth");
+        namesList.add("Yesh");
+        namesList.add("Ardra");
+        namesList.add("Ritu");
+        namesList.add("Anu");
+        namesList.add("Akash");
+        AlphabeticalOrderHemanth alphabeticalOrderHemanth = new AlphabeticalOrderHemanth();
+        System.out.println(alphabeticalOrderHemanth.alphabetOrder(namesList));
     }
 }
