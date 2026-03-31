@@ -23,21 +23,21 @@ public class MainNavaneeth {
         names1.add("Ram");
         names1.add("Pranav");
 
-        Set<String> set1 = new HashSet<>();
-        set1.add("Chandu");
-        set1.add("Varsha");
-        set1.add("Deepa");
-        set1.add("Harsha");
-        set1.add("Pranav");
-        set1.add("Navaneeth");
+        Set<String> employeeSet1 = new HashSet<>();
+        employeeSet1.add("Chandu");
+        employeeSet1.add("Varsha");
+        employeeSet1.add("Deepa");
+        employeeSet1.add("Harsha");
+        employeeSet1.add("Pranav");
+        employeeSet1.add("Navaneeth");
 
-        Set<String> set2 = new HashSet<>();
-        set2.add("1");
-        set2.add("2");
-        set2.add("3");
-        set2.add("4");
-        set2.add("5");
-        set2.add("Navaneeth");
+        Set<String> employeeSet2 = new HashSet<>();
+        employeeSet2.add("1");
+        employeeSet2.add("2");
+        employeeSet2.add("3");
+        employeeSet2.add("4");
+        employeeSet2.add("5");
+        employeeSet2.add("Navaneeth");
 
         Map<Integer, String> members = new HashMap<>();
         members.put(1, "Chandu");
@@ -47,19 +47,33 @@ public class MainNavaneeth {
         members.put(5, "Pranav");
         members.put(6, "Navaneeth");
 
-//        Map<Integer,String> members1 = new HashMap<>();
-//        members1.put(6, "Navaneeth");
-//        members1.put(7,"vishal");
-//        members1.put(8,"mallik");
+        Map<Integer, String> members1 = new HashMap<>();
+        members1.put(6, "Navaneeth");
+        members1.put(7, "vishal");
+        members1.put(8, "mallik");
 
         CollectionNavaneeth cn = new CollectionNavaneeth();
-////        cn.skipDuplicates(names,names1);
-////        cn.setIteration(set1, set2);
-//        System.out.println(cn.setIteration(set1,set2));
-//        System.out.println(cn.removeMe(members));
-//        System.out.println(cn.removeSpecificUsingStreamMethod(members));
-//        cn.removeSpecificUsingStreamMethodUsingFilter(members);
-        System.out.println(cn.removeSpecificUsingToMap(members));
-    }
+        cn.skipNeighbour(names);
+        cn.iteration(names);
+        cn.skipDuplicates(names, names1);
+        cn.combinedListLambda(names, names1);
 
+        cn.setIteration(employeeSet1, employeeSet2);
+        System.out.println(cn.setIteration(employeeSet1, employeeSet2));
+        System.out.println(cn.findDuplicatesInSet(employeeSet1, employeeSet2));
+        System.out.println(cn.combinedDuplicatesSet(employeeSet1, employeeSet2));
+
+        cn.hashMap(members);
+        System.out.println(cn.removeMe(members));
+        System.out.println(cn.removeSpecificUsingStreamMethod(members));
+
+        cn.removeSpecificUsingStreamMethodUsingFilter(members);
+        System.out.println(cn.removeSpecificUsingToMap(members));
+
+        cn.removeDuplicatesUsingStreamMap(members, members1);
+        System.out.println(cn.removeDuplicatesUsingMap(members, members1));
+        System.out.println(cn.removeDuplicatesUsingMap(members, members1));
+        System.out.println(cn.removeDuplicatesCombineUsingForLoopMap(members, members1));
+        System.out.println(cn.removeDuplicatesCombineUsingStreamMap(members, members1));
+    }
 }
