@@ -21,7 +21,7 @@ public class CollectionsShashi {
     public void filterNeighbour(List<String> names) {
         // filter name via for loop
         for (String name : names) {
-            if (name.equals("Logesh")) {
+            if (name.equals("logesh")) {
                 continue;
             }
             System.out.println(name);
@@ -29,7 +29,7 @@ public class CollectionsShashi {
 
         // filter name via forEach loop in lambda format
         System.out.println("filter name via forEach loop in lambda format");
-        names.stream().filter(name -> !name.equalsIgnoreCase("Logesh")).forEach(name -> System.out.println(name));
+        names.stream().filter(name -> !name.equalsIgnoreCase("logesh")).forEach(name -> System.out.println(name));
     }
 
     public void removeDuplicate(List<String> names, List<String> names1) {
@@ -52,14 +52,14 @@ public class CollectionsShashi {
             System.out.println(res);
         }
 
-        System.out.println(" printing only unique letters lamda format");
+        System.out.println(" printing only unique letters lambda format");
         names.stream().filter(name -> !names1.contains(name)).forEach(name -> System.out.println(name));
         names1.stream().filter(name1 -> !names.contains(name1)).forEach(name -> System.out.println(name));
 
-        System.out.println(" printing only unique letters lamda format via or format");
+        System.out.println(" printing only unique letters lambda format via or format");
         mergedList.stream().filter(ml -> !names1.contains(ml) || !names.contains(ml)).forEach(ml -> System.out.println(ml));
 
-        System.out.println(" printing only unique letters lamda format via and logic ");
+        System.out.println(" printing only unique letters lambda format via and logic ");
         mergedList.stream().filter(ml -> !(names1.contains(ml) && names.contains(ml))).forEach(ml -> System.out.println(ml));
     }
 
@@ -122,12 +122,12 @@ public class CollectionsShashi {
     }
 
     public void mapPrintEmployee(Map<Integer, String> employeeData) {
-        System.out.println("Printing employee data");
+        System.out.println("Printing employee data via entry set");
         for (Map.Entry<Integer, String> name : employeeData.entrySet()) {
             System.out.println(name.getKey() + "-" + name.getValue());
         }
 
-        System.out.println("Printing employee data");
+        System.out.println("Printing employee data via key set");
         for (Integer key : employeeData.keySet()) {
             System.out.println(key + "-" + employeeData.get(key));
         }
