@@ -18,6 +18,7 @@ public class MainCollectionsShashi {
         names1.add("i");
         names1.add("e");
         names1.add("j");
+
         CollectionsShashi collection = new CollectionsShashi();
         collection.doIterate(names);
         collection.filterNeighbour(names);
@@ -36,6 +37,7 @@ public class MainCollectionsShashi {
         setNames1.add("h");
         setNames1.add("a");
         setNames1.add("i");
+
         collection.setPrintNames(setNames, setNames1);
         collection.setRemoveNeighbour(setNames);
         collection.setPrintUniqueName(setNames, setNames1);
@@ -54,6 +56,7 @@ public class MainCollectionsShashi {
         employeeData1.put(8, "h");
         employeeData1.put(9, "a");
         employeeData1.put(10, "i");
+
         collection.mapPrintEmployee(employeeData);
         collection.removeDuplicateData(employeeData, employeeData1); //put first so all methods can be used
         collection.mapPrintEmployee(employeeData);

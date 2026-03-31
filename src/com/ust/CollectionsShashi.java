@@ -4,6 +4,7 @@ import java.util.*;
 
 public class CollectionsShashi {
     public void doIterate(List<String> names) {
+        System.out.println("printing via for loop");
         for (int i = 0; i < names.size(); i++) {
             System.out.println(names.get(i));
         }
@@ -43,11 +44,13 @@ public class CollectionsShashi {
                 result.add(name);
             }
         }
+
         for (String name1 : names1) {
             if (!names.contains(name1)) {
                 result.add(name1);
             }
         }
+
         for (String res : result) {
             System.out.println(res);
         }
@@ -115,10 +118,12 @@ public class CollectionsShashi {
         }
 
         System.out.println("printing unique name via lambda expression from merged set via and logic");
-        mergedSet.stream().filter(mergeSet -> !(setNames.contains(mergeSet) && setNames1.contains(mergeSet))).forEach(mergeSet -> System.out.println(mergeSet));
+        mergedSet.stream().filter(mergeSet -> !(setNames.contains(mergeSet) && setNames1.contains(mergeSet))).
+                forEach(mergeSet -> System.out.println(mergeSet));
 
         System.out.println("printing unique name via lambda expression from merged set via or logic");
-        mergedSet.stream().filter(mergeSet -> !setNames.contains(mergeSet) || !setNames1.contains(mergeSet)).forEach(mergeSet -> System.out.println(mergeSet));
+        mergedSet.stream().filter(mergeSet -> !setNames.contains(mergeSet) || !setNames1.contains(mergeSet)).
+                forEach(mergeSet -> System.out.println(mergeSet));
     }
 
     public void mapPrintEmployee(Map<Integer, String> employeeData) {
@@ -136,32 +141,33 @@ public class CollectionsShashi {
         employeeData.forEach((id, name) -> System.out.println(id + "-" + name));
     }
 
-    public void mapRemoveOurName(Map<Integer, String> employData) {
+    public void mapRemoveOurName(Map<Integer, String> employeeData) {
         System.out.println("printing map after removing our name by using for loop");
-        for (Integer key : employData.keySet()) {
+        for (Integer key : employeeData.keySet()) {
             if (!key.equals(1)) {
-                System.out.println(key + "-" + employData.get(key));
+                System.out.println(key + "-" + employeeData.get(key));
             }
         }
 
         System.out.println("printing map after removing our name by using contains key");
-        if (employData.containsKey(1)) {
-            employData.remove(1);
+        if (employeeData.containsKey(1)) {
+            employeeData.remove(1);
         }
-        for (Map.Entry<Integer, String> name : employData.entrySet()) {
+        for (Map.Entry<Integer, String> name : employeeData.entrySet()) {
             System.out.println(name.getKey() + "-" + name.getValue());
         }
 
         System.out.println("printing map after removing our name by using contains value");
-        if (employData.containsValue("b")) {
-            employData.values().remove("b");
+        if (employeeData.containsValue("b")) {
+            employeeData.values().remove("b");
         }
-        for (Map.Entry<Integer, String> name : employData.entrySet()) {
+
+        for (Map.Entry<Integer, String> name : employeeData.entrySet()) {
             System.out.println(name.getKey() + "-" + name.getValue());
         }
     }
 
-    public void removeDuplicateData(Map<Integer, String> employData, Map<Integer, String> employData1) {
+    public void removeDuplicateData(Map<Integer, String> employeeData, Map<Integer, String> employeeData1) {
         Map<Integer, String> duplicateMap = new HashMap<>();
 /*
         System.out.println("Printing unique names");
@@ -173,12 +179,14 @@ public class CollectionsShashi {
         }
 */
         System.out.println("printing unique value via lambda expression");
-        employData.entrySet().stream().filter(emplData -> !employData1.containsValue(emplData.getValue()) && !employData1.containsKey(emplData.getKey())).forEach(emplData -> System.out.println(emplData.getKey() + "-" + emplData.getValue()));
-        employData1.entrySet().stream().filter(emplData -> !employData.containsValue(emplData.getValue()) && !employData.containsKey(emplData.getKey())).forEach(emplData -> System.out.println(emplData.getKey() + "-" + emplData.getValue()));
+        employeeData.entrySet().stream().filter(emplData -> !employeeData1.containsValue(emplData.getValue()) && !employeeData1.containsKey(emplData.getKey())).
+                forEach(emplData -> System.out.println(emplData.getKey() + "-" + emplData.getValue()));
+        employeeData1.entrySet().stream().filter(emplData -> !employeeData.containsValue(emplData.getValue()) && !employeeData.containsKey(emplData.getKey())).
+                forEach(emplData -> System.out.println(emplData.getKey() + "-" + emplData.getValue()));
 
         System.out.println("printing duplicate value");
-        for (Map.Entry<Integer, String> emplData : employData.entrySet()) {
-            if (employData1.containsValue(emplData.getValue())) {
+        for (Map.Entry<Integer, String> emplData : employeeData.entrySet()) {
+            if (employeeData1.containsValue(emplData.getValue())) {
                 duplicateMap.put(emplData.getKey(), emplData.getValue());
             }
 /*
@@ -188,15 +196,15 @@ public class CollectionsShashi {
 */
         }
         // to remove duplicate keys
-        for (Integer key : employData.keySet()) {
-            if (employData1.containsKey(key)) {
-                employData.remove(key);
-                employData1.remove(key);
+        for (Integer key : employeeData.keySet()) {
+            if (employeeData1.containsKey(key)) {
+                employeeData.remove(key);
+                employeeData1.remove(key);
             }
         }
 
-        Map<Integer, String> mergedMap = new HashMap<>(employData);
-        mergedMap.putAll(employData1);
+        Map<Integer, String> mergedMap = new HashMap<>(employeeData);
+        mergedMap.putAll(employeeData1);
 
         System.out.println(duplicateMap);
         System.out.println("printing unique values only");
