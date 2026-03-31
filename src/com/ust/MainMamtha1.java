@@ -21,6 +21,16 @@ public class MainMamtha1 {
         names1.add("Praneesh");
         names1.add("Visagan");
 
+        CollectionsMamtha collectionsMamtha = new CollectionsMamtha();
+        collectionsMamtha.toPrintPod2Names(names);
+        System.out.println();
+        collectionsMamtha.toPrintExceptDeepshika(names);
+        System.out.println();
+        System.out.println(collectionsMamtha.toRemoveDuplicatesFromLists(names, names1));
+        System.out.println();
+        collectionsMamtha.toRemoveDuplicateUsingSingleForLoop(names, names1);
+        System.out.println();
+
         HashSet<String> hNames = new HashSet<>();
         hNames.add("Mamtha");
         hNames.add("Deepshi");
@@ -37,20 +47,12 @@ public class MainMamtha1 {
         hNames1.add("Praneesh");
         hNames1.add("Visagan");
 
-        CollectionsMamtha pod2 = new CollectionsMamtha();
-        pod2.printPod2Names(names);
+        collectionsMamtha.toIterateSet(hNames);
         System.out.println();
-        pod2.printExceptDeepshika(names);
+        collectionsMamtha.toRemoveDuplicateFromSets(hNames, hNames1);
         System.out.println();
-        System.out.println(pod2.compareTwoLists(names, names1));
+        collectionsMamtha.toRemoveDuplicateUsingLambdaEx(hNames, hNames1);
         System.out.println();
-        pod2.removeDuplicate(names, names1);
-        System.out.println();
-        pod2.hashSetNames(hNames, hNames1);
-        System.out.println();
-        pod2.removeDuplicate(hNames, hNames1);
-        System.out.println();
-//          pod2.compareTwoLists(names,names1);
 
         Map<String, String> mapNames = new HashMap<>();
         mapNames.put("308335", "Mamatha");
@@ -60,16 +62,25 @@ public class MainMamtha1 {
         mapNames.put("308342", "aishu");
         mapNames.put("308343", "bew");
 
-        pod2.toRemoveKeyUsingLambda(mapNames);
-        System.out.println();
+        Map<String, String> mapNames1 = new HashMap<>();
+        mapNames1.put("308123", "hema");
+        mapNames1.put("308124", "nadhi");
+        mapNames1.put("308125", "deepak");
+        mapNames1.put("308126", "praneesh");
+        mapNames1.put("308342", "aishu");
+        mapNames1.put("308127", "visagan");
 
-        pod2.printingMap(mapNames);
+        collectionsMamtha.toPrintingMap(mapNames);
         System.out.println();
-        pod2.printExceptMamthaMap(mapNames);
+        collectionsMamtha.printExceptMamthaMap(mapNames);
         System.out.println();
-        pod2.printExceptMyEmployeeId(mapNames);
+        collectionsMamtha.printExceptMyEmployeeId(mapNames);
         System.out.println();
-//        pod2.toRemoveKeyUsingLambda(mapNames);
+        collectionsMamtha.toRemoveKeyUsingLambda(mapNames);
+        System.out.println();
+        collectionsMamtha.toRemoveDuplicateMap(mapNames, mapNames1);
+        System.out.println();
+        collectionsMamtha.toRemoveDuplicateFromTwoMapsLambdaEx(mapNames, mapNames1);
 
 
     }
