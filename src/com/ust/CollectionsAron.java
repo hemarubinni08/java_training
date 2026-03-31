@@ -3,13 +3,16 @@ package com.ust;
 import java.util.*;
 import java.util.stream.Stream;
 
-// function to print all the names of people in your pod
 public class CollectionsAron {
+
+    // function to print all the names of people in your pod
     public void doIteration(List<String> names) {
         // use for each to loop through the list and print
         for (String name : names) {
             System.out.println(name);
         }
+
+        System.out.println("--Print using lambda--");
         // printing the same in a single line
         names.forEach(System.out::println);
     }
@@ -17,9 +20,13 @@ public class CollectionsAron {
     // function to print names that excluding the person sitting near you in your pod
     public void filteredIteration(List<String> names) {
         // use for each to loop through the list and print only if the name is not your neighbour's
-        for (String name : names)
-            if (!name.equals("Shashi"))
+        for (String name : names) {
+            if (!name.equals("Shashi")) {
                 System.out.println(name);
+            }
+        }
+
+        System.out.println("--Print using lambda--");
         // Lambda expression
         names.stream().filter(name -> !name.equals("Shashi")).forEach(System.out::println);
     }
@@ -28,16 +35,20 @@ public class CollectionsAron {
         // Create a list to store non duplicated values of both lists
         List<String> nonUnique = new ArrayList<>();
         // for each loop to add elements of names1 that are not in names2
+
         for (String name1 : names1) {
             if (!names2.contains(name1)) nonUnique.add(name1);
         }
+
         // for each loop to add elements of names2 that are not in names1
         for (String name2 : names2) {
             if (!names1.contains(name2)) nonUnique.add(name2);
         }
+
         nonUnique.clear();
         nonUnique.addAll(names1);
         nonUnique.addAll(names2);
+
         //Lambda expression to print non-duplicate numbers in the merged list
         nonUnique.stream().filter(nu -> !names1.contains(nu) || !names2.contains(nu)).forEach(System.out::println);
     }
@@ -47,20 +58,23 @@ public class CollectionsAron {
         HashSet<String> mergedSet = new HashSet<>();
         mergedSet.addAll(setNames1);
         mergedSet.addAll(setNames2);
+
         for (String setIterator : mergedSet) {
             System.out.println(setIterator);
         }
+        // Add a line break
         System.out.println();
+
         // Lambda expression
         mergedSet.forEach(System.out::println);
     }
 
     // function to print all names in the set excluding the name of your neighbor
-    public void filterSet(HashSet<String> setNames1) {
+    public void filterSet(HashSet<String> setNames1, String employeeName) {
         // loop to traverse the set
         for (String setName1 : setNames1)
             // condition that checks if the current value in the loop is your neighbor's name
-            if (!setName1.equals("Shashi"))
+            if (!setName1.equals(employeeName))
                 System.out.println(setName1);
     }
 
@@ -68,35 +82,43 @@ public class CollectionsAron {
     public void removeDuplicateSet(HashSet<String> setNames1, HashSet<String> setNames2) {
         // create a set to store the duplicate values
         HashSet<String> duplicateSet = new HashSet<>();
+
         // loop to traverse one set
         for (String setName1 : setNames1)
             // check if the current name in setNames1 is in setNames2
             if (setNames2.contains(setName1))
                 // add that value to duplicate set
                 duplicateSet.add(setName1);
+
         // set to merge the values of both sets
         HashSet<String> mergedSet = new HashSet<>();
         mergedSet.addAll(setNames1);
         mergedSet.addAll(setNames2);
+
         // remove all duplicate values from the merged set
         mergedSet.removeAll(duplicateSet);
+
         // print values in the merged set
         mergedSet.forEach(System.out::println);
         System.out.println();
+
         // lambda expression
         mergedSet.stream().filter(Iterator -> !duplicateSet.contains(Iterator)).forEach(System.out::println);
     }
 
     // function to print all the values in the map
     public void traverseMap(Map<String, String> employeesMap) {
+        // loop through the employee map and print each key-value pair
         for (Map.Entry<String, String> employee : employeesMap.entrySet()) {
             System.out.println(employee.getKey() + " - " + employee.getValue());
         }
+        // Added line break
         System.out.println();
+
+        // print using key set
         for (String key : employeesMap.keySet()) {
             System.out.println(key + " - " + employeesMap.get(key));
         }
-
     }
 
     // function to remove your data from the map using key and printing the rest
@@ -104,13 +126,16 @@ public class CollectionsAron {
         // loop through the entire loop
         for (String key : employeesMap.keySet()) {
             // check if the key matches your employee id and print only if it's not
-            if (!key.equals("308336"))
+            if (!key.equals(employeeKey))
                 System.out.println(key + " - " + employeesMap.get(key));
         }
+
+        // Added line break
         System.out.println();
+
         // check using containsKey method
-        if (employeesMap.containsKey(employeeKey))
-            employeesMap.remove(employeeKey);
+        employeesMap.remove(employeeKey);
+
         // print the map
         for (Map.Entry<String, String> employee : employeesMap.entrySet()) {
             System.out.println(employee.getKey() + " - " + employee.getValue());
@@ -123,7 +148,7 @@ public class CollectionsAron {
         if (employeesMap.containsValue(employeeName)) {
             employeesMap.values().remove(employeeName);
         }
-        System.out.println();
+
         // After removing just print rest of the values
         for (Map.Entry<String, String> employee : employeesMap.entrySet()) {
             System.out.println(employee.getKey() + " - " + employee.getValue());
@@ -141,11 +166,13 @@ public class CollectionsAron {
                 employeesMap2.values().remove(employee.getValue());
             }
         }
+
+        // create a map to merge both maps
+        Map<String, String> mergedMap = new HashMap<>(employeesMap1);
+        mergedMap.putAll(employeesMap2);
+
         // print both maps
-        for (Map.Entry<String, String> employee : employeesMap1.entrySet()) {
-            System.out.println(employee.getKey() + " - " + employee.getValue());
-        }
-        for (Map.Entry<String, String> employee : employeesMap2.entrySet()) {
+        for (Map.Entry<String, String> employee : mergedMap.entrySet()) {
             System.out.println(employee.getKey() + " - " + employee.getValue());
         }
     }
@@ -160,13 +187,18 @@ public class CollectionsAron {
                 employeesMap2.remove(key);
             }
         }
+
         // create a map to merge both maps
         Map<String, String> mergedMap = new HashMap<>(employeesMap1);
         mergedMap.putAll(employeesMap2);
+
         // loop through the merged map and print the key-value pair
         for (Map.Entry<String, String> employee : mergedMap.entrySet()) {
             System.out.println(employee.getKey() + " - " + employee.getValue());
         }
+
+        // Line break
+        System.out.println();
         // Do the same with stream
         Stream.concat(employeesMap1.entrySet().stream().filter(e1 -> !employeesMap2.containsKey(e1.getKey())), employeesMap2.entrySet().stream().filter(e2 -> !employeesMap1.containsKey(e2.getKey()))).forEach(e -> System.out.println(e.getKey() + " - " + e.getValue()));
     }
