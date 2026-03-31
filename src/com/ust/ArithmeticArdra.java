@@ -10,4 +10,3 @@ public class ArithmeticArdra {
         System.out.println(obj.addition(2, 3));
     }
 }
-

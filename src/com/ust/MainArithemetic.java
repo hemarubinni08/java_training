@@ -5,15 +5,18 @@ public class MainArithemetic {
 
     }
 
-    public static Integer addition(int x, int y) {
-        return x + y;
+    public static Integer addition(int num1, int num2) {
+
+        return num1 + num2;
     }
 
-    public static Integer subtraction(int a, int b) {
-        return a - b;
+    public static Integer subtraction(int num3, int num4) {
+
+        return num3 - num4;
     }
 
-    public static Integer multiplication(int c, int d) {
-        return c * d;
+    public static Integer multiplication(int num5, int num6) {
+
+        return num5 * num6;
     }
 }
