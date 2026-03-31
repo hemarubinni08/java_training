@@ -50,7 +50,7 @@ public class CollectionsSrujan2 {
                 forEach(name -> System.out.println(name.getKey() + "-" + name.getValue()));
     }
 
-    public HashMap doIteration2MapsSrujan(Map<Integer, String> podMembersMap1, Map<Integer, String> podMembersMap2) {
+    public Map<Integer, String> doIteration2MapsSrujan(Map<Integer, String> podMembersMap1, Map<Integer, String> podMembersMap2) {
         HashMap<Integer, String> mergedMap = new HashMap<>();
         HashMap<Integer, String> temporaryMap = new HashMap<>();
         mergedMap.putAll(podMembersMap1);
