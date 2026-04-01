@@ -1,0 +1,232 @@
+package com.ust;
+
+import java.util.*;
+
+public class CollectionsShashi {
+    public void doIterate(List<String> names) {
+        System.out.println("printing via for loop");
+        for (int i = 0; i < names.size(); i++) {
+            System.out.println(names.get(i));
+        }
+
+        System.out.println("Printing via enhanced for loop");
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+        System.out.println("printing via lambda expression");
+        names.forEach(name -> System.out.println(name));
+    }
+
+    public void sortedList(List<String> names) {
+        System.out.println("printing the sorted list");
+        for (int i = 0; i < names.size(); i++) {
+            for (int j = 0; j < names.size() - i - 1; j++) {
+                if (names.get(j).compareTo(names.get(j + 1)) > 0) {
+                    String temp = names.get(j);
+                    names.set(j, names.get(j + 1));
+                    names.set(j + 1, temp);
+                }
+            }
+        }
+        names.forEach(name -> System.out.println(name));
+    }
+
+    public void filterNeighbour(List<String> names) {
+        // filter name via for loop
+        System.out.println("printing the list by removing the neighbour");
+        for (String name : names) {
+            if (name.equals("e")) {
+                continue;
+            }
+            System.out.println(name);
+        }
+
+        // filter name via forEach loop in lambda format
+        System.out.println("filter name via forEach loop in lambda format");
+        names.stream().filter(name -> !name.equalsIgnoreCase("e")).forEach(name -> System.out.println(name));
+    }
+
+    public void removeDuplicate(List<String> names, List<String> names1) {
+        List<String> result = new ArrayList<>();
+        List<String> mergedList = new ArrayList<>(names);
+        mergedList.addAll(names1);
+
+        System.out.println("printing only unique letters");
+        for (String name : names) {
+            if (!names1.contains(name)) {
+                result.add(name);
+            }
+        }
+
+        for (String name1 : names1) {
+            if (!names.contains(name1)) {
+                result.add(name1);
+            }
+        }
+
+        for (String res : result) {
+            System.out.println(res);
+        }
+
+        System.out.println(" printing only unique letters lambda format");
+        names.stream().filter(name -> !names1.contains(name)).forEach(name -> System.out.println(name));
+        names1.stream().filter(name1 -> !names.contains(name1)).forEach(name -> System.out.println(name));
+
+        System.out.println(" printing only unique letters lambda format via or format");
+        mergedList.stream().filter(ml -> !names1.contains(ml) || !names.contains(ml)).forEach(ml -> System.out.println(ml));
+
+        System.out.println(" printing only unique letters lambda format via and logic ");
+        mergedList.stream().filter(ml -> !(names1.contains(ml) && names.contains(ml))).forEach(ml -> System.out.println(ml));
+    }
+
+    public void setPrintNames(Set<String> setNames, Set<String> setNames1) {
+        Set<String> mergedSet = new HashSet<>(setNames);
+        mergedSet.addAll(setNames1);
+
+        System.out.println("printing names via set");
+        for (String name : mergedSet) {
+            System.out.println(name);
+        }
+
+        System.out.println("printing names via set in lambda expression");
+        mergedSet.forEach(name -> System.out.println(name));
+    }
+
+    public void setRemoveNeighbour(Set<String> setNames) {
+        System.out.println("printing remove neighbour via set");
+        for (String name : setNames) {
+            if (!name.equalsIgnoreCase("b"))
+                System.out.println(name);
+        }
+    }
+
+    public void setPrintUniqueName(Set<String> setNames, Set<String> setNames1) {
+        Set<String> duplicateName = new HashSet<>();
+
+        Set<String> mergedSet = new HashSet<>(setNames);
+        mergedSet.addAll(setNames1);
+        System.out.println("printing duplicate name");
+        for (String name : setNames) {
+            if (setNames1.contains(name)) {
+                duplicateName.add(name);
+                System.out.println(name);
+            }
+        }
+
+        System.out.println("printing duplicate name via lambda expression from set");
+        setNames.stream().filter(name -> setNames1.contains(name)).forEach(name -> System.out.println(name));
+
+        System.out.println("printing unique name via lambda expression from set1");
+        setNames.stream().filter(name -> !setNames1.contains(name)).forEach(name -> System.out.println(name));
+
+        System.out.println("printing unique name via lambda expression from set2");
+        setNames1.stream().filter(name1 -> !setNames.contains(name1)).forEach(name1 -> System.out.println(name1));
+
+        System.out.println("printing only unique name");
+        for (String name : mergedSet) {
+            if (duplicateName.contains(name)) {
+                continue;
+            }
+            System.out.println(name);
+        }
+
+        System.out.println("printing unique name via lambda expression from merged set via and logic");
+        mergedSet.stream().filter(mergeSet -> !(setNames.contains(mergeSet) && setNames1.contains(mergeSet))).
+                forEach(mergeSet -> System.out.println(mergeSet));
+
+        System.out.println("printing unique name via lambda expression from merged set via or logic");
+        mergedSet.stream().filter(mergeSet -> !setNames.contains(mergeSet) || !setNames1.contains(mergeSet)).
+                forEach(mergeSet -> System.out.println(mergeSet));
+    }
+
+    public void mapPrintEmployee(Map<Integer, String> employeeData) {
+        System.out.println("Printing employee data via entry set");
+        for (Map.Entry<Integer, String> name : employeeData.entrySet()) {
+            System.out.println(name.getKey() + "-" + name.getValue());
+        }
+
+        System.out.println("Printing employee data via key set");
+        for (Integer key : employeeData.keySet()) {
+            System.out.println(key + "-" + employeeData.get(key));
+        }
+
+        System.out.println("Printing employee data via lambda expression");
+        employeeData.forEach((id, name) -> System.out.println(id + "-" + name));
+    }
+
+    public void mapRemoveOurName(Map<Integer, String> employeeData) {
+        System.out.println("printing map after removing our name by using for loop");
+        for (Integer key : employeeData.keySet()) {
+            if (!key.equals(1)) {
+                System.out.println(key + "-" + employeeData.get(key));
+            }
+        }
+
+        System.out.println("printing map after removing our name by using contains key");
+        if (employeeData.containsKey(1)) {
+            employeeData.remove(1);
+        }
+        for (Map.Entry<Integer, String> name : employeeData.entrySet()) {
+            System.out.println(name.getKey() + "-" + name.getValue());
+        }
+
+        System.out.println("printing map after removing our name by using contains value");
+        if (employeeData.containsValue("b")) {
+            employeeData.values().remove("b");
+        }
+
+        for (Map.Entry<Integer, String> name : employeeData.entrySet()) {
+            System.out.println(name.getKey() + "-" + name.getValue());
+        }
+    }
+
+    public void removeDuplicateData(Map<Integer, String> employeeData, Map<Integer, String> employeeData1) {
+        Map<Integer, String> duplicateMap = new HashMap<>();
+/*
+        System.out.println("Printing unique names");
+        if (mergedMap.containsValue("b")) {
+            employData.values().remove("b");
+        }
+        for (Map.Entry<Integer, String> name : mergedMap.entrySet()) {
+            System.out.println(name.getKey() + "-" + name.getValue());
+        }
+*/
+        System.out.println("printing unique value via lambda expression");
+        employeeData.entrySet().stream().filter(emplData -> !employeeData1.containsValue(emplData.getValue()) && !employeeData1.containsKey(emplData.getKey())).
+                forEach(emplData -> System.out.println(emplData.getKey() + "-" + emplData.getValue()));
+        employeeData1.entrySet().stream().filter(emplData -> !employeeData.containsValue(emplData.getValue()) && !employeeData.containsKey(emplData.getKey())).
+                forEach(emplData -> System.out.println(emplData.getKey() + "-" + emplData.getValue()));
+
+        System.out.println("printing duplicate value");
+        for (Map.Entry<Integer, String> emplData : employeeData.entrySet()) {
+            if (employeeData1.containsValue(emplData.getValue())) {
+                duplicateMap.put(emplData.getKey(), emplData.getValue());
+            }
+/*
+            if(employData1.containsKey(emplData.getKey())){
+                duplicateMap.put(emplData.getKey(),emplData.getValue());
+            }
+*/
+        }
+        // to remove duplicate keys
+        for (Integer key : employeeData.keySet()) {
+            if (employeeData1.containsKey(key)) {
+                employeeData.remove(key);
+                employeeData1.remove(key);
+            }
+        }
+
+        Map<Integer, String> mergedMap = new HashMap<>(employeeData);
+        mergedMap.putAll(employeeData1);
+
+        System.out.println(duplicateMap);
+        System.out.println("printing unique values only");
+        for (Map.Entry<Integer, String> emplData : mergedMap.entrySet()) {
+            if (duplicateMap.containsValue(emplData.getValue())) {
+                continue;
+            }
+            System.out.println(emplData.getKey() + "-" + emplData.getValue());
+        }
+    }
+}
