@@ -92,6 +92,7 @@ public class CollectionLogesh {
         int size = names.size();
         for (int i = 0; i < size - 1; i++) {
             int index = i;
+
             for (int j = i + 1; j < size; j++) {
                 if (names.get(j).compareTo(names.get(index)) < 0)
                     index = j;

@@ -46,7 +46,6 @@ public class MainLogesh {
         collection.filterNeighbour(names);
         collection.findDuplicatesList(names, names1);
 
-
         HashSet<String> memberNames = new HashSet<>();
         memberNames.add("Logesh");
         memberNames.add("Shashi");
