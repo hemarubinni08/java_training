@@ -105,7 +105,7 @@ public class CollectionsDeepshika {
         resultSet1.forEach(name -> System.out.println(name));
     }
 
-    public void hashRemoveDuplicateUsingLamda(Set<String> hashNames, Set<String> hashNames1) {
+    public void hashRemoveDuplicateUsingLambda(Set<String> hashNames, Set<String> hashNames1) {
         Set<String> resultSet = Stream.concat(hashNames.stream(), hashNames1.stream()).collect(Collectors.toSet()).stream().filter(name -> !(hashNames.contains(name) && hashNames1.contains(name))).collect(Collectors.toSet());
         System.out.println(resultSet);
     }
@@ -142,7 +142,7 @@ public class CollectionsDeepshika {
         System.out.println(mapNames);
     }
 
-    public void toRemoveKeyUsingLamda(Map<Integer, String> mapNames) {
+    public void toRemoveKeyUsingLambda(Map<Integer, String> mapNames) {
         int eId = 308341;
         mapNames.entrySet().stream().filter(entry -> entry.getKey() != eId).forEach(entry -> System.out.println(entry.getKey() + "-" + entry.getValue()));
     }
@@ -177,7 +177,7 @@ public class CollectionsDeepshika {
         System.out.println(mapNames1);
     }
 
-    public void toRemoveDuplicateMapUsingLamda(Map<Integer, String> mapNames, Map<Integer, String> mapNames1) {
+    public void toRemoveDuplicateMapUsingLambda(Map<Integer, String> mapNames, Map<Integer, String> mapNames1) {
         Set<Integer> duplicateKeys = mapNames.keySet().stream().filter(mapNames1::containsKey).collect(Collectors.toSet());
         duplicateKeys.forEach(key -> {
             mapNames.remove(key);

@@ -53,7 +53,7 @@ public class MainDeepshika {
         System.out.println();
         collectionsDeepshika.hashRemoveDuplicateUsingLoop(hashNames, hashNames1);
         System.out.println();
-        collectionsDeepshika.hashRemoveDuplicateUsingLamda(hashNames, hashNames1);
+        collectionsDeepshika.hashRemoveDuplicateUsingLambda(hashNames, hashNames1);
         System.out.println();
 
         Map<Integer, String> mapNames = new HashMap<>();
@@ -78,13 +78,13 @@ public class MainDeepshika {
         System.out.println();
         collectionsDeepshika.toRemoveWithKey(mapNames);
         System.out.println();
-        collectionsDeepshika.toRemoveKeyUsingLamda(mapNames);
+        collectionsDeepshika.toRemoveKeyUsingLambda(mapNames);
         System.out.println();
         collectionsDeepshika.toRemoveDuplicateMap(mapNames, mapNames1);
         System.out.println();
         collectionsDeepshika.toRemoveDuplicateMapSingleLoop(mapNames, mapNames1);
         System.out.println();
-        collectionsDeepshika.toRemoveDuplicateMapUsingLamda(mapNames, mapNames1);
+        collectionsDeepshika.toRemoveDuplicateMapUsingLambda(mapNames, mapNames1);
         System.out.println();
 
         List<String> lnames = new ArrayList<>();
