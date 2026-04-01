@@ -87,4 +87,20 @@ public class CollectionLogesh {
         }
         result.stream().filter(ms -> !memberNames.contains(ms) || !members1.contains(ms)).forEach(ms -> System.out.println(ms));
     }
+
+    public void sortedList(List<String> names) {
+        int size = names.size();
+        for (int i = 0; i < size - 1; i++) {
+            int index = i;
+            for (int j = i + 1; j < size; j++) {
+                if (names.get(j).compareTo(names.get(index)) < 0)
+                    index = j;
+            }
+            String temp = names.get(index);
+            names.set(index, names.get(i));
+            names.set(i, temp);
+        }
+        System.out.println("\nUsing Lambda");
+        names.forEach(e -> System.out.println(e));
+    }
 }

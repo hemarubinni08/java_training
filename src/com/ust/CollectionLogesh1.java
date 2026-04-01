@@ -53,6 +53,7 @@ public class CollectionLogesh1 {
         resultMap.putAll(podMembers1);
         System.out.println(duplicateMap);
         System.out.println("\nWitout Duplicate");
+
         for (Map.Entry<String, String> name : resultMap.entrySet()) {
             if (duplicateMap.containsValue(name.getValue())) {
                 continue;

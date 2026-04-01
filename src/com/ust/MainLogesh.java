@@ -42,8 +42,10 @@ public class MainLogesh {
 
         CollectionLogesh collection = new CollectionLogesh();
         collection.loopingNames(names);
+        collection.sortedList(names);
         collection.filterNeighbour(names);
         collection.findDuplicatesList(names, names1);
+
 
         HashSet<String> memberNames = new HashSet<>();
         memberNames.add("Logesh");
