@@ -407,5 +407,15 @@ public class Main_akash {
         System.out.println("Removal of duplicate values using Lambda function:");
         removeDuplicateValueHashMapAkash.removeDuplicatesUsingLambda(map1, map2);
         System.out.println();
+        System.out.println("Enter the names to be sorted:");
+        List<String> unsortedNames = new ArrayList<>();
+        for (int i=0;i<6;i++)
+        {
+            String nameOfMember = sc.nextLine();
+            unsortedNames.add(nameOfMember);
+        }
+        System.out.println("Printing names in alphabetical order:");
+        AlphabeticalOrderAkash alphabeticalOrderAkash = new AlphabeticalOrderAkash();
+        System.out.println(alphabeticalOrderAkash.alphabetOrder(unsortedNames));
     }
 }
