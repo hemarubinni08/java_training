@@ -32,6 +32,27 @@ public class CollectionsShashi {
         names.forEach(name -> System.out.println(name));
     }
 
+    public void exceptionHandling(List<String> names) throws IndexOutOfBoundsException,ConcurrentModificationException {
+        System.out.println("printing and trying exception handling");
+
+            for(String name:names){
+                if(name.equals("c")){
+                    names.remove(name);
+                }
+                System.out.println(name);
+            }
+
+//             try {
+//            names.remove(8);
+//        }catch (IndexOutOfBoundsException e){
+//            System.out.println(e.getMessage());
+//        }
+    }
+
+    public void listException(List<String> names) throws IndexOutOfBoundsException{
+        names.remove(9);
+    }
+
     public void filterNeighbour(List<String> names) {
         // filter name via for loop
         System.out.println("printing the list by removing the neighbour");

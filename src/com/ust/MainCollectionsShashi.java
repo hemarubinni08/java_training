@@ -26,6 +26,15 @@ public class MainCollectionsShashi {
         collection.filterNeighbour(names);
         collection.removeDuplicate(names, names1);
 
+        try {
+            collection.exceptionHandling(names);
+            collection.listException(names);
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println(e.getMessage());
+        }catch (ConcurrentModificationException ce){
+            System.out.println(ce.getMessage());
+        }
+
         Set<String> setNames = new HashSet<>();
         setNames.add("a");
         setNames.add("b");
