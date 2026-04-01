@@ -69,5 +69,12 @@ public class MainYesh {
         mapObject.checkForDuplicates(employees, secondMap);*/
         SortedListYesh sortedNames=new SortedListYesh();
         sortedNames.sortingList(teamMembersNames);
+        ExceptionYesh exObject=new ExceptionYesh();
+        exObject.HandlingException(teamMembersNames);
+        try{
+            exObject.HandlingWithMain(teamMembersNames);
+        } catch (ConcurrentModificationException e) {
+            System.out.println(e);
+        }
     }
 }
