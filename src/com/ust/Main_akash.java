@@ -416,6 +416,10 @@ public class Main_akash {
         }
         System.out.println("Printing names in alphabetical order:");
         AlphabeticalOrderAkash alphabeticalOrderAkash = new AlphabeticalOrderAkash();
+        System.out.println("Without using built-in function:");
         System.out.println(alphabeticalOrderAkash.alphabetOrder(unsortedNames));
+        System.out.println();
+        System.out.println("Using built-in function");
+        System.out.println(alphabeticalOrderAkash.sortingUsingBuiltInFunctions(unsortedNames));
     }
 }

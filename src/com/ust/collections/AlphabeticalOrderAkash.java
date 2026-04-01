@@ -1,8 +1,6 @@
 package com.ust.collections;
 
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
+import java.util.*;
 
 public class AlphabeticalOrderAkash {
     public boolean compareTwo(String s1, String s2)
@@ -38,6 +36,13 @@ public class AlphabeticalOrderAkash {
                 }
             }
         }
+        return list;
+    }
+
+    public List<String> sortingUsingBuiltInFunctions(List<String> list)
+    {
+        List<String> sortedNames = new ArrayList<>();
+        Collections.sort(list);
         return list;
     }
 }
