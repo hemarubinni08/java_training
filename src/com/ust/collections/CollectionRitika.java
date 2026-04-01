@@ -166,4 +166,26 @@ public class CollectionRitika {
         duplicates.keySet().forEach(merged::remove);
         System.out.println(merged);
     }
+
+    public void doiterateException(List<String> list1){
+        try{
+            for (String name: list1){
+                list1.add("Ardra1");
+                System.out.println(list1);
+            }
+        }catch (ConcurrentModificationException e){
+            System.out.println(e);
+        }
+    }
+    public void doiterateExceptionMethod(List<String> list1) {
+            try{
+                System.out.println(list1.get(list1.size()));
+                for(String name:list1){
+                    list1.remove("Akash");
+                    System.out.println(list1);
+                }
+            }catch(IndexOutOfBoundsException e){
+                System.out.println(e);
+        }
+    }
 }

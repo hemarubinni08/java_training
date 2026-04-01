@@ -7,34 +7,44 @@ import java.util.ArrayList;
 
 public class MainRitika {
     public static void main(String[] args) {
-        ArrayList<String> list1 = new ArrayList<>();
-        list1.add("Ritika");
-        list1.add("Anudeepika");
-        list1.add("Hemantha");
-        list1.add("Yeshwanth");
-        list1.add("Ardra");
-        list1.add("Akash");
-        list1.add("Bewin");
-        list1.add("Ashiwariya");
-        list1.add("Kushal");
-        list1.add("Hemarrubini");
-        list1.add("Sohaib");
-        list1.add("Kirti");
-        list1.add("Harsh");
-        list1.add("Rohit");
-        list1.add("Harshavardhan");
-        list1.add("Chandrashekhar");
-        list1.add("Varsha");
-        list1.add("Deepa");
-        list1.add("Pranav");
-        list1.add("Lekhaya");
-        list1.add("Logesh");
+        ArrayList<String> newlist=new ArrayList<>();
+        newlist.add("Ritika");
+        newlist.add("Anudeepika");
+        newlist.add("Hemantha");
+        newlist.add("Yeshwanth");
+        newlist.add("Ardra");
+        newlist.add("Akash");
 
-        CollectionRitika obj = new CollectionRitika();
-        System.out.println(obj.sortedList(list1));
+        CollectionRitika obj=new CollectionRitika();
+        obj.doiterateException(newlist);
     }
 }
 
+//        ArrayList<String> list1 = new ArrayList<>();
+//        list1.add("Ritika");
+//        list1.add("Anudeepika");
+//        list1.add("Hemantha");
+//        list1.add("Yeshwanth");
+//        list1.add("Ardra");
+//        list1.add("Akash");
+//        list1.add("Bewin");
+//        list1.add("Ashiwariya");
+//        list1.add("Kushal");
+//        list1.add("Hemarrubini");
+//        list1.add("Sohaib");
+//        list1.add("Kirti");
+//        list1.add("Harsh");
+//        list1.add("Rohit");
+//        list1.add("Harshavardhan");
+//        list1.add("Chandrashekhar");
+//        list1.add("Varsha");
+//        list1.add("Deepa");
+//        list1.add("Pranav");
+//        list1.add("Lekhaya");
+//        list1.add("Logesh");
+//
+//        CollectionRitika obj = new CollectionRitika();
+//        System.out.println(obj.sortedList(list1));
 
 
 //        Map<String, String> map1 = new HashMap<>();
