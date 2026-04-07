@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 
 public class GokulCollection {
-    public static void displayNames(List<String> names1, List<String> names2) {
+    public  void displayNames(List<String> names1, List<String> names2) {
 
         List<String> result = new ArrayList<>();
 

@@ -5,20 +5,24 @@ import java.util.HashSet;
 
 public class MainGokul {
     public static void main(String[] args) {
-        ArrayList<String> names1 = new ArrayList<>();
-        names1.add("gokul");
-        names1.add("harsh");
-        names1.add("rohit");
-        names1.add("navya");
-        names1.add("keerthi");
-        names1.add("deepak");
-        ArrayList<String> names2 = new ArrayList<>();
-        names2.add("raina");
-        names2.add("virat");
-        names2.add("dhoni");
-        names2.add("gokul");
-        names2.add("bravo");
-        GokulCollection.displayNames(names1, names2);
+        ArrayList<String> num1 = new ArrayList<>();
+        num1.add("gokul");
+        num1.add("harsh");
+        num1.add("rohit");
+        num1.add("navya");
+        num1.add("keerthi");
+        num1.add("deepak");
+        ArrayList<String> num2 = new ArrayList<>();
+        num2.add("raina");
+        num2.add("virat");
+        num2.add("dhoni");
+        num2.add("gokul");
+        num2.add("bravo");
+
+        GokulCollection list=new  GokulCollection();
+
+        list.displayNames(num1, num2);
+
 
     }
 }
